@@ -5,7 +5,18 @@ import { InquiryForm } from "./index";
 import { MapPin, Phone, Mail, MessageCircle } from "lucide-react";
 
 export const Route = createFileRoute("/contact")({
-  head: () => ({ meta: [{ title: "Contact — Seagol Factory" }, { name: "description", content: "Talk to our export team. Phone, email, WhatsApp, and factory address in Mashhad, Iran." }] }),
+  head: () => ({
+    meta: [
+      { title: "تماس با کارخانه سیگل | سفارش نبات زعفرانی و زعفران — Contact" },
+      { name: "description", content: "تماس با تیم صادرات کارخانه سیگل برای سفارش نبات زعفرانی، زعفران ایرانی و شیرینی سنتی. تلفن، ایمیل، واتساپ و آدرس کارخانه در مشهد. Talk to our export team — phone, email, WhatsApp, factory address in Mashhad, Iran." },
+      { name: "keywords", content: "تماس با سیگل, سفارش نبات, خرید عمده نبات زعفرانی, تامین کننده زعفران مشهد, تماس صادرات نبات, contact Seagol, order saffron nabat, wholesale Persian sweets contact" },
+      { property: "og:title", content: "تماس با کارخانه سیگل — Contact Seagol" },
+      { property: "og:description", content: "سفارش و استعلام نبات زعفرانی، زعفران ایرانی و شیرینی سنتی برای بازارهای داخلی و صادراتی." },
+      { property: "og:url", content: "https://global-saffron-gate.lovable.app/contact" },
+      { property: "og:type", content: "website" },
+    ],
+    links: [{ rel: "canonical", href: "https://global-saffron-gate.lovable.app/contact" }],
+  }),
   component: ContactPage,
 });
 
