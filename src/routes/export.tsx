@@ -5,7 +5,18 @@ import { InquiryForm } from "./index";
 import { Tag, Settings2, Ship, FileCheck } from "lucide-react";
 
 export const Route = createFileRoute("/export")({
-  head: () => ({ meta: [{ title: "Export & Global Partnerships — Seagol Factory" }, { name: "description", content: "Private label, OEM, bulk export, logistics, and complete export documentation for global distributors." }] }),
+  head: () => ({
+    meta: [
+      { title: "صادرات نبات زعفرانی و زعفران ایرانی | برند خصوصی و OEM — Seagol Export" },
+      { name: "description", content: "خدمات صادرات نبات زعفرانی، زعفران ایرانی و شیرینی سنتی به سراسر جهان: برند خصوصی (Private Label)، تولید OEM، بسته‌بندی فله و لجستیک کانتینری. Private label, OEM, bulk export, logistics & full export documentation for global distributors." },
+      { name: "keywords", content: "صادرات نبات, صادرات زعفران, صادرات شیرینی ایرانی, نبات صادراتی, زعفران فله, برند خصوصی, OEM نبات, خرید عمده نبات, تامین کننده نبات, export nabat, export saffron, private label saffron candy, OEM Persian sweets, wholesale Iranian saffron" },
+      { property: "og:title", content: "صادرات نبات و زعفران سیگل — Seagol Global Export" },
+      { property: "og:description", content: "تامین‌کننده نبات زعفرانی و زعفران ایرانی برای توزیع‌کنندگان و واردکنندگان بین‌المللی." },
+      { property: "og:url", content: "https://global-saffron-gate.lovable.app/export" },
+      { property: "og:type", content: "website" },
+    ],
+    links: [{ rel: "canonical", href: "https://global-saffron-gate.lovable.app/export" }],
+  }),
   component: ExportPage,
 });
 

@@ -9,7 +9,18 @@ import factoryImg from "@/assets/factory-interior.jpg";
 import { cn } from "@/lib/utils";
 
 export const Route = createFileRoute("/products")({
-  head: () => ({ meta: [{ title: "Products — Seagol Factory" }, { name: "description", content: "Complete catalog: saffron nabat, crystal candy, flavored sticks, gift and export packaging." }] }),
+  head: () => ({
+    meta: [
+      { title: "محصولات: نبات زعفرانی، نبات چوبی، شیرینی سنتی و زعفران | کارخانه سیگل" },
+      { name: "description", content: "کاتالوگ کامل محصولات سیگل: نبات زعفرانی، نبات چوبی، نبات شاخه‌ای، آبنبات طعم‌دار، نبات هدیه و بسته‌بندی صادراتی فله. Premium Persian saffron nabat, crystal candy, flavored sticks, gift packs and bulk export packaging." },
+      { name: "keywords", content: "نبات, نبات زعفرانی, نبات چوبی, نبات شاخه ای, نبات کریستالی, آبنبات, شکرپنیر, نبات هدیه, نبات فله, زعفران ایرانی, شیرینی سنتی, خرید عمده نبات, saffron nabat, Persian rock candy, crystal sugar candy, saffron sticks, bulk nabat, wholesale Persian sweets, حلويات الزعفران, سكر نبات" },
+      { property: "og:title", content: "محصولات نبات و زعفران سیگل — Seagol Products" },
+      { property: "og:description", content: "کاتالوگ کامل نبات زعفرانی، نبات چوبی، شیرینی سنتی و بسته‌بندی صادراتی." },
+      { property: "og:url", content: "https://global-saffron-gate.lovable.app/products" },
+      { property: "og:type", content: "website" },
+    ],
+    links: [{ rel: "canonical", href: "https://global-saffron-gate.lovable.app/products" }],
+  }),
   component: ProductsPage,
 });
 

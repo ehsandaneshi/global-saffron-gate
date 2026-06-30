@@ -4,7 +4,18 @@ import { PageShell, PageHeader } from "@/components/PageShell";
 import factoryImg from "@/assets/factory-interior.jpg";
 
 export const Route = createFileRoute("/manufacturing")({
-  head: () => ({ meta: [{ title: "Manufacturing — Seagol Factory" }, { name: "description", content: "Modern Persian confectionery manufacturing process, from raw saffron to export-ready cartons." }] }),
+  head: () => ({
+    meta: [
+      { title: "فرآیند تولید نبات زعفرانی و شیرینی سنتی | کارخانه سیگل — Manufacturing" },
+      { name: "description", content: "خط تولید مدرن نبات زعفرانی، نبات چوبی و شیرینی سنتی سیگل از زعفران خام تا کارتن صادراتی، با رعایت استانداردهای ISO 22000 و HACCP. Modern Persian confectionery manufacturing from raw saffron to export-ready cartons." },
+      { name: "keywords", content: "تولید نبات, خط تولید نبات زعفرانی, کارخانه نبات مشهد, فرآوری زعفران, شیرینی سنتی, ایزو ۲۲۰۰۰, HACCP, nabat production, saffron processing, Persian sweets manufacturing" },
+      { property: "og:title", content: "فرآیند تولید نبات زعفرانی سیگل — Seagol Manufacturing" },
+      { property: "og:description", content: "تولید استاندارد نبات زعفرانی و شیرینی سنتی از مزرعه زعفران تا بازارهای جهانی." },
+      { property: "og:url", content: "https://global-saffron-gate.lovable.app/manufacturing" },
+      { property: "og:type", content: "website" },
+    ],
+    links: [{ rel: "canonical", href: "https://global-saffron-gate.lovable.app/manufacturing" }],
+  }),
   component: ManufacturingPage,
 });
 
