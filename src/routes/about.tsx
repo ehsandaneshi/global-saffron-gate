@@ -5,7 +5,18 @@ import { Target, Eye, Heart, Factory, Award, Globe2 } from "lucide-react";
 import factoryImg from "@/assets/factory-interior.jpg";
 
 export const Route = createFileRoute("/about")({
-  head: () => ({ meta: [{ title: "About — Seagol Factory" }, { name: "description", content: "Three decades of Persian confectionery craftsmanship, exporting to global markets." }] }),
+  head: () => ({
+    meta: [
+      { title: "درباره کارخانه سیگل | تولیدکننده نبات زعفرانی و شیرینی ایرانی — About Seagol Factory" },
+      { name: "description", content: "سه دهه تجربه در تولید نبات زعفرانی، زعفران ایرانی و شیرینی سنتی با کیفیت صادراتی. آشنایی با ماموریت، چشم‌انداز و تاریخچه کارخانه سیگل. Three decades of Persian saffron nabat & confectionery craftsmanship for global markets." },
+      { name: "keywords", content: "درباره سیگل, کارخانه نبات, تاریخچه تولید نبات, نبات زعفرانی مشهد, زعفران ایرانی, شیرینی سنتی, about Seagol, Persian saffron manufacturer, Iranian nabat factory" },
+      { property: "og:title", content: "درباره کارخانه سیگل — About Seagol Factory" },
+      { property: "og:description", content: "سه دهه تخصص در تولید نبات، زعفران و شیرینی سنتی ایرانی برای بازارهای جهانی." },
+      { property: "og:url", content: "https://global-saffron-gate.lovable.app/about" },
+      { property: "og:type", content: "website" },
+    ],
+    links: [{ rel: "canonical", href: "https://global-saffron-gate.lovable.app/about" }],
+  }),
   component: AboutPage,
 });
 

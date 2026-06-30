@@ -12,7 +12,60 @@ import factoryImg from "@/assets/factory-interior.jpg";
 import productsImg from "@/assets/products-display.jpg";
 import saffronImg from "@/assets/saffron-threads.jpg";
 
+const HOME_TITLE = "نبات زعفرانی، شیرینی سنتی و زعفران ایرانی | کارخانه سیگل — Seagol Factory";
+const HOME_DESC = "کارخانه سیگل، تولیدکننده تخصصی نبات زعفرانی، نبات چوبی، نبات شاخه‌ای، آبنبات، شکرپنیر و شیرینی سنتی ایرانی با زعفران درجه یک. صادرات نبات و زعفران به بیش از ۲۸ کشور جهان. Premium Persian saffron rock candy (Nabat), saffron threads, and traditional Iranian confectionery — wholesale, private label & OEM export.";
+const HOME_KEYWORDS = "نبات, نبات زعفرانی, نبات چوبی, نبات شاخه ای, زعفران, زعفران ایرانی, شیرینی, شیرینی سنتی, آبنبات, شکرپنیر, نبات مشهد, صادرات نبات, صادرات زعفران, کارخانه نبات, سیگل, منبد, درسین, نبات اعلا, حلوا, نبات هدیه, nabat, saffron, Persian rock candy, Iranian saffron, saffron candy, rock sugar, Persian sweets, Iranian confectionery, halal sweets, نبات زعفراني, زعفران إيراني, حلويات إيرانية, سكر نبات, حلويات الزعفران";
+
 export const Route = createFileRoute("/")({
+  head: () => ({
+    meta: [
+      { title: HOME_TITLE },
+      { name: "description", content: HOME_DESC },
+      { name: "keywords", content: HOME_KEYWORDS },
+      { property: "og:title", content: HOME_TITLE },
+      { property: "og:description", content: HOME_DESC },
+      { property: "og:url", content: "https://global-saffron-gate.lovable.app/" },
+      { property: "og:type", content: "website" },
+      { property: "og:locale", content: "fa_IR" },
+      { property: "og:locale:alternate", content: "ar_SA" },
+      { property: "og:locale:alternate", content: "en_US" },
+    ],
+    links: [
+      { rel: "canonical", href: "https://global-saffron-gate.lovable.app/" },
+      { rel: "alternate", hrefLang: "fa", href: "https://global-saffron-gate.lovable.app/" },
+      { rel: "alternate", hrefLang: "ar", href: "https://global-saffron-gate.lovable.app/" },
+      { rel: "alternate", hrefLang: "en", href: "https://global-saffron-gate.lovable.app/" },
+      { rel: "alternate", hrefLang: "x-default", href: "https://global-saffron-gate.lovable.app/" },
+    ],
+    scripts: [
+      {
+        type: "application/ld+json",
+        children: JSON.stringify({
+          "@context": "https://schema.org",
+          "@type": "Organization",
+          name: "Seagol Factory — کارخانه سیگل",
+          alternateName: ["سیگل", "Seagol", "سيغول"],
+          url: "https://global-saffron-gate.lovable.app/",
+          logo: "https://global-saffron-gate.lovable.app/favicon.ico",
+          description: HOME_DESC,
+          brand: ["Seagol", "Manbod", "Dorsin"],
+          address: { "@type": "PostalAddress", addressLocality: "Mashhad", addressCountry: "IR" },
+          sameAs: [],
+          knowsAbout: ["نبات زعفرانی", "زعفران ایرانی", "شیرینی سنتی", "Persian Rock Candy", "Saffron", "Nabat"],
+        }),
+      },
+      {
+        type: "application/ld+json",
+        children: JSON.stringify({
+          "@context": "https://schema.org",
+          "@type": "WebSite",
+          name: "Seagol Factory",
+          url: "https://global-saffron-gate.lovable.app/",
+          inLanguage: ["fa-IR", "ar-SA", "en-US"],
+        }),
+      },
+    ],
+  }),
   component: HomePage,
 });
 
