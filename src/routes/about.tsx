@@ -16,6 +16,7 @@ export const Route = createFileRoute("/about")({
       { property: "og:type", content: "website" },
     ],
     links: [{ rel: "canonical", href: "https://global-saffron-gate.lovable.app/about" }],
+    scripts: [breadcrumbScript([{ name: "About", path: "/about" }])],
   }),
   component: AboutPage,
 });
