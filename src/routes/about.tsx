@@ -1,4 +1,5 @@
 import { createFileRoute } from "@tanstack/react-router";
+import { breadcrumbScript } from "@/lib/breadcrumb";
 import { useI18n } from "@/lib/i18n";
 import { PageShell, PageHeader } from "@/components/PageShell";
 import { Target, Eye, Heart, Factory, Award, Globe2 } from "lucide-react";
