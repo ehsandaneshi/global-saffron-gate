@@ -1,4 +1,5 @@
 import { createFileRoute } from "@tanstack/react-router";
+import { breadcrumbScript } from "@/lib/breadcrumb";
 import { useI18n } from "@/lib/i18n";
 import { PageShell, PageHeader } from "@/components/PageShell";
 import { Award, ShieldCheck, BadgeCheck } from "lucide-react";
@@ -15,6 +16,7 @@ export const Route = createFileRoute("/certifications")({
       { property: "og:type", content: "website" },
     ],
     links: [{ rel: "canonical", href: "https://global-saffron-gate.lovable.app/certifications" }],
+    scripts: [breadcrumbScript([{ name: "Certifications", path: "/certifications" }])],
   }),
   component: CertPage,
 });

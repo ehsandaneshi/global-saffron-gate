@@ -1,4 +1,5 @@
 import { createFileRoute } from "@tanstack/react-router";
+import { breadcrumbScript } from "@/lib/breadcrumb";
 import { useI18n } from "@/lib/i18n";
 import { PageShell, PageHeader } from "@/components/PageShell";
 import { InquiryForm } from "./index";
@@ -16,6 +17,7 @@ export const Route = createFileRoute("/contact")({
       { property: "og:type", content: "website" },
     ],
     links: [{ rel: "canonical", href: "https://global-saffron-gate.lovable.app/contact" }],
+    scripts: [breadcrumbScript([{ name: "Contact", path: "/contact" }])],
   }),
   component: ContactPage,
 });
