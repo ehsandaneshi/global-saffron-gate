@@ -1,4 +1,5 @@
 import { createFileRoute } from "@tanstack/react-router";
+import { breadcrumbScript } from "@/lib/breadcrumb";
 import { useI18n } from "@/lib/i18n";
 import { PageShell, PageHeader } from "@/components/PageShell";
 import factoryImg from "@/assets/factory-interior.jpg";
@@ -15,6 +16,7 @@ export const Route = createFileRoute("/manufacturing")({
       { property: "og:type", content: "website" },
     ],
     links: [{ rel: "canonical", href: "https://global-saffron-gate.lovable.app/manufacturing" }],
+    scripts: [breadcrumbScript([{ name: "Manufacturing", path: "/manufacturing" }])],
   }),
   component: ManufacturingPage,
 });

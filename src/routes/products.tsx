@@ -1,4 +1,5 @@
 import { createFileRoute } from "@tanstack/react-router";
+import { breadcrumbScript } from "@/lib/breadcrumb";
 import { useState } from "react";
 import { useI18n } from "@/lib/i18n";
 import { PageShell, PageHeader } from "@/components/PageShell";
@@ -33,6 +34,7 @@ export const Route = createFileRoute("/products")({
     ],
     links: [{ rel: "canonical", href: "https://global-saffron-gate.lovable.app/products" }],
     scripts: [
+      breadcrumbScript([{ name: "Products", path: "/products" }]),
       {
         type: "application/ld+json",
         children: JSON.stringify({
