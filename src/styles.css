@@ -101,6 +101,11 @@
 
   body {
     background-color: var(--color-background);
+    background-image:
+      radial-gradient(ellipse at top, oklch(0.78 0.16 75 / 0.10), transparent 60%),
+      url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='120' height='120' viewBox='0 0 120 120'><g fill='none' stroke='%23a86a1f' stroke-opacity='0.06' stroke-width='1'><path d='M60 6 L78 42 L114 42 L84 66 L96 108 L60 84 L24 108 L36 66 L6 42 L42 42 Z'/><circle cx='60' cy='60' r='14'/></g></svg>");
+    background-attachment: fixed;
+    background-size: auto, 120px 120px;
     color: var(--color-foreground);
     font-family: var(--font-sans);
     font-feature-settings: "ss01", "cv11";
@@ -155,9 +160,47 @@
   background-size: 24px 24px;
 }
 
+/* Traditional Persian / Islamic geometric tile pattern (8-point star & rosettes) */
+@utility bg-pattern-islamic {
+  background-color: var(--cream);
+  background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='80' height='80' viewBox='0 0 80 80'><g fill='none' stroke='%23a86a1f' stroke-opacity='0.18' stroke-width='1'><path d='M40 4 L52 28 L76 28 L57 44 L66 68 L40 54 L14 68 L23 44 L4 28 L28 28 Z'/><circle cx='40' cy='40' r='10'/><path d='M40 30 L44 40 L40 50 L36 40 Z'/></g></svg>");
+  background-size: 80px 80px;
+}
+
+/* Ornamental saffron+turquoise divider strip inspired by Persian tilework */
+@utility persian-strip {
+  height: 6px;
+  background:
+    repeating-linear-gradient(
+      90deg,
+      var(--saffron-deep) 0 12px,
+      var(--gold) 12px 20px,
+      var(--turquoise) 20px 28px,
+      var(--royal) 28px 40px
+    );
+}
+
 @utility surface-card {
   background: var(--card);
   border: 1px solid var(--border);
   border-radius: var(--radius-xl);
   box-shadow: var(--shadow-soft);
+  position: relative;
 }
+
+@utility ornamental-border {
+  position: relative;
+}
+@utility ornamental-border::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  border-radius: inherit;
+  padding: 1px;
+  background: linear-gradient(135deg, var(--saffron), var(--turquoise), var(--saffron-deep));
+  -webkit-mask: linear-gradient(#000 0 0) content-box, linear-gradient(#000 0 0);
+  -webkit-mask-composite: xor;
+          mask-composite: exclude;
+  pointer-events: none;
+}
+

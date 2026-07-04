@@ -28,6 +28,7 @@ export function Header() {
 
   return (
     <header className="sticky top-0 z-50 backdrop-blur-md bg-background/85 border-b border-border">
+      <div className="persian-strip" aria-hidden="true" />
       <div className="container-page flex h-16 items-center gap-4">
         <Link to="/" className="flex items-center gap-2 shrink-0">
           <div className="grid h-9 w-9 place-items-center rounded-lg bg-[image:var(--gradient-saffron)] shadow-[var(--shadow-elegant)]">

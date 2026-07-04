@@ -13,7 +13,7 @@ const I18nContext = createContext<I18nCtx | null>(null);
 const dirOf = (l: Lang): "rtl" | "ltr" => (l === "en" ? "ltr" : "rtl");
 
 export function I18nProvider({ children }: { children: ReactNode }) {
-  const [lang, setLangState] = useState<Lang>("en");
+  const [lang, setLangState] = useState<Lang>("fa");
 
   useEffect(() => {
     const stored = (typeof window !== "undefined" && localStorage.getItem("lang")) as Lang | null;
