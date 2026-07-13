@@ -129,8 +129,8 @@ const en = {
 
   contact_eyebrow: "Contact",
   contact_title: "Talk to our export team",
-  contact_address: "Industrial Zone, Mashhad, Iran",
-  contact_phone: "+98 51 0000 0000",
+  contact_address: "Rafsanjan, Saadatabad, Shahid Amiri St, Iran",
+  contact_phone: "034 3429 2600 · 0913 650 0345",
   contact_email: "export@seagolfactory.com",
   contact_hours: "Sun – Thu · 08:00 – 17:00 IRST",
   contact_shop: "Retail Shop",
@@ -319,8 +319,8 @@ const fa: typeof en = {
 
   contact_eyebrow: "تماس",
   contact_title: "با تیم صادرات ما صحبت کنید",
-  contact_address: "شهرک صنعتی، مشهد، ایران",
-  contact_phone: "+۹۸ ۵۱ ۰۰۰۰ ۰۰۰۰",
+  contact_address: "رفسنجان، سعادت‌آباد، خیابان شهید امیری، ایران",
+  contact_phone: "۰۳۴۳۴۲۹۲۶۰۰ · ۰۹۱۳۶۵۰۰۳۴۵",
   contact_email: "export@seagolfactory.com",
   contact_hours: "یکشنبه تا پنج‌شنبه · ۸ تا ۱۷ به وقت ایران",
   contact_shop: "فروشگاه",
@@ -509,8 +509,8 @@ const ar: typeof en = {
 
   contact_eyebrow: "تواصل",
   contact_title: "تحدث مع فريق التصدير",
-  contact_address: "المنطقة الصناعية، مشهد، إيران",
-  contact_phone: "+98 51 0000 0000",
+  contact_address: "رفسنجان، سعادت‌آباد، شارع الشهيد أميري، إيران",
+  contact_phone: "٠٣٤ ٣٤٢٩ ٢٦٠٠ · ٠٩١٣ ٦٥٠ ٠٣٤٥",
   contact_email: "export@seagolfactory.com",
   contact_hours: "الأحد – الخميس · 8:00 – 17:00 بتوقيت إيران",
   contact_shop: "متجر التجزئة",
