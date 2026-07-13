@@ -38,10 +38,12 @@ export function Footer() {
         <div>
           <h4 className="font-display text-sm uppercase tracking-widest text-[color:var(--gold)]">{t("footer_contact")}</h4>
           <ul className="mt-4 space-y-3 text-sm opacity-80">
-            <li className="flex items-start gap-2"><MapPin className="h-4 w-4 mt-0.5 shrink-0" />{t("contact_address")}</li>
-            <li className="flex items-center gap-2"><Phone className="h-4 w-4" />{t("contact_phone")}</li>
+            <li className="flex items-start gap-2"><MapPin className="h-4 w-4 mt-0.5 shrink-0" /><span><span className="text-[color:var(--gold)]">{t("contact_shop")}:</span> {t("contact_shop_address")}</span></li>
+            <li className="flex items-center gap-2"><Phone className="h-4 w-4" /><span>{t("contact_shop_phone")}</span></li>
+            <li className="flex items-start gap-2"><MapPin className="h-4 w-4 mt-0.5 shrink-0" /><span><span className="text-[color:var(--gold)]">{t("contact_factory")}:</span> {t("contact_factory_address")}</span></li>
+            <li className="flex items-center gap-2"><Phone className="h-4 w-4" /><span>{t("contact_factory_phone")}</span></li>
             <li className="flex items-center gap-2"><Mail className="h-4 w-4" />{t("contact_email")}</li>
-            <li className="flex items-center gap-2"><MessageCircle className="h-4 w-4" />WhatsApp</li>
+            <li className="flex items-center gap-2"><MessageCircle className="h-4 w-4" />{t("contact_whatsapp")}</li>
           </ul>
         </div>
       </div>
