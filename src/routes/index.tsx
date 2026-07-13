@@ -14,7 +14,7 @@ import saffronImg from "@/assets/saffron-threads.jpg";
 
 const HOME_TITLE = "نبات زعفرانی، شیرینی سنتی و زعفران ایرانی | کارخانه سیگل — Seagol Factory";
 const HOME_DESC = "کارخانه سیگل، تولیدکننده تخصصی نبات زعفرانی، نبات چوبی، نبات شاخه‌ای، آبنبات، شکرپنیر و شیرینی سنتی ایرانی با زعفران درجه یک. صادرات نبات و زعفران به بیش از ۲۸ کشور جهان. Premium Persian saffron rock candy (Nabat), saffron threads, and traditional Iranian confectionery — wholesale, private label & OEM export.";
-const HOME_KEYWORDS = "نبات, نبات زعفرانی, نبات چوبی, نبات شاخه ای, زعفران, زعفران ایرانی, شیرینی, شیرینی سنتی, آبنبات, شکرپنیر, نبات مشهد, صادرات نبات, صادرات زعفران, کارخانه نبات, سیگل, منبد, درسین, نبات اعلا, حلوا, نبات هدیه, nabat, saffron, Persian rock candy, Iranian saffron, saffron candy, rock sugar, Persian sweets, Iranian confectionery, halal sweets, نبات زعفراني, زعفران إيراني, حلويات إيرانية, سكر نبات, حلويات الزعفران";
+const HOME_KEYWORDS = "نبات, نبات زعفرانی, نبات چوبی, نبات شاخه ای, زعفران, زعفران ایرانی, شیرینی, شیرینی سنتی, آبنبات, شکرپنیر, نبات رفسنجان, صادرات نبات, صادرات زعفران, کارخانه نبات, سیگل, منبد, درسین, نبات اعلا, حلوا, نبات هدیه, nabat, saffron, Persian rock candy, Iranian saffron, saffron candy, rock sugar, Persian sweets, Iranian confectionery, halal sweets, نبات زعفراني, زعفران إيراني, حلويات إيرانية, سكر نبات, حلويات الزعفران";
 
 export const Route = createFileRoute("/")({
   head: () => ({
