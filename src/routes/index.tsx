@@ -49,7 +49,7 @@ export const Route = createFileRoute("/")({
           logo: "https://global-saffron-gate.lovable.app/favicon.ico",
           description: HOME_DESC,
           brand: ["Seagol", "Manbod", "Dorsin"],
-          address: { "@type": "PostalAddress", addressLocality: "Mashhad", addressCountry: "IR" },
+          address: { "@type": "PostalAddress", addressLocality: "Rafsanjan", addressCountry: "IR" },
           sameAs: [],
           knowsAbout: ["نبات زعفرانی", "زعفران ایرانی", "شیرینی سنتی", "Persian Rock Candy", "Saffron", "Nabat"],
         }),
@@ -607,21 +607,26 @@ export function InquiryForm() {
 function ContactBlock() {
   const { t } = useI18n();
   const items = [
-    { i: MapPin, l: t("contact_address") },
-    { i: Phone, l: t("contact_phone") },
-    { i: Mail, l: t("contact_email") },
-    { i: MessageCircle, l: "WhatsApp · Available 24/7" },
+    { i: MapPin, title: t("contact_shop"), l: t("contact_shop_address") },
+    { i: Phone, title: t("contact_shop"), l: t("contact_shop_phone") },
+    { i: MapPin, title: t("contact_factory"), l: t("contact_factory_address") },
+    { i: Phone, title: t("contact_factory"), l: t("contact_factory_phone") },
+    { i: Mail, title: t("contact_email"), l: t("contact_email") },
+    { i: MessageCircle, title: "WhatsApp", l: t("contact_whatsapp") },
   ];
   return (
     <section className="py-20 md:py-28">
-      <div className="container-page grid md:grid-cols-2 gap-10 items-center">
+      <div className="container-page grid md:grid-cols-2 gap-10 items-start">
         <div>
           <SectionHeader eyebrow={t("contact_eyebrow")} title={t("contact_title")} />
           <div className="mt-8 space-y-4">
-            {items.map(({ i: Icon, l }) => (
-              <div key={l} className="flex items-center gap-3">
+            {items.map(({ i: Icon, title, l }) => (
+              <div key={title + l} className="surface-card p-5 flex items-center gap-4">
                 <div className="grid h-11 w-11 place-items-center rounded-xl bg-[color:var(--saffron)]/15 text-[color:var(--saffron-deep)]"><Icon className="h-5 w-5" /></div>
-                <div className="text-sm font-medium">{l}</div>
+                <div>
+                  <div className="text-xs uppercase tracking-wider text-[color:var(--gold)] font-medium mb-0.5">{title}</div>
+                  <div className="text-sm font-medium">{l}</div>
+                </div>
               </div>
             ))}
           </div>
@@ -630,7 +635,7 @@ function ContactBlock() {
         <div className="rounded-3xl overflow-hidden shadow-[var(--shadow-elegant)] aspect-[4/3] bg-card">
           <iframe
             title="Map"
-            src="https://maps.google.com/maps?q=Mashhad,Iran&z=11&output=embed"
+            src="https://maps.google.com/maps?q=رفسنجان، سعادت‌آباد، خیابان شهید امیری، ایران&z=15&output=embed"
             className="h-full w-full border-0"
             loading="lazy"
           />
