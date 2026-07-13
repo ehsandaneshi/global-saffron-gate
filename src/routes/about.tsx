@@ -10,7 +10,7 @@ export const Route = createFileRoute("/about")({
     meta: [
       { title: "درباره کارخانه سیگل | تولیدکننده نبات زعفرانی و شیرینی ایرانی — About Seagol Factory" },
       { name: "description", content: "سه دهه تجربه در تولید نبات زعفرانی، زعفران ایرانی و شیرینی سنتی با کیفیت صادراتی. آشنایی با ماموریت، چشم‌انداز و تاریخچه کارخانه سیگل. Three decades of Persian saffron nabat & confectionery craftsmanship for global markets." },
-      { name: "keywords", content: "درباره سیگل, کارخانه نبات, تاریخچه تولید نبات, نبات زعفرانی مشهد, زعفران ایرانی, شیرینی سنتی, about Seagol, Persian saffron manufacturer, Iranian nabat factory" },
+      { name: "keywords", content: "درباره سیگل, کارخانه نبات, تاریخچه تولید نبات, نبات زعفرانی رفسنجان, زعفران ایرانی, شیرینی سنتی, about Seagol, Persian saffron manufacturer, Iranian nabat factory" },
       { property: "og:title", content: "درباره کارخانه سیگل — About Seagol Factory" },
       { property: "og:description", content: "سه دهه تخصص در تولید نبات، زعفران و شیرینی سنتی ایرانی برای بازارهای جهانی." },
       { property: "og:url", content: "https://global-saffron-gate.lovable.app/about" },

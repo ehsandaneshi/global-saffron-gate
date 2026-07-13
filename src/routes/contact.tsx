@@ -9,8 +9,8 @@ export const Route = createFileRoute("/contact")({
   head: () => ({
     meta: [
       { title: "تماس با کارخانه سیگل | سفارش نبات زعفرانی و زعفران — Contact" },
-      { name: "description", content: "تماس با تیم صادرات کارخانه سیگل برای سفارش نبات زعفرانی، زعفران ایرانی و شیرینی سنتی. تلفن، ایمیل، واتساپ و آدرس کارخانه در مشهد. Talk to our export team — phone, email, WhatsApp, factory address in Mashhad, Iran." },
-      { name: "keywords", content: "تماس با سیگل, سفارش نبات, خرید عمده نبات زعفرانی, تامین کننده زعفران مشهد, تماس صادرات نبات, contact Seagol, order saffron nabat, wholesale Persian sweets contact" },
+      { name: "description", content: "تماس با تیم صادرات کارخانه سیگل برای سفارش نبات زعفرانی، زعفران ایرانی و شیرینی سنتی. تلفن، ایمیل، واتساپ و آدرس کارخانه در رفسنجان. Talk to our export team — phone, email, WhatsApp, factory address in Rafsanjan, Iran." },
+      { name: "keywords", content: "تماس با سیگل, سفارش نبات, خرید عمده نبات زعفرانی, تامین کننده زعفران رفسنجان, تماس صادرات نبات, contact Seagol, order saffron nabat, wholesale Persian sweets contact" },
       { property: "og:title", content: "تماس با کارخانه سیگل — Contact Seagol" },
       { property: "og:description", content: "سفارش و استعلام نبات زعفرانی، زعفران ایرانی و شیرینی سنتی برای بازارهای داخلی و صادراتی." },
       { property: "og:url", content: "https://global-saffron-gate.lovable.app/contact" },
@@ -49,7 +49,7 @@ function ContactPage() {
           <div className="text-xs text-muted-foreground">{t("contact_hours")}</div>
         </div>
         <div className="rounded-3xl overflow-hidden shadow-[var(--shadow-elegant)] aspect-[4/3]">
-          <iframe title="Map" src="https://maps.google.com/maps?q=Rafsanjan,Iran&z=13&output=embed" className="h-full w-full border-0" loading="lazy" />
+          <iframe title="Map" src="https://maps.google.com/maps?q=رفسنجان، سعادت‌آباد، خیابان شهید امیری، ایران&z=15&output=embed" className="h-full w-full border-0" loading="lazy" />
         </div>
       </section>
       <InquiryForm />
