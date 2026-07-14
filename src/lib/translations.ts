@@ -16,8 +16,8 @@ const en = {
   nav_export_inquiry: "Export Inquiry",
 
   hero_eyebrow: "Est. since 1995 · Made in Iran",
-  hero_title: "The Crystal Gold of Persia, Refined for the World",
-  hero_subtitle: "Seagol Factory manufactures premium saffron rock candy and traditional Persian confectionery for international markets, importers, and private-label partners.",
+  hero_title: "Seagol | Iran's Producer of Plain & Saffron Nabat",
+  hero_subtitle: "A reliable partner for global importers and distributors, with export-focused production and consistent quality.",
   cta_view_products: "View Products",
   cta_export_inquiry: "Export Inquiry",
   cta_download_catalog: "Download Catalog",
