@@ -1,8 +1,8 @@
 export type Lang = "en" | "fa" | "ar";
 
 const en = {
-  brand_name: "Seagol Factory",
-  brand_tagline: "Premium Iranian Saffron Nabat & Confectionery",
+  brand_name: "Iran's Crystal Gold, for the World (Seagol)",
+  brand_tagline: "Seagol | Producer of Plain and Saffron Nabat of Iran\nA trusted partner for global importers and distributors with export-oriented production and stable quality.",
 
   nav_home: "Home",
   nav_about: "About",
@@ -191,8 +191,8 @@ const en = {
 };
 
 const fa: typeof en = {
-  brand_name: "کارخانه سیگل",
-  brand_tagline: "نبات زعفرانی و شیرینی‌های ممتاز ایرانی",
+  brand_name: "طلای کریستالی ایران ، برای جهان (سیگل)",
+  brand_tagline: "سیگل | تولیدکننده نبات ساده و زعفرانی ایران\nشریک مطمئن واردکنندگان و توزیع‌کنندگان جهانی با تولید صادرات‌محور و کیفیت پایدار",
 
   nav_home: "خانه",
   nav_about: "درباره ما",
@@ -381,8 +381,8 @@ const fa: typeof en = {
 };
 
 const ar: typeof en = {
-  brand_name: "مصنع سيگل",
-  brand_tagline: "نبات الزعفران والحلويات الإيرانية الفاخرة",
+  brand_name: "ذهب كريستالي إيراني، للعالم (سيگل)",
+  brand_tagline: "سيگل | منتج النبات العادي والزعفراني الإيراني\nشريك موثوق للمستوردين والموزعين العالميين بإنتاج موجه للتصدير وجودة مستدامة",
 
   nav_home: "الرئيسية",
   nav_about: "من نحن",
