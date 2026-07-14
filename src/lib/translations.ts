@@ -1,8 +1,8 @@
 export type Lang = "en" | "fa" | "ar";
 
 const en = {
-  brand_name: "Iran's Crystal Gold, for the World (Seagol)",
-  brand_tagline: "Seagol | Producer of Plain and Saffron Nabat of Iran\nA trusted partner for global importers and distributors with export-oriented production and stable quality.",
+  brand_name: "Seagol Factory",
+  brand_tagline: "Premium Iranian Saffron Nabat & Confectionery",
 
   nav_home: "Home",
   nav_about: "About",
@@ -16,8 +16,8 @@ const en = {
   nav_export_inquiry: "Export Inquiry",
 
   hero_eyebrow: "Est. since 1995 · Made in Iran",
-  hero_title: "Seagol | Iran's Producer of Plain & Saffron Nabat",
-  hero_subtitle: "A reliable partner for global importers and distributors, with export-focused production and consistent quality.",
+  hero_title: "The Crystal Gold of Persia, Refined for the World",
+  hero_subtitle: "Seagol Factory manufactures premium saffron rock candy and traditional Persian confectionery for international markets, importers, and private-label partners.",
   cta_view_products: "View Products",
   cta_export_inquiry: "Export Inquiry",
   cta_download_catalog: "Download Catalog",
@@ -191,8 +191,8 @@ const en = {
 };
 
 const fa: typeof en = {
-  brand_name: "طلای کریستالی ایران ، برای جهان (سیگل)",
-  brand_tagline: "سیگل | تولیدکننده نبات ساده و زعفرانی ایران\nشریک مطمئن واردکنندگان و توزیع‌کنندگان جهانی با تولید صادرات‌محور و کیفیت پایدار",
+  brand_name: "کارخانه سیگل",
+  brand_tagline: "نبات زعفرانی و شیرینی‌های ممتاز ایرانی",
 
   nav_home: "خانه",
   nav_about: "درباره ما",
@@ -206,8 +206,8 @@ const fa: typeof en = {
   nav_export_inquiry: "درخواست صادرات",
 
   hero_eyebrow: "از سال ۱۳۷۴ · ساخت ایران",
-  hero_title: "سیگل | تولیدکننده نبات ساده و زعفرانی ایران",
-  hero_subtitle: "شریک مطمئن واردکنندگان و توزیع‌کنندگان جهانی با تولید صادرات‌محور و کیفیت پایدار.",
+  hero_title: "طلای کریستالی ایران، برای جهان",
+  hero_subtitle: "کارخانه سیگل تولیدکننده نبات زعفرانی و شیرینی‌های سنتی ایرانی برای بازارهای جهانی، واردکنندگان و شرکای تولید برند است.",
   cta_view_products: "مشاهده محصولات",
   cta_export_inquiry: "درخواست صادرات",
   cta_download_catalog: "دانلود کاتالوگ",
@@ -381,8 +381,8 @@ const fa: typeof en = {
 };
 
 const ar: typeof en = {
-  brand_name: "ذهب كريستالي إيراني، للعالم (سيگل)",
-  brand_tagline: "سيگل | منتج النبات العادي والزعفراني الإيراني\nشريك موثوق للمستوردين والموزعين العالميين بإنتاج موجه للتصدير وجودة مستدامة",
+  brand_name: "مصنع سيگل",
+  brand_tagline: "نبات الزعفران والحلويات الإيرانية الفاخرة",
 
   nav_home: "الرئيسية",
   nav_about: "من نحن",
@@ -396,8 +396,8 @@ const ar: typeof en = {
   nav_export_inquiry: "طلب تصدير",
 
   hero_eyebrow: "تأسس عام 1995 · صنع في إيران",
-  hero_title: "سيگل | منتج النبات العادي والزعفراني في إيران",
-  hero_subtitle: "شريك موثوق للمستوردين والموزعين حول العالم، بإنتاج موجّه للتصدير وجودة ثابتة.",
+  hero_title: "الذهب البلوري لبلاد فارس، مصقول للعالم",
+  hero_subtitle: "يقوم مصنع سيگل بتصنيع نبات الزعفران الفاخر والحلويات الإيرانية التقليدية للأسواق الدولية والمستوردين وشركاء العلامة الخاصة.",
   cta_view_products: "عرض المنتجات",
   cta_export_inquiry: "طلب تصدير",
   cta_download_catalog: "تحميل الكتالوج",
