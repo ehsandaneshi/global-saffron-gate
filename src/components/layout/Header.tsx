@@ -35,8 +35,8 @@ export function Header() {
             <span className="font-display text-base font-bold text-primary-foreground">S</span>
           </div>
           <div className="min-w-0">
-            <div className="font-display text-base font-bold leading-none text-foreground">{t("brand_name")}</div>
-            <div className="text-[10px] uppercase tracking-widest text-muted-foreground mt-0.5">Persian Heritage · Global Reach</div>
+            <div className="font-display text-sm font-bold leading-tight text-foreground">{t("brand_name")}</div>
+            <div className="text-[10px] leading-tight text-muted-foreground mt-0.5 whitespace-pre-line">{t("brand_tagline")}</div>
           </div>
         </Link>
 
