@@ -16,8 +16,8 @@ const en = {
   nav_export_inquiry: "Export Inquiry",
 
   hero_eyebrow: "Est. since 1995 · Made in Iran",
-  hero_title: "The Crystal Gold of Persia, Refined for the World",
-  hero_subtitle: "Seagol Factory manufactures premium saffron rock candy and traditional Persian confectionery for international markets, importers, and private-label partners.",
+  hero_title: "Seagol | Iran's Producer of Plain & Saffron Nabat",
+  hero_subtitle: "A reliable partner for global importers and distributors, with export-focused production and consistent quality.",
   cta_view_products: "View Products",
   cta_export_inquiry: "Export Inquiry",
   cta_download_catalog: "Download Catalog",
@@ -206,8 +206,8 @@ const fa: typeof en = {
   nav_export_inquiry: "درخواست صادرات",
 
   hero_eyebrow: "از سال ۱۳۷۴ · ساخت ایران",
-  hero_title: "طلای کریستالی ایران، برای جهان",
-  hero_subtitle: "کارخانه سیگل تولیدکننده نبات زعفرانی و شیرینی‌های سنتی ایرانی برای بازارهای جهانی، واردکنندگان و شرکای تولید برند است.",
+  hero_title: "سیگل | تولیدکننده نبات ساده و زعفرانی ایران",
+  hero_subtitle: "شریک مطمئن واردکنندگان و توزیع‌کنندگان جهانی با تولید صادرات‌محور و کیفیت پایدار.",
   cta_view_products: "مشاهده محصولات",
   cta_export_inquiry: "درخواست صادرات",
   cta_download_catalog: "دانلود کاتالوگ",
@@ -396,8 +396,8 @@ const ar: typeof en = {
   nav_export_inquiry: "طلب تصدير",
 
   hero_eyebrow: "تأسس عام 1995 · صنع في إيران",
-  hero_title: "الذهب البلوري لبلاد فارس، مصقول للعالم",
-  hero_subtitle: "يقوم مصنع سيگل بتصنيع نبات الزعفران الفاخر والحلويات الإيرانية التقليدية للأسواق الدولية والمستوردين وشركاء العلامة الخاصة.",
+  hero_title: "سيگل | منتج النبات العادي والزعفراني في إيران",
+  hero_subtitle: "شريك موثوق للمستوردين والموزعين حول العالم، بإنتاج موجّه للتصدير وجودة ثابتة.",
   cta_view_products: "عرض المنتجات",
   cta_export_inquiry: "طلب تصدير",
   cta_download_catalog: "تحميل الكتالوج",
