@@ -25,8 +25,8 @@ const en = {
   cta_contact: "Contact Sales",
 
   about_eyebrow: "About the Factory",
-  about_title: "Three decades of crafting Persia's finest sweetness",
-  about_body: "From our state-of-the-art facility in Iran, we transform pure cane sugar and the world's finest saffron into crystalline confections trusted by importers across four continents.",
+  about_title: "Seagol | Trusted Manufacturer & Trade Partner in Iranian Saffron Rock Candy",
+  about_body: "Export-oriented production, stable quality for importers, distributors, and international brands.",
 
   brands_eyebrow: "Our Brands",
   brands_title: "Three brands, one heritage of excellence",
