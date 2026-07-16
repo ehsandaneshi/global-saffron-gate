@@ -261,7 +261,7 @@ function WhyUs() {
           {items.map(({ i: Icon, k }) => (
             <div key={k[0]} className="rounded-2xl border border-white/10 bg-white/5 p-6 backdrop-blur hover:bg-white/10 transition">
               <Icon className="h-7 w-7 text-[color:var(--gold)]" />
-              <div className="mt-4 font-display text-xl font-bold">{t(k[0])}</div>
+              <div className="mt-4 font-display text-2xl font-extrabold">{t(k[0])}</div>
               <div className="mt-2 text-sm opacity-75">{t(k[1])}</div>
             </div>
           ))}
