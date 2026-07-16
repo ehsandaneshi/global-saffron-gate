@@ -195,7 +195,7 @@ function Brands() {
                 <b.icon className="h-12 w-12" strokeWidth={1.5} />
               </div>
               <div className="text-xs uppercase tracking-[0.25em] text-[color:var(--saffron-deep)]">{b.tag}</div>
-              <div className="mt-2 font-display text-3xl font-bold">{b.name}</div>
+              <div className="mt-2 font-display text-4xl font-extrabold">{b.name}</div>
               <p className="mt-3 text-sm text-muted-foreground leading-relaxed">{b.desc}</p>
               <Link to="/products" className="mt-5 inline-flex items-center gap-1 text-sm font-semibold text-[color:var(--saffron-deep)] group-hover:gap-2 transition-all">
                 {t("cta_learn_more")} <ArrowRight className="h-3.5 w-3.5 rtl:rotate-180" />
@@ -230,7 +230,7 @@ function Categories() {
               <img src={c.img} alt={t(c.k)} loading="lazy" className="absolute inset-0 h-full w-full object-cover transition-transform duration-700 group-hover:scale-110" />
               <div className="absolute inset-0 bg-gradient-to-t from-[color:var(--ink)] via-[color:var(--ink)]/30 to-transparent" />
               <div className="absolute bottom-4 start-4 end-4 text-[color:var(--cream)]">
-                <div className="font-display text-lg font-bold">{t(c.k)}</div>
+                <div className="font-display text-xl md:text-2xl font-extrabold">{t(c.k)}</div>
               </div>
             </div>
           ))}
@@ -256,7 +256,7 @@ function WhyUs() {
       <div className="absolute inset-0 opacity-20 bg-[radial-gradient(circle_at_80%_20%,oklch(0.78_0.16_75/0.7),transparent_55%)]" />
       <div className="container-page relative">
         <div className="text-xs uppercase tracking-[0.3em] text-[color:var(--gold)]">{t("why_eyebrow")}</div>
-        <h2 className="mt-3 font-display text-3xl md:text-5xl font-bold max-w-2xl">{t("why_title")}</h2>
+        <h2 className="mt-3 font-display text-4xl md:text-5xl lg:text-6xl font-extrabold max-w-2xl">{t("why_title")}</h2>
         <div className="mt-14 grid md:grid-cols-2 lg:grid-cols-3 gap-6">
           {items.map(({ i: Icon, k }) => (
             <div key={k[0]} className="rounded-2xl border border-white/10 bg-white/5 p-6 backdrop-blur hover:bg-white/10 transition">
