@@ -40,7 +40,7 @@ function ExportPage() {
               <div className="grid h-12 w-12 place-items-center rounded-xl bg-[image:var(--gradient-saffron)] text-primary-foreground">
                 <s.i className="h-6 w-6" />
               </div>
-              <h3 className="mt-5 font-display text-xl font-bold">{s.t}</h3>
+              <h3 className="mt-5 font-display text-2xl font-extrabold">{s.t}</h3>
               <p className="mt-2 text-muted-foreground">{s.d}</p>
             </div>
           ))}

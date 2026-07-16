@@ -44,7 +44,7 @@ function CertPage() {
               <div className="grid h-14 w-14 place-items-center rounded-2xl bg-[image:var(--gradient-saffron)] text-primary-foreground mx-auto">
                 {i % 3 === 0 ? <Award className="h-7 w-7" /> : i % 3 === 1 ? <ShieldCheck className="h-7 w-7" /> : <BadgeCheck className="h-7 w-7" />}
               </div>
-              <div className="mt-4 font-display text-lg font-bold">{c.n}</div>
+              <div className="mt-4 font-display text-xl font-extrabold">{c.n}</div>
               <div className="mt-1 text-xs text-muted-foreground">{c.d}</div>
             </div>
           ))}

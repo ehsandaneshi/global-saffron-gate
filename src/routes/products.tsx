@@ -116,7 +116,7 @@ function ProductsPage() {
               </div>
               <div className="p-5">
                 <div className="text-[10px] uppercase tracking-[0.25em] text-[color:var(--saffron-deep)]">{p.brand}</div>
-                <h3 className="mt-1 font-display text-lg font-bold">{p.name}</h3>
+                <h3 className="mt-1 font-display text-xl font-extrabold">{p.name}</h3>
                 <div className="mt-3 text-xs text-muted-foreground">{p.pack}</div>
                 <a href="/#inquiry" className="mt-4 inline-flex text-sm font-semibold text-[color:var(--saffron-deep)]">{t("cta_export_inquiry")} →</a>
               </div>

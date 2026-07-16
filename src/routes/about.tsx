@@ -36,7 +36,7 @@ function AboutPage() {
         <img src={factoryImg} alt="Factory" loading="lazy" className="rounded-3xl shadow-[var(--shadow-elegant)] aspect-[4/3] object-cover" />
         <div>
           <div className="text-xs uppercase tracking-[0.3em] text-[color:var(--saffron-deep)]">{t("about_history_t")}</div>
-          <h2 className="mt-3 font-display text-3xl md:text-4xl font-bold">{t("about_eyebrow")}</h2>
+          <h2 className="mt-3 font-display text-4xl md:text-5xl font-extrabold">{t("about_eyebrow")}</h2>
           <p className="mt-5 text-muted-foreground leading-relaxed">{t("about_history_b")}</p>
           <div className="mt-8 grid grid-cols-3 gap-4">
             {[
@@ -60,7 +60,7 @@ function AboutPage() {
               <div className="grid h-12 w-12 place-items-center rounded-xl bg-[image:var(--gradient-saffron)] text-primary-foreground">
                 <b.i className="h-6 w-6" />
               </div>
-              <h3 className="mt-5 font-display text-2xl font-bold">{b.t}</h3>
+              <h3 className="mt-5 font-display text-2xl md:text-3xl font-extrabold">{b.t}</h3>
               <p className="mt-3 text-muted-foreground">{b.b}</p>
             </div>
           ))}
