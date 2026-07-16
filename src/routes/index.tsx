@@ -110,7 +110,7 @@ function Hero() {
           <span className="inline-flex items-center gap-2 rounded-full border border-[color:var(--gold)]/40 bg-black/30 px-3 py-1 text-xs uppercase tracking-[0.25em] text-[color:var(--gold)]">
             <Sparkles className="h-3 w-3" /> {t("hero_eyebrow")}
           </span>
-          <h1 className="mt-6 font-display text-4xl sm:text-5xl md:text-7xl font-bold leading-[1.05]">
+          <h1 className="mt-6 font-display text-4xl sm:text-5xl md:text-7xl lg:text-8xl font-extrabold leading-[1.05]">
             {t("hero_title")}
           </h1>
           <p className="mt-6 max-w-xl text-base md:text-lg opacity-85">{t("hero_subtitle")}</p>
