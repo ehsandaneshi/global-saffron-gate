@@ -49,7 +49,7 @@ function BlogPage() {
                   <span className="text-[color:var(--saffron-deep)]">{p.c}</span>
                   <span className="text-muted-foreground">{p.date}</span>
                 </div>
-                <h3 className="mt-3 font-display text-lg font-bold leading-snug">{p.title}</h3>
+                <h3 className="mt-3 font-display text-xl font-extrabold leading-snug">{p.title}</h3>
               </div>
             </a>
           ))}

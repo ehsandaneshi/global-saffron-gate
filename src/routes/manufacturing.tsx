@@ -39,7 +39,7 @@ function ManufacturingPage() {
           {steps.map(([k, d], i) => (
             <li key={k} className="relative">
               <span className="absolute -start-[42px] grid h-10 w-10 place-items-center rounded-full bg-[image:var(--gradient-saffron)] text-primary-foreground font-display font-bold shadow-[var(--shadow-elegant)]">{i + 1}</span>
-              <h3 className="font-display text-2xl font-bold">{t(k)}</h3>
+              <h3 className="font-display text-2xl md:text-3xl font-extrabold">{t(k)}</h3>
               <p className="mt-2 text-muted-foreground max-w-2xl">{t(d)}</p>
             </li>
           ))}
