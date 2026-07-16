@@ -134,9 +134,9 @@ function Hero() {
 
 function SectionHeader({ eyebrow, title, center }: { eyebrow: string; title: string; center?: boolean }) {
   return (
-    <div className={center ? "text-center max-w-2xl mx-auto" : "max-w-2xl"}>
+      <div className={center ? "text-center max-w-2xl mx-auto" : "max-w-2xl"}>
       <div className="text-xs uppercase tracking-[0.3em] text-[color:var(--saffron-deep)]">{eyebrow}</div>
-      <h2 className="mt-3 font-display text-3xl md:text-5xl font-bold text-foreground">{title}</h2>
+      <h2 className="mt-3 font-display text-4xl md:text-5xl lg:text-6xl font-extrabold text-foreground">{title}</h2>
     </div>
   );
 }
