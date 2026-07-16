@@ -340,7 +340,7 @@ function Process() {
           {steps.map((s, i) => (
             <li key={i} className="relative surface-card p-6">
               <div className="font-display text-5xl font-bold text-[color:var(--saffron)]/30">0{i + 1}</div>
-              <div className="mt-2 font-display text-lg font-bold">{t(s.k[0])}</div>
+              <div className="mt-2 font-display text-xl font-extrabold">{t(s.k[0])}</div>
               <div className="mt-2 text-sm text-muted-foreground">{t(s.k[1])}</div>
             </li>
           ))}
@@ -397,7 +397,7 @@ function ExportMap() {
       <div className="container-page relative">
         <div className="text-center max-w-3xl mx-auto">
           <div className="text-xs uppercase tracking-[0.3em] text-[color:var(--gold)]">{t("export_eyebrow")}</div>
-          <h2 className="mt-3 font-display text-3xl md:text-5xl font-bold">{t("export_title")}</h2>
+          <h2 className="mt-3 font-display text-4xl md:text-5xl lg:text-6xl font-extrabold">{t("export_title")}</h2>
           <p className="mt-5 opacity-80">{t("export_body")}</p>
         </div>
 
@@ -467,7 +467,7 @@ function VideoShowcase() {
               <img src={v.img} alt={t(v.k)} loading="lazy" className="absolute inset-0 h-full w-full object-cover" />
               <div className="absolute inset-0 bg-gradient-to-t from-[color:var(--ink)]/90 to-transparent" />
               <PlayCircle className="absolute inset-0 m-auto h-16 w-16 text-[color:var(--cream)] group-hover:scale-110 transition-transform" strokeWidth={1} />
-              <div className="absolute bottom-4 start-4 font-display text-lg font-bold text-[color:var(--cream)]">{t(v.k)}</div>
+              <div className="absolute bottom-4 start-4 font-display text-xl font-extrabold text-[color:var(--cream)]">{t(v.k)}</div>
             </button>
           ))}
         </div>
@@ -493,7 +493,7 @@ function DownloadCenter() {
           {dls.map((d) => (
             <a key={d.k} href="#" className="surface-card p-6 hover:-translate-y-1 transition-transform flex flex-col">
               <Download className="h-8 w-8 text-[color:var(--saffron-deep)]" />
-              <div className="mt-4 font-display text-lg font-bold">{t(d.k)}</div>
+              <div className="mt-4 font-display text-xl font-extrabold">{t(d.k)}</div>
               <div className="mt-1 text-xs text-muted-foreground">PDF · {d.size}</div>
               <div className="mt-4 inline-flex items-center gap-1 text-sm font-semibold text-[color:var(--saffron-deep)]">Download <ArrowRight className="h-3.5 w-3.5 rtl:rotate-180" /></div>
             </a>
@@ -563,7 +563,7 @@ export function InquiryForm() {
       <div className="container-page grid lg:grid-cols-2 gap-12 items-start">
         <div>
           <div className="text-xs uppercase tracking-[0.3em] text-[color:var(--gold)]">{t("inquiry_eyebrow")}</div>
-          <h2 className="mt-3 font-display text-3xl md:text-5xl font-bold">{t("inquiry_title")}</h2>
+          <h2 className="mt-3 font-display text-4xl md:text-5xl lg:text-6xl font-extrabold">{t("inquiry_title")}</h2>
           <p className="mt-5 opacity-80 max-w-md">{t("inquiry_subtitle")}</p>
           <ul className="mt-8 space-y-3 text-sm">
             {[t("export_services_pl"), t("export_services_oem"), t("export_services_log"), t("export_services_doc")].map((s) => (
