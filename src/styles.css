@@ -101,6 +101,7 @@
   }
 
   body {
+    overflow-x: hidden;
     background-color: var(--color-background);
     background-image:
       radial-gradient(ellipse at top, oklch(0.78 0.16 75 / 0.10), transparent 60%),
