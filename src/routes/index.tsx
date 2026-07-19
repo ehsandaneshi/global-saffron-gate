@@ -134,9 +134,9 @@ function Hero() {
 
 function SectionHeader({ eyebrow, title, center }: { eyebrow: string; title: string; center?: boolean }) {
   return (
-      <div className={center ? "text-center max-w-2xl mx-auto" : "max-w-2xl"}>
+      <div className={center ? "text-center max-w-3xl mx-auto" : "max-w-3xl"}>
         <div className="text-xs uppercase tracking-[0.3em] text-[color:var(--saffron-deep)]">{eyebrow}</div>
-        <h2 className="mt-3 font-display text-4xl md:text-5xl lg:text-6xl font-extrabold text-foreground">{title}</h2>
+        <h2 className="mt-3 font-display text-5xl md:text-6xl lg:text-7xl xl:text-8xl font-black text-foreground">{title}</h2>
       </div>
   );
 }
@@ -256,7 +256,7 @@ function WhyUs() {
       <div className="absolute inset-0 opacity-20 bg-[radial-gradient(circle_at_80%_20%,oklch(0.78_0.16_75/0.7),transparent_55%)]" />
       <div className="container-page relative">
         <div className="text-xs uppercase tracking-[0.3em] text-[color:var(--gold)]">{t("why_eyebrow")}</div>
-        <h2 className="mt-3 font-display text-4xl md:text-5xl lg:text-6xl font-extrabold max-w-2xl">{t("why_title")}</h2>
+        <h2 className="mt-3 font-display text-5xl md:text-6xl lg:text-7xl xl:text-8xl font-black max-w-3xl">{t("why_title")}</h2>
         <div className="mt-14 grid md:grid-cols-2 lg:grid-cols-3 gap-6">
           {items.map(({ i: Icon, k }) => (
             <div key={k[0]} className="rounded-2xl border border-white/10 bg-white/5 p-6 backdrop-blur hover:bg-white/10 transition">
@@ -395,9 +395,9 @@ function ExportMap() {
     <section className="py-20 md:py-28 relative overflow-hidden bg-[image:var(--gradient-royal)] text-[color:var(--cream)]">
       <div className="absolute inset-0 opacity-10 bg-[radial-gradient(circle_at_50%_50%,white,transparent_60%)]" />
       <div className="container-page relative">
-        <div className="text-center max-w-3xl mx-auto">
+        <div className="text-center max-w-4xl mx-auto">
           <div className="text-xs uppercase tracking-[0.3em] text-[color:var(--gold)]">{t("export_eyebrow")}</div>
-          <h2 className="mt-3 font-display text-4xl md:text-5xl lg:text-6xl font-extrabold">{t("export_title")}</h2>
+          <h2 className="mt-3 font-display text-5xl md:text-6xl lg:text-7xl xl:text-8xl font-black">{t("export_title")}</h2>
           <p className="mt-5 opacity-80">{t("export_body")}</p>
         </div>
 
@@ -563,7 +563,7 @@ export function InquiryForm() {
       <div className="container-page grid lg:grid-cols-2 gap-12 items-start">
         <div>
           <div className="text-xs uppercase tracking-[0.3em] text-[color:var(--gold)]">{t("inquiry_eyebrow")}</div>
-          <h2 className="mt-3 font-display text-4xl md:text-5xl lg:text-6xl font-extrabold">{t("inquiry_title")}</h2>
+          <h2 className="mt-3 font-display text-5xl md:text-6xl lg:text-7xl xl:text-8xl font-black">{t("inquiry_title")}</h2>
           <p className="mt-5 opacity-80 max-w-md">{t("inquiry_subtitle")}</p>
           <ul className="mt-8 space-y-3 text-sm">
             {[t("export_services_pl"), t("export_services_oem"), t("export_services_log"), t("export_services_doc")].map((s) => (
