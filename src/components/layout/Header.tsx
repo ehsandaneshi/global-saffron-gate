@@ -55,15 +55,15 @@ export function Header() {
           ))}
         </nav>
 
-        <div className="ms-auto lg:ms-0 flex items-center gap-2">
+        <div className="ms-auto lg:ms-0 flex items-center gap-2 shrink-0">
           <div className="flex items-center rounded-full border border-border bg-card p-0.5">
-            <Globe className="ms-2 h-3.5 w-3.5 text-muted-foreground" />
+            <Globe className="ms-2 h-3.5 w-3.5 text-muted-foreground hidden sm:inline-block" />
             {langs.map((l) => (
               <button
                 key={l.code}
                 onClick={() => setLang(l.code)}
                 className={cn(
-                  "px-2.5 py-1 text-xs font-semibold rounded-full transition-all",
+                  "px-2 sm:px-2.5 py-1 text-[11px] sm:text-xs font-semibold rounded-full transition-all",
                   lang === l.code
                     ? "bg-[image:var(--gradient-saffron)] text-primary-foreground shadow-[var(--shadow-soft)]"
                     : "text-muted-foreground hover:text-foreground",
