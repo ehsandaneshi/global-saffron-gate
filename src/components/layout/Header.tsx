@@ -29,14 +29,14 @@ export function Header() {
   return (
     <header className="sticky top-0 z-50 backdrop-blur-md bg-background/85 border-b border-border">
       <div className="persian-strip" aria-hidden="true" />
-      <div className="container-page flex h-16 items-center gap-4">
-        <Link to="/" className="flex items-center gap-2 shrink-0">
-          <div className="grid h-9 w-9 place-items-center rounded-lg bg-[image:var(--gradient-saffron)] shadow-[var(--shadow-elegant)]">
+      <div className="container-page flex h-16 items-center gap-2 sm:gap-4">
+        <Link to="/" className="flex items-center gap-2 min-w-0 shrink">
+          <div className="grid h-9 w-9 shrink-0 place-items-center rounded-lg bg-[image:var(--gradient-saffron)] shadow-[var(--shadow-elegant)]">
             <span className="font-display text-base font-bold text-primary-foreground">S</span>
           </div>
           <div className="min-w-0">
-            <div className="font-display text-base font-bold leading-none text-foreground">{t("brand_name")}</div>
-            <div className="text-[10px] uppercase tracking-widest text-muted-foreground mt-0.5">Persian Heritage · Global Reach</div>
+            <div className="font-display text-sm sm:text-base font-bold leading-none text-foreground truncate">{t("brand_name")}</div>
+            <div className="hidden sm:block text-[10px] uppercase tracking-widest text-muted-foreground mt-0.5">Persian Heritage · Global Reach</div>
           </div>
         </Link>
 
@@ -55,15 +55,15 @@ export function Header() {
           ))}
         </nav>
 
-        <div className="ms-auto lg:ms-0 flex items-center gap-2">
+        <div className="ms-auto lg:ms-0 flex items-center gap-2 shrink-0">
           <div className="flex items-center rounded-full border border-border bg-card p-0.5">
-            <Globe className="ms-2 h-3.5 w-3.5 text-muted-foreground" />
+            <Globe className="ms-2 h-3.5 w-3.5 text-muted-foreground hidden sm:inline-block" />
             {langs.map((l) => (
               <button
                 key={l.code}
                 onClick={() => setLang(l.code)}
                 className={cn(
-                  "px-2.5 py-1 text-xs font-semibold rounded-full transition-all",
+                  "px-2 sm:px-2.5 py-1 text-[11px] sm:text-xs font-semibold rounded-full transition-all",
                   lang === l.code
                     ? "bg-[image:var(--gradient-saffron)] text-primary-foreground shadow-[var(--shadow-soft)]"
                     : "text-muted-foreground hover:text-foreground",
