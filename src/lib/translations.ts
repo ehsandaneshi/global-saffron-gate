@@ -1,7 +1,7 @@
 export type Lang = "en" | "fa" | "ar";
 
 const en = {
-  brand_name: "Seagol Factory",
+  brand_name: "Sigol Factory",
   brand_tagline: "Premium Iranian Saffron Nabat & Confectionery",
 
   nav_home: "Home",
@@ -17,7 +17,7 @@ const en = {
 
   hero_eyebrow: "Est. since 1995 · Made in Iran",
   hero_title: "The Crystal Gold of Persia, Refined for the World",
-  hero_subtitle: "Seagol Factory manufactures premium saffron rock candy and traditional Persian confectionery for international markets, importers, and private-label partners.",
+  hero_subtitle: "Sigol Factory manufactures premium saffron rock candy and traditional Persian confectionery for international markets, importers, and private-label partners.",
   cta_view_products: "View Products",
   cta_export_inquiry: "Export Inquiry",
   cta_download_catalog: "Download Catalog",
@@ -30,7 +30,7 @@ const en = {
 
   brands_eyebrow: "Our Brands",
   brands_title: "Three brands, one heritage of excellence",
-  brand_seagol_desc: "Our flagship premium line — luxury saffron nabat and crystal candy crafted for connoisseurs and gifting markets.",
+  brand_sigol_desc: "Our flagship premium line — luxury saffron nabat and crystal candy crafted for connoisseurs and gifting markets.",
   brand_manbod_desc: "Family-favorite Persian sweets and traditional confectionery, designed for retail and hypermarket distribution.",
   brand_dorsin_desc: "Modern flavored nabat and innovative formats for export markets, private label, and OEM partners.",
 
@@ -44,7 +44,7 @@ const en = {
   cat_gift: "Gift Packaging",
   cat_export: "Export Packaging",
 
-  why_eyebrow: "Why Seagol",
+  why_eyebrow: "Why Sigol",
   why_title: "Built for international buyers",
   why_quality: "Premium Quality",
   why_quality_d: "Hand-selected raw materials and rigorous QC at every stage.",
@@ -84,7 +84,7 @@ const en = {
 
   export_eyebrow: "Export Markets",
   export_title: "Exporting Premium Iranian Products to Global Markets",
-  export_body: "From Persian Gulf hubs to Europe, North America, and East Asia — Seagol products reach buyers in 28+ countries through trusted logistics partners.",
+  export_body: "From Persian Gulf hubs to Europe, North America, and East Asia — Sigol products reach buyers in 28+ countries through trusted logistics partners.",
   export_regions_me: "Middle East",
   export_regions_eu: "Europe",
   export_regions_asia: "Asia Pacific",
@@ -92,7 +92,7 @@ const en = {
   export_regions_af: "Africa",
 
   gallery_eyebrow: "Factory Gallery",
-  gallery_title: "Inside the Seagol facility",
+  gallery_title: "Inside the Sigol facility",
 
   video_eyebrow: "Video Showcase",
   video_title: "See the craft in motion",
@@ -141,16 +141,16 @@ const en = {
   contact_factory_phone: "034 3429 2600 · 0913 650 0345",
   contact_whatsapp: "WhatsApp · 0913 650 0345",
 
-  footer_about: "Seagol Factory is a leading Iranian manufacturer of premium saffron nabat, crystal candy, and traditional Persian confectionery for global markets.",
+  footer_about: "Sigol Factory is a leading Iranian manufacturer of premium saffron nabat, crystal candy, and traditional Persian confectionery for global markets.",
   footer_quick: "Quick Links",
   footer_brands: "Our Brands",
   footer_contact: "Get in Touch",
   footer_rights: "All rights reserved.",
 
-  page_about_title: "About Seagol Factory",
+  page_about_title: "About Sigol Factory",
   page_about_lead: "A heritage of Persian sweetness, engineered for the modern global market.",
   about_history_t: "Our History",
-  about_history_b: "Founded in 1995 in Rafsanjan, Seagol began as a family workshop crafting traditional nabat. Three generations later, we operate one of Iran's most advanced confectionery facilities.",
+  about_history_b: "Founded in 1995 in Rafsanjan, Sigol began as a family workshop crafting traditional nabat. Three generations later, we operate one of Iran's most advanced confectionery facilities.",
   about_mission_t: "Mission",
   about_mission_b: "To bring authentic Persian sweetness to the world through uncompromising quality and reliable partnership.",
   about_vision_t: "Vision",
@@ -220,7 +220,7 @@ const fa: typeof en = {
 
   brands_eyebrow: "برندهای ما",
   brands_title: "سه برند، یک میراث برتر",
-  brand_seagol_desc: "خط لوکس و پرچم‌دار ما — نبات زعفرانی و کریستالی برای بازارهای هدیه و خاص.",
+  brand_sigol_desc: "خط لوکس و پرچم‌دار ما — نبات زعفرانی و کریستالی برای بازارهای هدیه و خاص.",
   brand_manbod_desc: "شیرینی‌های سنتی محبوب خانواده برای توزیع در فروشگاه‌های زنجیره‌ای و خرده‌فروشی.",
   brand_dorsin_desc: "نبات‌های طعم‌دار مدرن برای بازارهای صادراتی، برند اختصاصی و شرکای OEM.",
 
@@ -410,7 +410,7 @@ const ar: typeof en = {
 
   brands_eyebrow: "علاماتنا التجارية",
   brands_title: "ثلاث علامات، إرث واحد من التميز",
-  brand_seagol_desc: "خطنا الفاخر الرائد — نبات الزعفران والحلويات البلورية لعشاق الذواقة وأسواق الهدايا.",
+  brand_sigol_desc: "خطنا الفاخر الرائد — نبات الزعفران والحلويات البلورية لعشاق الذواقة وأسواق الهدايا.",
   brand_manbod_desc: "حلويات إيرانية تقليدية مفضلة للعائلة، مصممة للبيع بالتجزئة وسلاسل الهايبر ماركت.",
   brand_dorsin_desc: "نبات بنكهات حديثة وصيغ مبتكرة لأسواق التصدير والعلامة الخاصة وشركاء OEM.",
 

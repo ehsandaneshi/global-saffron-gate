@@ -12,7 +12,7 @@ import factoryImg from "@/assets/factory-interior.jpg";
 import productsImg from "@/assets/products-display.jpg";
 import saffronImg from "@/assets/saffron-threads.jpg";
 
-const HOME_TITLE = "نبات زعفرانی، شیرینی سنتی و زعفران ایرانی | کارخانه سیگل — Seagol Factory";
+const HOME_TITLE = "نبات زعفرانی، شیرینی سنتی و زعفران ایرانی | کارخانه سیگل — Sigol Factory";
 const HOME_DESC = "کارخانه سیگل، تولیدکننده تخصصی نبات زعفرانی، نبات چوبی، نبات شاخه‌ای، آبنبات، شکرپنیر و شیرینی سنتی ایرانی با زعفران درجه یک. صادرات نبات و زعفران به بیش از ۲۸ کشور جهان. Premium Persian saffron rock candy (Nabat), saffron threads, and traditional Iranian confectionery — wholesale, private label & OEM export.";
 const HOME_KEYWORDS = "نبات, نبات زعفرانی, نبات چوبی, نبات شاخه ای, زعفران, زعفران ایرانی, شیرینی, شیرینی سنتی, آبنبات, شکرپنیر, نبات رفسنجان, صادرات نبات, صادرات زعفران, کارخانه نبات, سیگل, منبد, درسین, نبات اعلا, حلوا, نبات هدیه, nabat, saffron, Persian rock candy, Iranian saffron, saffron candy, rock sugar, Persian sweets, Iranian confectionery, halal sweets, نبات زعفراني, زعفران إيراني, حلويات إيرانية, سكر نبات, حلويات الزعفران";
 
@@ -43,12 +43,12 @@ export const Route = createFileRoute("/")({
         children: JSON.stringify({
           "@context": "https://schema.org",
           "@type": "Organization",
-          name: "Seagol Factory — کارخانه سیگل",
-          alternateName: ["سیگل", "Seagol", "سيغول"],
+          name: "Sigol Factory — کارخانه سیگل",
+          alternateName: ["سیگل", "Sigol", "سيغول"],
           url: "https://global-saffron-gate.lovable.app/",
           logo: "https://global-saffron-gate.lovable.app/favicon.ico",
           description: HOME_DESC,
-          brand: ["Seagol", "Manbod", "Dorsin"],
+          brand: ["Sigol", "Manbod", "Dorsin"],
           address: { "@type": "PostalAddress", addressLocality: "Rafsanjan", addressCountry: "IR" },
           sameAs: [],
           knowsAbout: ["نبات زعفرانی", "زعفران ایرانی", "شیرینی سنتی", "Persian Rock Candy", "Saffron", "Nabat"],
@@ -59,7 +59,7 @@ export const Route = createFileRoute("/")({
         children: JSON.stringify({
           "@context": "https://schema.org",
           "@type": "WebSite",
-          name: "Seagol Factory",
+          name: "Sigol Factory",
           url: "https://global-saffron-gate.lovable.app/",
           inLanguage: ["fa-IR", "ar-SA", "en-US"],
         }),
@@ -148,7 +148,7 @@ function AboutStrip() {
     <section className="py-20 md:py-28">
       <div className="container-page grid md:grid-cols-2 gap-12 items-center">
         <div className="relative">
-          <img src={factoryImg} alt="Seagol factory" width={1600} height={1067} loading="lazy" className="rounded-3xl shadow-[var(--shadow-elegant)] object-cover w-full aspect-[4/3]" />
+          <img src={factoryImg} alt="Sigol factory" width={1600} height={1067} loading="lazy" className="rounded-3xl shadow-[var(--shadow-elegant)] object-cover w-full aspect-[4/3]" />
           <div className="surface-card absolute -bottom-6 -end-6 rtl:-start-6 rtl:end-auto p-5 max-w-xs">
             <div className="text-3xl font-display font-bold text-[color:var(--saffron-deep)]">+30</div>
             <div className="text-xs uppercase tracking-wider text-muted-foreground mt-1">{t("stats_years")}</div>
@@ -180,7 +180,7 @@ function AboutStrip() {
 function Brands() {
   const { t } = useI18n();
   const brands = [
-    { name: "Seagol", tag: "Premium · Luxury", icon: Crown, desc: t("brand_seagol_desc"), gradient: "linear-gradient(135deg,oklch(0.62 0.18 55),oklch(0.42 0.12 45))" },
+    { name: "Sigol", tag: "Premium · Luxury", icon: Crown, desc: t("brand_sigol_desc"), gradient: "linear-gradient(135deg,oklch(0.62 0.18 55),oklch(0.42 0.12 45))" },
     { name: "Manbod", tag: "Family · Retail", icon: Gift, desc: t("brand_manbod_desc"), gradient: "linear-gradient(135deg,oklch(0.68 0.13 195),oklch(0.38 0.14 265))" },
     { name: "Dorsin", tag: "Modern · OEM", icon: Package, desc: t("brand_dorsin_desc"), gradient: "linear-gradient(135deg,oklch(0.78 0.16 75),oklch(0.55 0.14 35))" },
   ];
@@ -526,7 +526,7 @@ function Partners() {
 function Testimonials() {
   const { t } = useI18n();
   const items = [
-    { n: "Ahmed Al-Mansouri", r: "Importer, UAE", q: "Seagol has been our trusted nabat supplier for 6 years. Consistent premium quality and excellent export documentation." },
+    { n: "Ahmed Al-Mansouri", r: "Importer, UAE", q: "Sigol has been our trusted nabat supplier for 6 years. Consistent premium quality and excellent export documentation." },
     { n: "Maria Schneider", r: "Distributor, Germany", q: "Their private label program transformed our specialty sweets line. Professional from quote to container delivery." },
     { n: "Hassan Karimov", r: "Retail Chain, Central Asia", q: "Authentic Persian flavor, beautiful packaging, and reliable monthly shipments. Highly recommended." },
   ];
