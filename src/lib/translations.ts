@@ -15,7 +15,7 @@ const en = {
   nav_contact: "Contact",
   nav_export_inquiry: "Export Inquiry",
 
-  hero_eyebrow: "Est. since 1995 · Made in Iran",
+  hero_eyebrow: "Est. since 2016 · Made in Iran",
   hero_title: "The Crystal Gold of Persia, Refined for the World",
   hero_subtitle: "Sigol Factory manufactures premium saffron rock candy and traditional Persian confectionery for international markets, importers, and private-label partners.",
   cta_view_products: "View Products",
@@ -25,7 +25,7 @@ const en = {
   cta_contact: "Contact Sales",
 
   about_eyebrow: "About the Factory",
-  about_title: "Three decades of crafting Persia's finest sweetness",
+  about_title: "Over a decade of crafting Persia's finest sweetness",
   about_body: "From our state-of-the-art facility in Iran, we transform pure cane sugar and the world's finest saffron into crystalline confections trusted by importers across four continents.",
 
   brands_eyebrow: "Our Brands",
@@ -150,7 +150,7 @@ const en = {
   page_about_title: "About Sigol Factory",
   page_about_lead: "A heritage of Persian sweetness, engineered for the modern global market.",
   about_history_t: "Our History",
-  about_history_b: "Founded in 1995 in Rafsanjan, Sigol began as a family workshop crafting traditional nabat. Three generations later, we operate one of Iran's most advanced confectionery facilities.",
+  about_history_b: "Founded in 2016 (1395 SH) in Rafsanjan, Sigol began as a family workshop crafting traditional nabat. Over a decade later, we operate one of Iran's most advanced confectionery facilities.",
   about_mission_t: "Mission",
   about_mission_b: "To bring authentic Persian sweetness to the world through uncompromising quality and reliable partnership.",
   about_vision_t: "Vision",
@@ -205,7 +205,7 @@ const fa: typeof en = {
   nav_contact: "تماس",
   nav_export_inquiry: "درخواست صادرات",
 
-  hero_eyebrow: "از سال ۱۳۷۴ · ساخت ایران",
+  hero_eyebrow: "از سال ۱۳۹۵ · ساخت ایران",
   hero_title: "طلای کریستالی ایران، برای جهان",
   hero_subtitle: "کارخانه سیگل تولیدکننده نبات زعفرانی و شیرینی‌های سنتی ایرانی برای بازارهای جهانی، واردکنندگان و شرکای تولید برند است.",
   cta_view_products: "مشاهده محصولات",
@@ -215,7 +215,7 @@ const fa: typeof en = {
   cta_contact: "تماس با فروش",
 
   about_eyebrow: "درباره کارخانه",
-  about_title: "سه دهه ساخت ناب‌ترین شیرینی پارسی",
+  about_title: "بیش از یک دهه ساخت ناب‌ترین شیرینی پارسی",
   about_body: "در کارخانه پیشرفته خود در ایران، شکر خالص و بهترین زعفران جهان را به شیرینی‌های کریستالی تبدیل می‌کنیم که واردکنندگان در چهار قاره به آن اعتماد دارند.",
 
   brands_eyebrow: "برندهای ما",
@@ -340,7 +340,7 @@ const fa: typeof en = {
   page_about_title: "درباره کارخانه سیگل",
   page_about_lead: "میراث شیرینی پارسی، طراحی‌شده برای بازار جهانی مدرن.",
   about_history_t: "تاریخچه",
-  about_history_b: "تأسیس‌شده در سال ۱۳۷۴ در رفسنجان، سیگل از یک کارگاه خانوادگی شروع شد و امروز یکی از پیشرفته‌ترین کارخانه‌های شیرینی‌سازی ایران است.",
+  about_history_b: "تأسیس‌شده در سال ۱۳۹۵ در رفسنجان، سیگل از یک کارگاه خانوادگی شروع شد و امروز یکی از پیشرفته‌ترین کارخانه‌های شیرینی‌سازی ایران است.",
   about_mission_t: "مأموریت",
   about_mission_b: "رساندن شیرینی اصیل ایرانی به جهان از طریق کیفیت بی‌بدیل و همکاری قابل اعتماد.",
   about_vision_t: "چشم‌انداز",
@@ -395,7 +395,7 @@ const ar: typeof en = {
   nav_contact: "اتصل بنا",
   nav_export_inquiry: "طلب تصدير",
 
-  hero_eyebrow: "تأسس عام 1995 · صنع في إيران",
+  hero_eyebrow: "تأسس عام 2016 · صنع في إيران",
   hero_title: "الذهب البلوري لبلاد فارس، مصقول للعالم",
   hero_subtitle: "يقوم مصنع سيگل بتصنيع نبات الزعفران الفاخر والحلويات الإيرانية التقليدية للأسواق الدولية والمستوردين وشركاء العلامة الخاصة.",
   cta_view_products: "عرض المنتجات",
@@ -405,7 +405,7 @@ const ar: typeof en = {
   cta_contact: "تواصل مع المبيعات",
 
   about_eyebrow: "عن المصنع",
-  about_title: "ثلاثة عقود من صناعة أرقى حلويات فارس",
+  about_title: "أكثر من عقد من صناعة أرقى حلويات فارس",
   about_body: "من منشأتنا المتطورة في إيران، نحوّل قصب السكر النقي وأجود أنواع الزعفران إلى حلويات بلورية يثق بها المستوردون في أربع قارات.",
 
   brands_eyebrow: "علاماتنا التجارية",
@@ -530,7 +530,7 @@ const ar: typeof en = {
   page_about_title: "عن مصنع سيگل",
   page_about_lead: "إرث الحلويات الفارسية، مُهندس للسوق العالمية الحديثة.",
   about_history_t: "تاريخنا",
-  about_history_b: "تأسس عام 1995 في رفسنجان، بدأ سيگل كورشة عائلية وأصبح اليوم من أكثر مصانع الحلويات تطوراً في إيران.",
+  about_history_b: "تأسس عام 2016 في رفسنجان، بدأ سيگل كورشة عائلية وأصبح اليوم من أكثر مصانع الحلويات تطوراً في إيران.",
   about_mission_t: "رسالتنا",
   about_mission_b: "إيصال الحلويات الفارسية الأصيلة إلى العالم بجودة لا تساوم وشراكة موثوقة.",
   about_vision_t: "رؤيتنا",

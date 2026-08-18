@@ -9,10 +9,10 @@ export const Route = createFileRoute("/about")({
   head: () => ({
     meta: [
       { title: "درباره کارخانه سیگل | تولیدکننده نبات زعفرانی و شیرینی ایرانی — About Sigol Factory" },
-      { name: "description", content: "سه دهه تجربه در تولید نبات زعفرانی، زعفران ایرانی و شیرینی سنتی با کیفیت صادراتی. آشنایی با ماموریت، چشم‌انداز و تاریخچه کارخانه سیگل. Three decades of Persian saffron nabat & confectionery craftsmanship for global markets." },
+      { name: "description", content: "بیش از یک دهه تجربه در تولید نبات زعفرانی، زعفران ایرانی و شیرینی سنتی با کیفیت صادراتی. آشنایی با ماموریت، چشم‌انداز و تاریخچه کارخانه سیگل. Over a decade of Persian saffron nabat & confectionery craftsmanship for global markets." },
       { name: "keywords", content: "درباره سیگل, کارخانه نبات, تاریخچه تولید نبات, نبات زعفرانی رفسنجان, زعفران ایرانی, شیرینی سنتی, about Sigol, Persian saffron manufacturer, Iranian nabat factory" },
       { property: "og:title", content: "درباره کارخانه سیگل — About Sigol Factory" },
-      { property: "og:description", content: "سه دهه تخصص در تولید نبات، زعفران و شیرینی سنتی ایرانی برای بازارهای جهانی." },
+      { property: "og:description", content: "بیش از یک دهه تخصص در تولید نبات، زعفران و شیرینی سنتی ایرانی برای بازارهای جهانی." },
       { property: "og:url", content: "https://global-saffron-gate.lovable.app/about" },
       { property: "og:type", content: "website" },
     ],
@@ -40,7 +40,7 @@ function AboutPage() {
           <p className="mt-5 text-muted-foreground leading-relaxed">{t("about_history_b")}</p>
           <div className="mt-8 grid grid-cols-3 gap-4">
             {[
-              { i: Factory, n: "30+", l: t("stats_years") },
+              { i: Factory, n: "10+", l: t("stats_years") },
               { i: Award, n: "6", l: t("certs_eyebrow") },
               { i: Globe2, n: "28+", l: t("stats_countries") },
             ].map((s) => (
