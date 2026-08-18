@@ -10,7 +10,7 @@ export const Route = createFileRoute("/certifications")({
       { title: "گواهینامه‌ها: ISO 22000، HACCP، حلال و FDA | کارخانه سیگل — Certifications" },
       { name: "description", content: "گواهینامه‌های بین‌المللی کیفیت و ایمنی غذایی برای نبات زعفرانی، زعفران ایرانی و شیرینی سنتی سیگل: ISO 22000، HACCP، Halal، GMP، FDA و ارگانیک. International food safety & quality certifications for Persian saffron nabat and confectionery." },
       { name: "keywords", content: "گواهینامه نبات, ایزو ۲۲۰۰۰, HACCP, حلال, FDA, GMP, نبات ارگانیک, زعفران ارگانیک, ایمنی غذایی, halal certified saffron candy, ISO 22000 nabat, organic Iranian saffron" },
-      { property: "og:title", content: "گواهینامه‌های بین‌المللی سیگل — Seagol Certifications" },
+      { property: "og:title", content: "گواهینامه‌های بین‌المللی سیگل — Sigol Certifications" },
       { property: "og:description", content: "ISO 22000، HACCP، Halal، FDA و سایر استانداردهای جهانی برای محصولات نبات و زعفران." },
       { property: "og:url", content: "https://global-saffron-gate.lovable.app/certifications" },
       { property: "og:type", content: "website" },

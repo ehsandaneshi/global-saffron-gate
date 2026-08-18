@@ -16,7 +16,7 @@ export function Footer() {
           </div>
           <p className="mt-4 max-w-md text-sm leading-relaxed opacity-70">{t("footer_about")}</p>
           <div className="mt-6 flex flex-wrap gap-3">
-            {["Seagol", "Manbod", "Dorsin"].map((b) => (
+            {["Sigol", "Manbod", "Dorsin"].map((b) => (
               <span key={b} className="rounded-full border border-white/15 px-3 py-1 text-xs tracking-wider uppercase">
                 {b}
               </span>
@@ -49,7 +49,7 @@ export function Footer() {
       </div>
       <div className="border-t border-white/10">
         <div className="container-page py-5 flex flex-wrap gap-3 justify-between text-xs opacity-60">
-          <span>© {new Date().getFullYear()} Seagol Factory. {t("footer_rights")}</span>
+          <span>© {new Date().getFullYear()} Sigol Factory. {t("footer_rights")}</span>
           <span>Designed for global export · EN · فارسی · العربية</span>
         </div>
       </div>
