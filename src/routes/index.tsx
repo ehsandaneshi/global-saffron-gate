@@ -150,7 +150,7 @@ function AboutStrip() {
         <div className="relative">
           <img src={factoryImg} alt="Sigol factory" width={1600} height={1067} loading="lazy" className="rounded-3xl shadow-[var(--shadow-elegant)] object-cover w-full aspect-[4/3]" />
           <div className="surface-card absolute -bottom-6 -end-6 rtl:-start-6 rtl:end-auto p-5 max-w-xs">
-            <div className="text-3xl font-display font-bold text-[color:var(--saffron-deep)]">+30</div>
+            <div className="text-3xl font-display font-bold text-[color:var(--saffron-deep)]">+10</div>
             <div className="text-xs uppercase tracking-wider text-muted-foreground mt-1">{t("stats_years")}</div>
           </div>
         </div>
@@ -300,11 +300,11 @@ function Counter({ to, suffix = "" }: { to: number; suffix?: string }) {
 function Stats() {
   const { t } = useI18n();
   const data = [
-    { v: 30, s: "+", k: "stats_years" as const },
+    { v: 10, s: "+", k: "stats_years" as const },
     { v: 4500, s: "", k: "stats_capacity" as const },
-    { v: 280, s: "+", k: "stats_employees" as const },
+    { v: 50, s: "+", k: "stats_employees" as const },
     { v: 28, s: "+", k: "stats_countries" as const },
-    { v: 120, s: "+", k: "stats_products" as const },
+    { v: 15, s: "+", k: "stats_products" as const },
   ];
   return (
     <section className="py-16 border-y border-border bg-card">
