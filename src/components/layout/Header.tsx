@@ -27,7 +27,7 @@ export function Header() {
   ] as const;
 
   return (
-    <header className="sticky top-0 z-50 backdrop-blur-md bg-background/85 border-b border-border">
+    <header className="fixed top-0 inset-x-0 z-50 backdrop-blur-md bg-background/85 border-b border-border">
       <div className="persian-strip" aria-hidden="true" />
       <div className="container-page flex h-[4.5rem] items-center gap-2 sm:gap-4">
         <Link to="/" className="flex items-center gap-2 min-w-0 shrink">
