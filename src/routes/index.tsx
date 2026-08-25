@@ -212,14 +212,14 @@ function Brands() {
 function Categories() {
   const { t } = useI18n();
   const cats = [
-    { k: "cat_saffron_nabat" as const, img: heroImg },
-    { k: "cat_crystal_nabat" as const, img: productsImg },
-    { k: "cat_stick_nabat" as const, img: heroImg },
-    { k: "cat_flavored_nabat" as const, img: saffronImg },
-    { k: "cat_bulk" as const, img: factoryImg },
-    { k: "cat_gift" as const, img: productsImg },
-    { k: "cat_export" as const, img: factoryImg },
+    { k: "cat_stick_nabat" as const, img: stickImg },
+    { k: "cat_branch_nabat" as const, img: branchImg },
+    { k: "cat_flavored_nabat" as const, img: flavoredImg },
   ];
+  const flavors = [
+    "flavor_damask_rose", "flavor_rose", "flavor_lemon_verbena", "flavor_cinnamon", "flavor_ginger",
+    "flavor_mint", "flavor_orange_blossom", "flavor_hibiscus", "flavor_cardamom", "flavor_saffron",
+  ] as const;
   return (
     <section className="py-20 md:py-28">
       <div className="container-page">
