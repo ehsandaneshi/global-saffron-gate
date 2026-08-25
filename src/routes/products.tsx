@@ -3,32 +3,67 @@ import { breadcrumbScript } from "@/lib/breadcrumb";
 import { useState } from "react";
 import { useI18n } from "@/lib/i18n";
 import { PageShell, PageHeader } from "@/components/PageShell";
-import heroImg from "@/assets/hero-saffron-nabat.jpg";
-import productsImg from "@/assets/products-display.jpg";
-import saffronImg from "@/assets/saffron-threads.jpg";
-import factoryImg from "@/assets/factory-interior.jpg";
+import stickImg from "@/assets/nabat-stick.jpg";
+import branchImg from "@/assets/nabat-branch.jpg";
+import flavoredImg from "@/assets/nabat-flavored.jpg";
+import floralImg from "@/assets/nabat-floral.jpg";
+import herbalImg from "@/assets/nabat-herbal.jpg";
+import saffronFlavorImg from "@/assets/nabat-saffron-flavor.jpg";
 import { cn } from "@/lib/utils";
 
-const products = [
-  { name: "Premium Saffron Nabat", cat: "saffron", brand: "Sigol", img: heroImg, pack: "200g · 500g · 1kg · Bulk", desc: "نبات زعفرانی پریمیوم با زعفران سرگل ایرانی — Premium Persian saffron rock candy crafted from authentic Sargol saffron." },
-  { name: "Crystal Nabat Classic", cat: "crystal", brand: "Manbod", img: productsImg, pack: "250g · 500g · 5kg", desc: "نبات کریستالی شفاف و خالص — Pure crystal Persian rock candy (nabat) for tea and traditional sweets." },
-  { name: "Stick Nabat — Gift Box", cat: "stick", brand: "Sigol", img: productsImg, pack: "12pcs · 24pcs · 48pcs", desc: "نبات چوبی هدیه در جعبه پریمیوم — Saffron-infused stick nabat in luxury gift box, ideal for export." },
-  { name: "Saffron Crystal Sticks", cat: "stick", brand: "Sigol", img: heroImg, pack: "10pcs · 20pcs", desc: "نبات چوبی زعفرانی — Saffron crystal sticks, hand-finished Persian confectionery." },
-  { name: "Rose & Cardamom Nabat", cat: "flavored", brand: "Dorsin", img: saffronImg, pack: "150g · 300g", desc: "نبات طعم‌دار گل محمدی و هل — Flavored Persian rock candy with rose and cardamom." },
-  { name: "Lemon & Mint Nabat", cat: "flavored", brand: "Dorsin", img: saffronImg, pack: "150g · 300g", desc: "نبات طعم‌دار لیمو و نعناع — Refreshing lemon and mint Persian sweets." },
-  { name: "Bulk Saffron Nabat 25kg", cat: "bulk", brand: "Sigol", img: factoryImg, pack: "25kg sack · Container", desc: "نبات زعفرانی فله صادراتی — Bulk saffron nabat for wholesale and container export." },
-  { name: "Luxury Gift Collection", cat: "gift", brand: "Sigol", img: productsImg, pack: "Wooden box · Premium", desc: "کلکسیون هدیه لوکس نبات و زعفران — Luxury wooden gift box with Persian saffron sweets." },
-  { name: "Export Carton Pack", cat: "export", brand: "Manbod", img: factoryImg, pack: "Custom · OEM", desc: "بسته‌بندی صادراتی OEM و برند اختصاصی — OEM and private-label export carton packing." },
+type Product = {
+  name: string;
+  cat: "stick" | "branch" | "flavored";
+  brand: string;
+  img: string;
+  pack: string;
+  desc: string;
+  nameKey?: "cat_stick_nabat" | "cat_branch_nabat";
+  flavorKey?:
+    | "flavor_damask_rose" | "flavor_rose" | "flavor_lemon_verbena" | "flavor_cinnamon"
+    | "flavor_ginger" | "flavor_mint" | "flavor_orange_blossom" | "flavor_hibiscus"
+    | "flavor_cardamom" | "flavor_saffron";
+};
+
+const products: Product[] = [
+  {
+    name: "Stick Nabat — نبات چوبی",
+    nameKey: "cat_stick_nabat",
+    cat: "stick",
+    brand: "Sigol",
+    img: stickImg,
+    pack: "12pcs · 24pcs · 48pcs · Bulk",
+    desc: "نبات چوبی سیگل — Persian stick rock candy (nabat chubi), crystallized on wooden sticks, ideal for tea service, HORECA and gift packs.",
+  },
+  {
+    name: "Branch Nabat — نبات شاخه",
+    nameKey: "cat_branch_nabat",
+    cat: "branch",
+    brand: "Sigol",
+    img: branchImg,
+    pack: "250g · 500g · 1kg · 25kg bulk",
+    desc: "نبات شاخه سیگل — Persian branch rock candy (nabat shakhe), naturally crystallized golden sugar branches for retail and bulk export.",
+  },
+  { name: "Flavored Nabat — Damask Rose", flavorKey: "flavor_damask_rose", cat: "flavored", brand: "Dorsin", img: floralImg, pack: "150g · 300g · 500g", desc: "نبات طعم‌دار گل محمدی — Flavored Persian nabat with Damask rose." },
+  { name: "Flavored Nabat — Rose", flavorKey: "flavor_rose", cat: "flavored", brand: "Dorsin", img: floralImg, pack: "150g · 300g · 500g", desc: "نبات طعم‌دار گل رز — Flavored Persian nabat with rose." },
+  { name: "Flavored Nabat — Lemon Verbena", flavorKey: "flavor_lemon_verbena", cat: "flavored", brand: "Dorsin", img: herbalImg, pack: "150g · 300g · 500g", desc: "نبات طعم‌دار به لیمو — Flavored Persian nabat with lemon verbena." },
+  { name: "Flavored Nabat — Cinnamon", flavorKey: "flavor_cinnamon", cat: "flavored", brand: "Dorsin", img: herbalImg, pack: "150g · 300g · 500g", desc: "نبات طعم‌دار دارچین — Flavored Persian nabat with cinnamon." },
+  { name: "Flavored Nabat — Ginger", flavorKey: "flavor_ginger", cat: "flavored", brand: "Dorsin", img: herbalImg, pack: "150g · 300g · 500g", desc: "نبات طعم‌دار زنجبیل — Flavored Persian nabat with ginger." },
+  { name: "Flavored Nabat — Mint", flavorKey: "flavor_mint", cat: "flavored", brand: "Dorsin", img: herbalImg, pack: "150g · 300g · 500g", desc: "نبات طعم‌دار نعنا — Flavored Persian nabat with mint." },
+  { name: "Flavored Nabat — Orange Blossom", flavorKey: "flavor_orange_blossom", cat: "flavored", brand: "Manbod", img: floralImg, pack: "150g · 300g · 500g", desc: "نبات طعم‌دار بهارنارنج — Flavored Persian nabat with orange blossom." },
+  { name: "Flavored Nabat — Hibiscus", flavorKey: "flavor_hibiscus", cat: "flavored", brand: "Manbod", img: flavoredImg, pack: "150g · 300g · 500g", desc: "نبات طعم‌دار چای ترش — Flavored Persian nabat with hibiscus." },
+  { name: "Flavored Nabat — Cardamom", flavorKey: "flavor_cardamom", cat: "flavored", brand: "Manbod", img: flavoredImg, pack: "150g · 300g · 500g", desc: "نبات طعم‌دار هل — Flavored Persian nabat with cardamom." },
+  { name: "Flavored Nabat — Saffron", flavorKey: "flavor_saffron", cat: "flavored", brand: "Sigol", img: saffronFlavorImg, pack: "150g · 300g · 500g · Bulk", desc: "نبات طعم‌دار زعفران — Flavored Persian nabat with premium Sargol saffron." },
 ];
 
 export const Route = createFileRoute("/products")({
   head: () => ({
     meta: [
-      { title: "محصولات: نبات زعفرانی، نبات چوبی، شیرینی سنتی و زعفران | کارخانه سیگل" },
-      { name: "description", content: "کاتالوگ کامل محصولات سیگل: نبات زعفرانی، نبات چوبی، نبات شاخه‌ای، آبنبات طعم‌دار، نبات هدیه و بسته‌بندی صادراتی فله. Premium Persian saffron nabat, crystal candy, flavored sticks, gift packs and bulk export packaging." },
-      { name: "keywords", content: "نبات, نبات زعفرانی, نبات چوبی, نبات شاخه ای, نبات کریستالی, آبنبات, شکرپنیر, نبات هدیه, نبات فله, زعفران ایرانی, شیرینی سنتی, خرید عمده نبات, saffron nabat, Persian rock candy, crystal sugar candy, saffron sticks, bulk nabat, wholesale Persian sweets, حلويات الزعفران, سكر نبات" },
-      { property: "og:title", content: "محصولات نبات و زعفران سیگل — Sigol Products" },
-      { property: "og:description", content: "کاتالوگ کامل نبات زعفرانی، نبات چوبی، شیرینی سنتی و بسته‌بندی صادراتی." },
+      { title: "محصولات: نبات چوبی، نبات شاخه و نبات طعم‌دار | کارخانه سیگل" },
+      { name: "description", content: "کاتالوگ محصولات سیگل در سه دسته: نبات چوبی، نبات شاخه و نبات طعم‌دار با طعم‌های گل محمدی، گل رز، به لیمو، دارچین، زنجبیل، نعنا، بهارنارنج، چای ترش، هل و زعفران. Persian stick nabat, branch nabat and flavored nabat for wholesale and export." },
+      { name: "keywords", content: "نبات, نبات چوبی, نبات شاخه, نبات طعم دار, نبات زعفران, نبات گل محمدی, نبات هل, نبات دارچین, نبات نعنا, نبات بهارنارنج, نبات چای ترش, نبات زنجبیل, نبات به لیمو, زعفران ایرانی, شیرینی سنتی, خرید عمده نبات, stick nabat, branch nabat, flavored nabat, Persian rock candy, saffron nabat" },
+      { property: "og:title", content: "محصولات نبات سیگل — Stick, Branch & Flavored Nabat" },
+      { property: "og:description", content: "سه دسته اصلی محصولات سیگل: نبات چوبی، نبات شاخه و نبات طعم‌دار با ۱۰ طعم." },
       { property: "og:url", content: "https://global-saffron-gate.lovable.app/products" },
       { property: "og:type", content: "website" },
     ],
@@ -40,7 +75,7 @@ export const Route = createFileRoute("/products")({
         children: JSON.stringify({
           "@context": "https://schema.org",
           "@type": "ItemList",
-          name: "Sigol Factory — Persian Saffron Nabat, Crystal Candy & Traditional Sweets",
+          name: "Sigol Factory — Stick Nabat, Branch Nabat & Flavored Nabat",
           url: "https://global-saffron-gate.lovable.app/products",
           numberOfItems: products.length,
           itemListElement: products.map((p, i) => ({
@@ -75,13 +110,9 @@ export const Route = createFileRoute("/products")({
 
 const cats = [
   { id: "all", k: "filter_all" as const },
-  { id: "saffron", k: "cat_saffron_nabat" as const },
-  { id: "crystal", k: "cat_crystal_nabat" as const },
   { id: "stick", k: "cat_stick_nabat" as const },
+  { id: "branch", k: "cat_branch_nabat" as const },
   { id: "flavored", k: "cat_flavored_nabat" as const },
-  { id: "bulk", k: "cat_bulk" as const },
-  { id: "gift", k: "cat_gift" as const },
-  { id: "export", k: "cat_export" as const },
 ];
 
 function ProductsPage() {
@@ -109,19 +140,24 @@ function ProductsPage() {
           ))}
         </div>
         <div className="mt-10 grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
-          {filtered.map((p) => (
-            <article key={p.name} className="surface-card overflow-hidden group">
-              <div className="aspect-[4/3] overflow-hidden">
-                <img src={p.img} alt={p.name} loading="lazy" className="h-full w-full object-cover group-hover:scale-105 transition-transform duration-700" />
-              </div>
-              <div className="p-5">
-                <div className="text-[10px] uppercase tracking-[0.25em] text-[color:var(--saffron-deep)]">{p.brand}</div>
-                <h3 className="mt-1 font-display text-xl font-extrabold">{p.name}</h3>
-                <div className="mt-3 text-xs text-muted-foreground">{p.pack}</div>
-                <a href="/#inquiry" className="mt-4 inline-flex text-sm font-semibold text-[color:var(--saffron-deep)]">{t("cta_export_inquiry")} →</a>
-              </div>
-            </article>
-          ))}
+          {filtered.map((p) => {
+            const title = p.nameKey
+              ? t(p.nameKey)
+              : `${t("cat_flavored_nabat")} — ${t(p.flavorKey!)}`;
+            return (
+              <article key={p.name} className="surface-card overflow-hidden group">
+                <div className="aspect-[4/3] overflow-hidden">
+                  <img src={p.img} alt={title} loading="lazy" width={1024} height={768} className="h-full w-full object-cover group-hover:scale-105 transition-transform duration-700" />
+                </div>
+                <div className="p-5">
+                  <div className="text-[10px] uppercase tracking-[0.25em] text-[color:var(--saffron-deep)]">{p.brand}</div>
+                  <h3 className="mt-1 font-display text-xl font-extrabold">{title}</h3>
+                  <div className="mt-3 text-xs text-muted-foreground">{p.pack}</div>
+                  <a href="/#inquiry" className="mt-4 inline-flex text-sm font-semibold text-[color:var(--saffron-deep)]">{t("cta_export_inquiry")} →</a>
+                </div>
+              </article>
+            );
+          })}
         </div>
       </section>
     </PageShell>
