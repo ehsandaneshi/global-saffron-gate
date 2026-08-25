@@ -11,6 +11,9 @@ import heroImg from "@/assets/hero-saffron-nabat.jpg";
 import factoryImg from "@/assets/factory-interior.jpg";
 import productsImg from "@/assets/products-display.jpg";
 import saffronImg from "@/assets/saffron-threads.jpg";
+import stickImg from "@/assets/nabat-stick.jpg";
+import branchImg from "@/assets/nabat-branch.jpg";
+import flavoredImg from "@/assets/nabat-flavored.jpg";
 
 const HOME_TITLE = "نبات زعفرانی، شیرینی سنتی و زعفران ایرانی | کارخانه سیگل — Sigol Factory";
 const HOME_DESC = "کارخانه سیگل، تولیدکننده تخصصی نبات زعفرانی، نبات چوبی، نبات شاخه‌ای، آبنبات، شکرپنیر و شیرینی سنتی ایرانی با زعفران درجه یک. صادرات نبات و زعفران به بیش از ۲۸ کشور جهان. Premium Persian saffron rock candy (Nabat), saffron threads, and traditional Iranian confectionery — wholesale, private label & OEM export.";
@@ -224,17 +227,26 @@ function Categories() {
     <section className="py-20 md:py-28">
       <div className="container-page">
         <SectionHeader eyebrow={t("cats_eyebrow")} title={t("cats_title")} />
-        <div className="mt-12 grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
+        <div className="mt-12 grid grid-cols-1 sm:grid-cols-3 gap-5">
           {cats.map((c) => (
-            <div key={c.k} className="group relative overflow-hidden rounded-2xl aspect-square">
-              <img src={c.img} alt={t(c.k)} loading="lazy" className="absolute inset-0 h-full w-full object-cover transition-transform duration-700 group-hover:scale-110" />
+            <Link to="/products" key={c.k} className="group relative overflow-hidden rounded-2xl aspect-[4/5]">
+              <img src={c.img} alt={t(c.k)} loading="lazy" width={1024} height={768} className="absolute inset-0 h-full w-full object-cover transition-transform duration-700 group-hover:scale-110" />
               <div className="absolute inset-0 bg-gradient-to-t from-[color:var(--ink)] via-[color:var(--ink)]/30 to-transparent" />
               <div className="absolute bottom-4 start-4 end-4 text-[color:var(--cream)]">
-                <div className="font-display text-xl md:text-2xl font-extrabold">{t(c.k)}</div>
+                <div className="font-display text-2xl md:text-3xl font-extrabold">{t(c.k)}</div>
               </div>
-            </div>
+            </Link>
           ))}
         </div>
+        <div className="mt-10 surface-card p-6">
+          <h3 className="font-display text-2xl font-extrabold">{t("flavors_title")}</h3>
+          <div className="mt-4 flex flex-wrap gap-2">
+            {flavors.map((f) => (
+              <span key={f} className="rounded-full border border-border bg-card px-4 py-2 text-xs font-semibold text-foreground/80">{t(f)}</span>
+            ))}
+          </div>
+        </div>
+
       </div>
     </section>
   );
