@@ -113,7 +113,7 @@ function Hero() {
           <span className="inline-flex items-center gap-2 rounded-full border border-[color:var(--gold)]/40 bg-black/30 px-3 py-1 text-xs uppercase tracking-[0.25em] text-[color:var(--gold)]">
             <Sparkles className="h-3 w-3" /> {t("hero_eyebrow")}
           </span>
-          <h1 className="mt-6 font-display text-4xl sm:text-5xl md:text-7xl lg:text-8xl font-extrabold leading-[1.05]">
+          <h1 className="mt-6 font-display text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-extrabold leading-[1.05]">
             {t("hero_title")}
           </h1>
           <p className="mt-6 max-w-xl text-base md:text-lg opacity-85">{t("hero_subtitle")}</p>
@@ -139,7 +139,7 @@ function SectionHeader({ eyebrow, title, center }: { eyebrow: string; title: str
   return (
       <div className={center ? "text-center max-w-3xl mx-auto" : "max-w-3xl"}>
         <div className="text-xs uppercase tracking-[0.3em] text-[color:var(--saffron-deep)]">{eyebrow}</div>
-        <h2 className="mt-3 font-display text-5xl md:text-6xl lg:text-7xl xl:text-8xl font-black text-foreground">{title}</h2>
+        <h2 className="mt-3 font-display text-3xl md:text-4xl lg:text-5xl xl:text-6xl font-black text-foreground">{title}</h2>
       </div>
   );
 }
@@ -153,7 +153,7 @@ function AboutStrip() {
         <div className="relative">
           <img src={factoryImg} alt="Sigol factory" width={1600} height={1067} loading="lazy" className="rounded-3xl shadow-[var(--shadow-elegant)] object-cover w-full aspect-[4/3]" />
           <div className="surface-card absolute -bottom-6 -end-6 rtl:-start-6 rtl:end-auto p-5 max-w-xs">
-            <div className="text-3xl font-display font-bold text-[color:var(--saffron-deep)]">+10</div>
+            <div className="text-2xl font-display font-bold text-[color:var(--saffron-deep)]">+10</div>
             <div className="text-xs uppercase tracking-wider text-muted-foreground mt-1">{t("stats_years")}</div>
           </div>
         </div>
@@ -198,7 +198,7 @@ function Brands() {
                 <b.icon className="h-12 w-12" strokeWidth={1.5} />
               </div>
               <div className="text-xs uppercase tracking-[0.25em] text-[color:var(--saffron-deep)]">{b.tag}</div>
-              <div className="mt-2 font-display text-4xl font-extrabold">{b.name}</div>
+              <div className="mt-2 font-display text-2xl font-extrabold">{b.name}</div>
               <p className="mt-3 text-sm text-muted-foreground leading-relaxed">{b.desc}</p>
               <Link to="/products" className="mt-5 inline-flex items-center gap-1 text-sm font-semibold text-[color:var(--saffron-deep)] group-hover:gap-2 transition-all">
                 {t("cta_learn_more")} <ArrowRight className="h-3.5 w-3.5 rtl:rotate-180" />
@@ -233,13 +233,13 @@ function Categories() {
               <img src={c.img} alt={t(c.k)} loading="lazy" width={1024} height={768} className="absolute inset-0 h-full w-full object-cover transition-transform duration-700 group-hover:scale-110" />
               <div className="absolute inset-0 bg-gradient-to-t from-[color:var(--ink)] via-[color:var(--ink)]/30 to-transparent" />
               <div className="absolute bottom-4 start-4 end-4 text-[color:var(--cream)]">
-                <div className="font-display text-2xl md:text-3xl font-extrabold">{t(c.k)}</div>
+                <div className="font-display text-xl md:text-2xl font-extrabold">{t(c.k)}</div>
               </div>
             </Link>
           ))}
         </div>
         <div className="mt-10 surface-card p-6">
-          <h3 className="font-display text-2xl font-extrabold">{t("flavors_title")}</h3>
+          <h3 className="font-display text-xl font-extrabold">{t("flavors_title")}</h3>
           <div className="mt-4 flex flex-wrap gap-2">
             {flavors.map((f) => (
               <span key={f} className="rounded-full border border-border bg-card px-4 py-2 text-xs font-semibold text-foreground/80">{t(f)}</span>
@@ -268,12 +268,12 @@ function WhyUs() {
       <div className="absolute inset-0 opacity-20 bg-[radial-gradient(circle_at_80%_20%,oklch(0.78_0.16_75/0.7),transparent_55%)]" />
       <div className="container-page relative">
         <div className="text-xs uppercase tracking-[0.3em] text-[color:var(--gold)]">{t("why_eyebrow")}</div>
-        <h2 className="mt-3 font-display text-5xl md:text-6xl lg:text-7xl xl:text-8xl font-black max-w-3xl">{t("why_title")}</h2>
+        <h2 className="mt-3 font-display text-3xl md:text-4xl lg:text-5xl xl:text-6xl font-black max-w-3xl">{t("why_title")}</h2>
         <div className="mt-14 grid md:grid-cols-2 lg:grid-cols-3 gap-6">
           {items.map(({ i: Icon, k }) => (
             <div key={k[0]} className="rounded-2xl border border-white/10 bg-white/5 p-6 backdrop-blur hover:bg-white/10 transition">
               <Icon className="h-7 w-7 text-[color:var(--gold)]" />
-              <div className="mt-4 font-display text-2xl font-extrabold">{t(k[0])}</div>
+              <div className="mt-4 font-display text-xl font-extrabold">{t(k[0])}</div>
               <div className="mt-2 text-sm opacity-75">{t(k[1])}</div>
             </div>
           ))}
@@ -323,7 +323,7 @@ function Stats() {
       <div className="container-page grid grid-cols-2 md:grid-cols-5 gap-8">
         {data.map((d) => (
           <div key={d.k} className="text-center">
-            <div className="font-display text-4xl md:text-5xl font-bold text-gradient-gold">
+            <div className="font-display text-2xl md:text-3xl font-bold text-gradient-gold">
               <Counter to={d.v} suffix={d.s} />
             </div>
             <div className="mt-2 text-xs uppercase tracking-wider text-muted-foreground">{t(d.k)}</div>
@@ -351,8 +351,8 @@ function Process() {
         <ol className="mt-14 grid md:grid-cols-5 gap-4 relative">
           {steps.map((s, i) => (
             <li key={i} className="relative surface-card p-6">
-              <div className="font-display text-5xl font-bold text-[color:var(--saffron)]/30">0{i + 1}</div>
-              <div className="mt-2 font-display text-xl font-extrabold">{t(s.k[0])}</div>
+              <div className="font-display text-3xl font-bold text-[color:var(--saffron)]/30">0{i + 1}</div>
+              <div className="mt-2 font-display text-lg font-extrabold">{t(s.k[0])}</div>
               <div className="mt-2 text-sm text-muted-foreground">{t(s.k[1])}</div>
             </li>
           ))}
@@ -409,7 +409,7 @@ function ExportMap() {
       <div className="container-page relative">
         <div className="text-center max-w-4xl mx-auto">
           <div className="text-xs uppercase tracking-[0.3em] text-[color:var(--gold)]">{t("export_eyebrow")}</div>
-          <h2 className="mt-3 font-display text-5xl md:text-6xl lg:text-7xl xl:text-8xl font-black">{t("export_title")}</h2>
+          <h2 className="mt-3 font-display text-3xl md:text-4xl lg:text-5xl xl:text-6xl font-black">{t("export_title")}</h2>
           <p className="mt-5 opacity-80">{t("export_body")}</p>
         </div>
 
@@ -430,7 +430,7 @@ function ExportMap() {
           <div className="mt-6 grid grid-cols-2 md:grid-cols-5 gap-4">
             {regions.map((r) => (
               <div key={r.k} className="text-center rounded-xl border border-white/10 p-4">
-                <div className="font-display text-2xl font-bold text-[color:var(--gold)]">{r.n}</div>
+                <div className="font-display text-xl font-bold text-[color:var(--gold)]">{r.n}</div>
                 <div className="text-xs mt-1 opacity-80">{t(r.k)}</div>
               </div>
             ))}
@@ -575,7 +575,7 @@ export function InquiryForm() {
       <div className="container-page grid lg:grid-cols-2 gap-12 items-start">
         <div>
           <div className="text-xs uppercase tracking-[0.3em] text-[color:var(--gold)]">{t("inquiry_eyebrow")}</div>
-          <h2 className="mt-3 font-display text-5xl md:text-6xl lg:text-7xl xl:text-8xl font-black">{t("inquiry_title")}</h2>
+          <h2 className="mt-3 font-display text-3xl md:text-4xl lg:text-5xl xl:text-6xl font-black">{t("inquiry_title")}</h2>
           <p className="mt-5 opacity-80 max-w-md">{t("inquiry_subtitle")}</p>
           <ul className="mt-8 space-y-3 text-sm">
             {[t("export_services_pl"), t("export_services_oem"), t("export_services_log"), t("export_services_doc")].map((s) => (
