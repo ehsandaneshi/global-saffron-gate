@@ -33,7 +33,7 @@ const products: Product[] = [
     brand: "Sigol",
     img: stickImg,
     pack: "12pcs · 24pcs · 48pcs · Bulk",
-    desc: "نبات چوبی سیگل — Persian stick rock candy (nabat chubi), crystallized on wooden sticks, ideal for tea service, HORECA and gift packs.",
+    desc: "نبات چوبی سی گل — Persian stick rock candy (nabat chubi), crystallized on wooden sticks, ideal for tea service, HORECA and gift packs.",
   },
   {
     name: "Branch Nabat — نبات شاخه",
@@ -42,7 +42,7 @@ const products: Product[] = [
     brand: "Sigol",
     img: branchImg,
     pack: "250g · 500g · 1kg · 25kg bulk",
-    desc: "نبات شاخه سیگل — Persian branch rock candy (nabat shakhe), naturally crystallized golden sugar branches for retail and bulk export.",
+    desc: "نبات شاخه سی گل — Persian branch rock candy (nabat shakhe), naturally crystallized golden sugar branches for retail and bulk export.",
   },
   { name: "Flavored Nabat — Damask Rose", flavorKey: "flavor_damask_rose", cat: "flavored", brand: "Dorsin", img: floralImg, pack: "150g · 300g · 500g", desc: "نبات طعم‌دار گل محمدی — Flavored Persian nabat with Damask rose." },
   { name: "Flavored Nabat — Rose", flavorKey: "flavor_rose", cat: "flavored", brand: "Dorsin", img: floralImg, pack: "150g · 300g · 500g", desc: "نبات طعم‌دار گل رز — Flavored Persian nabat with rose." },
@@ -59,11 +59,11 @@ const products: Product[] = [
 export const Route = createFileRoute("/products")({
   head: () => ({
     meta: [
-      { title: "محصولات: نبات چوبی، نبات شاخه و نبات طعم‌دار | کارخانه سیگل" },
-      { name: "description", content: "کاتالوگ محصولات سیگل در سه دسته: نبات چوبی، نبات شاخه و نبات طعم‌دار با طعم‌های گل محمدی، گل رز، به لیمو، دارچین، زنجبیل، نعنا، بهارنارنج، چای ترش، هل و زعفران. Persian stick nabat, branch nabat and flavored nabat for wholesale and export." },
+      { title: "محصولات: نبات چوبی، نبات شاخه و نبات طعم‌دار | کارخانه سی گل" },
+      { name: "description", content: "کاتالوگ محصولات سی گل در سه دسته: نبات چوبی، نبات شاخه و نبات طعم‌دار با طعم‌های گل محمدی، گل رز، به لیمو، دارچین، زنجبیل، نعنا، بهارنارنج، چای ترش، هل و زعفران. Persian stick nabat, branch nabat and flavored nabat for wholesale and export." },
       { name: "keywords", content: "نبات, نبات چوبی, نبات شاخه, نبات طعم دار, نبات زعفران, نبات گل محمدی, نبات هل, نبات دارچین, نبات نعنا, نبات بهارنارنج, نبات چای ترش, نبات زنجبیل, نبات به لیمو, زعفران ایرانی, شیرینی سنتی, خرید عمده نبات, stick nabat, branch nabat, flavored nabat, Persian rock candy, saffron nabat" },
-      { property: "og:title", content: "محصولات نبات سیگل — Stick, Branch & Flavored Nabat" },
-      { property: "og:description", content: "سه دسته اصلی محصولات سیگل: نبات چوبی، نبات شاخه و نبات طعم‌دار با ۱۰ طعم." },
+      { property: "og:title", content: "محصولات نبات سی گل — Stick, Branch & Flavored Nabat" },
+      { property: "og:description", content: "سه دسته اصلی محصولات سی گل: نبات چوبی، نبات شاخه و نبات طعم‌دار با ۱۰ طعم." },
       { property: "og:url", content: "https://global-saffron-gate.lovable.app/products" },
       { property: "og:type", content: "website" },
     ],

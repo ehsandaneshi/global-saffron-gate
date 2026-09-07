@@ -11,9 +11,9 @@ export const Route = createFileRoute("/blog")({
   head: () => ({
     meta: [
       { title: "بلاگ نبات و زعفران | اخبار صنعت شیرینی ایرانی — Sigol Blog" },
-      { name: "description", content: "مقالات تخصصی درباره نبات زعفرانی، زعفران ایرانی، شیرینی سنتی، صادرات و آموزش محصول از کارخانه سیگل. Industry insights, export news and product education on Persian saffron nabat and confectionery." },
+      { name: "description", content: "مقالات تخصصی درباره نبات زعفرانی، زعفران ایرانی، شیرینی سنتی، صادرات و آموزش محصول از کارخانه سی گل. Industry insights, export news and product education on Persian saffron nabat and confectionery." },
       { name: "keywords", content: "بلاگ نبات, مقالات زعفران, اخبار صادرات نبات, شیرینی ایرانی, آموزش نبات زعفرانی, saffron blog, Persian nabat articles, Iranian confectionery news" },
-      { property: "og:title", content: "بلاگ سیگل — نبات، زعفران و شیرینی" },
+      { property: "og:title", content: "بلاگ سی گل — نبات، زعفران و شیرینی" },
       { property: "og:description", content: "مقالات تخصصی صنعت نبات زعفرانی، زعفران ایرانی و صادرات شیرینی." },
       { property: "og:url", content: "https://global-saffron-gate.lovable.app/blog" },
       { property: "og:type", content: "website" },

@@ -8,10 +8,10 @@ import { MapPin, Phone, Mail, MessageCircle } from "lucide-react";
 export const Route = createFileRoute("/contact")({
   head: () => ({
     meta: [
-      { title: "تماس با کارخانه سیگل | سفارش نبات زعفرانی و زعفران — Contact" },
-      { name: "description", content: "تماس با تیم صادرات کارخانه سیگل برای سفارش نبات زعفرانی، زعفران ایرانی و شیرینی سنتی. تلفن، ایمیل، واتساپ و آدرس کارخانه در رفسنجان. Talk to our export team — phone, email, WhatsApp, factory address in Rafsanjan, Iran." },
-      { name: "keywords", content: "تماس با سیگل, سفارش نبات, خرید عمده نبات زعفرانی, تامین کننده زعفران رفسنجان, تماس صادرات نبات, contact Sigol, order saffron nabat, wholesale Persian sweets contact" },
-      { property: "og:title", content: "تماس با کارخانه سیگل — Contact Sigol" },
+      { title: "تماس با کارخانه سی گل | سفارش نبات زعفرانی و زعفران — Contact" },
+      { name: "description", content: "تماس با تیم صادرات کارخانه سی گل برای سفارش نبات زعفرانی، زعفران ایرانی و شیرینی سنتی. تلفن، ایمیل، واتساپ و آدرس کارخانه در رفسنجان. Talk to our export team — phone, email, WhatsApp, factory address in Rafsanjan, Iran." },
+      { name: "keywords", content: "تماس با سی گل, سفارش نبات, خرید عمده نبات زعفرانی, تامین کننده زعفران رفسنجان, تماس صادرات نبات, contact Sigol, order saffron nabat, wholesale Persian sweets contact" },
+      { property: "og:title", content: "تماس با کارخانه سی گل — Contact Sigol" },
       { property: "og:description", content: "سفارش و استعلام نبات زعفرانی، زعفران ایرانی و شیرینی سنتی برای بازارهای داخلی و صادراتی." },
       { property: "og:url", content: "https://global-saffron-gate.lovable.app/contact" },
       { property: "og:type", content: "website" },
