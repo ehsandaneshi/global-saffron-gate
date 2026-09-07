@@ -8,10 +8,10 @@ import factoryImg from "@/assets/factory-interior.jpg";
 export const Route = createFileRoute("/about")({
   head: () => ({
     meta: [
-      { title: "درباره کارخانه سیگل | تولیدکننده نبات زعفرانی و شیرینی ایرانی — About Sigol Factory" },
-      { name: "description", content: "بیش از یک دهه تجربه در تولید نبات زعفرانی، زعفران ایرانی و شیرینی سنتی با کیفیت صادراتی. آشنایی با ماموریت، چشم‌انداز و تاریخچه کارخانه سیگل. Over a decade of Persian saffron nabat & confectionery craftsmanship for global markets." },
-      { name: "keywords", content: "درباره سیگل, کارخانه نبات, تاریخچه تولید نبات, نبات زعفرانی رفسنجان, زعفران ایرانی, شیرینی سنتی, about Sigol, Persian saffron manufacturer, Iranian nabat factory" },
-      { property: "og:title", content: "درباره کارخانه سیگل — About Sigol Factory" },
+      { title: "درباره کارخانه سی گل | تولیدکننده نبات زعفرانی و شیرینی ایرانی — About Sigol Factory" },
+      { name: "description", content: "بیش از یک دهه تجربه در تولید نبات زعفرانی، زعفران ایرانی و شیرینی سنتی با کیفیت صادراتی. آشنایی با ماموریت، چشم‌انداز و تاریخچه کارخانه سی گل. Over a decade of Persian saffron nabat & confectionery craftsmanship for global markets." },
+      { name: "keywords", content: "درباره سی گل, کارخانه نبات, تاریخچه تولید نبات, نبات زعفرانی رفسنجان, زعفران ایرانی, شیرینی سنتی, about Sigol, Persian saffron manufacturer, Iranian nabat factory" },
+      { property: "og:title", content: "درباره کارخانه سی گل — About Sigol Factory" },
       { property: "og:description", content: "بیش از یک دهه تخصص در تولید نبات، زعفران و شیرینی سنتی ایرانی برای بازارهای جهانی." },
       { property: "og:url", content: "https://global-saffron-gate.lovable.app/about" },
       { property: "og:type", content: "website" },
