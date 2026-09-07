@@ -2,7 +2,7 @@ import { createFileRoute, Link } from "@tanstack/react-router";
 import { useEffect, useRef, useState } from "react";
 import {
   ArrowRight, Award, ShieldCheck, Factory, Globe2, Truck, Sparkles,
-  PlayCircle, Download, Quote, Send, Phone, Mail, MapPin, MessageCircle,
+  Download, Quote, Send, Phone, Mail, MapPin, MessageCircle,
   Check, Crown, Gift, Package, Beaker, Star,
 } from "lucide-react";
 import { useI18n } from "@/lib/i18n";
@@ -85,7 +85,6 @@ function HomePage() {
       <Certifications />
       <ExportMap />
       <Gallery />
-      <VideoShowcase />
       <DownloadCenter />
       <Partners />
       <Testimonials />
@@ -454,33 +453,6 @@ function Gallery() {
             <div key={i} className={`overflow-hidden rounded-2xl ${i === 0 ? "md:col-span-2 md:row-span-2" : ""}`}>
               <img src={src} alt="Factory" loading="lazy" className="h-full w-full object-cover aspect-square hover:scale-105 transition-transform duration-700" />
             </div>
-          ))}
-        </div>
-      </div>
-    </section>
-  );
-}
-
-/* ---------------- VIDEO ---------------- */
-function VideoShowcase() {
-  const { t } = useI18n();
-  const vids = [
-    { k: "video_factory" as const, img: factoryImg },
-    { k: "video_process" as const, img: heroImg },
-    { k: "video_brand" as const, img: productsImg },
-  ];
-  return (
-    <section className="py-20 md:py-28 bg-card">
-      <div className="container-page">
-        <SectionHeader eyebrow={t("video_eyebrow")} title={t("video_title")} center />
-        <div className="mt-12 grid md:grid-cols-3 gap-6">
-          {vids.map((v) => (
-            <button key={v.k} className="group relative overflow-hidden rounded-2xl aspect-video text-start">
-              <img src={v.img} alt={t(v.k)} loading="lazy" className="absolute inset-0 h-full w-full object-cover" />
-              <div className="absolute inset-0 bg-gradient-to-t from-[color:var(--ink)]/90 to-transparent" />
-              <PlayCircle className="absolute inset-0 m-auto h-16 w-16 text-[color:var(--cream)] group-hover:scale-110 transition-transform" strokeWidth={1} />
-              <div className="absolute bottom-4 start-4 font-display text-xl font-extrabold text-[color:var(--cream)]">{t(v.k)}</div>
-            </button>
           ))}
         </div>
       </div>
