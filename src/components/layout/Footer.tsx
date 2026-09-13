@@ -6,6 +6,7 @@ export function Footer() {
   const { t } = useI18n();
   return (
     <footer className="mt-24 bg-[color:var(--ink)] text-[color:var(--cream)]">
+      <div className="persian-strip" aria-hidden="true" />
       <div className="container-page py-16 grid gap-10 md:grid-cols-4">
         <div className="md:col-span-2">
           <div className="flex items-center gap-2">

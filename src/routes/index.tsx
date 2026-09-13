@@ -139,6 +139,7 @@ function SectionHeader({ eyebrow, title, center }: { eyebrow: string; title: str
       <div className={center ? "text-center max-w-3xl mx-auto" : "max-w-3xl"}>
         <div className="text-xs uppercase tracking-[0.3em] text-[color:var(--saffron-deep)]">{eyebrow}</div>
         <h2 className="mt-3 font-display text-3xl md:text-4xl lg:text-5xl xl:text-6xl font-black text-foreground">{title}</h2>
+        <div className={`title-flourish mt-4 ${center ? "mx-auto" : "rtl:ml-auto rtl:mr-0"}`} aria-hidden="true" />
       </div>
   );
 }
@@ -192,7 +193,7 @@ function Brands() {
         <SectionHeader eyebrow={t("brands_eyebrow")} title={t("brands_title")} center />
         <div className="mt-14 grid md:grid-cols-3 gap-6">
           {brands.map((b) => (
-            <div key={b.name} className="group surface-card overflow-hidden p-8 hover:-translate-y-1 transition-transform">
+            <div key={b.name} className="group surface-card ornamental-border overflow-hidden p-8 hover:-translate-y-1 transition-transform">
               <div className="h-32 -mx-8 -mt-8 mb-6 grid place-items-center text-primary-foreground" style={{ backgroundImage: b.gradient }}>
                 <b.icon className="h-12 w-12" strokeWidth={1.5} />
               </div>

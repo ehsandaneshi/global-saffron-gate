@@ -19,6 +19,7 @@ export function PageHeader({ eyebrow, title, lead }: { eyebrow: string; title: s
       <div className="container-page relative py-20 md:py-28">
         <div className="text-xs uppercase tracking-[0.3em] text-[color:var(--gold)]">{eyebrow}</div>
         <h1 className="mt-4 font-display text-3xl md:text-4xl lg:text-5xl font-extrabold max-w-4xl">{title}</h1>
+        <div className="title-flourish mt-5 rtl:ml-auto rtl:mr-0" aria-hidden="true" />
         <p className="mt-5 max-w-2xl text-base md:text-lg opacity-80">{lead}</p>
       </div>
     </section>

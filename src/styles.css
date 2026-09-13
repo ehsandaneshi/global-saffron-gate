@@ -194,6 +194,16 @@
   background-size: 80px 80px;
 }
 
+/* Traditional Persian flourish under section titles (lozenge + scroll curls) */
+@utility title-flourish {
+  width: 11.25rem;
+  height: 1rem;
+  background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='180' height='16' viewBox='0 0 180 16'><g fill='none' stroke='%23a86a1f' stroke-opacity='0.75' stroke-width='1.2'><path d='M4 8 H66'/><path d='M114 8 H176'/><path d='M90 2 L96 8 L90 14 L84 8 Z'/><path d='M74 8 C74 4 80 4 80 8 C80 12 74 12 74 8'/><path d='M106 8 C106 4 100 4 100 8 C100 12 106 12 106 8'/><circle cx='70' cy='8' r='1' fill='%23a86a1f'/><circle cx='110' cy='8' r='1' fill='%23a86a1f'/></g></svg>");
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+}
+
 /* Ornamental saffron+turquoise divider strip inspired by Persian tilework */
 @utility persian-strip {
   height: 6px;
