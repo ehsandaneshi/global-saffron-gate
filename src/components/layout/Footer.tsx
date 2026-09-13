@@ -1,6 +1,7 @@
 import { Link } from "@tanstack/react-router";
 import { Mail, Phone, MapPin, MessageCircle } from "lucide-react";
 import { useI18n } from "@/lib/i18n";
+import logoAsset from "@/assets/sigol-logo.png.asset.json";
 
 export function Footer() {
   const { t } = useI18n();
@@ -10,9 +11,11 @@ export function Footer() {
       <div className="container-page py-16 grid gap-10 md:grid-cols-4">
         <div className="md:col-span-2">
           <div className="flex items-center gap-2">
-            <div className="grid h-9 w-9 place-items-center rounded-lg bg-[image:var(--gradient-saffron)]">
-              <span className="font-display font-bold">S</span>
-            </div>
+            <img
+              src={logoAsset.url}
+              alt="لوگوی کارخانه سی گل"
+              className="h-12 w-12 shrink-0 object-contain"
+            />
             <div className="font-display text-lg font-bold">{t("brand_name")}</div>
           </div>
           <p className="mt-4 max-w-md text-sm leading-relaxed opacity-70">{t("footer_about")}</p>
