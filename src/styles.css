@@ -105,9 +105,9 @@
     background-color: var(--color-background);
     background-image:
       radial-gradient(ellipse at top, oklch(0.78 0.16 75 / 0.10), transparent 60%),
-      url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='120' height='120' viewBox='0 0 120 120'><g fill='none' stroke='%23a86a1f' stroke-opacity='0.06' stroke-width='1'><path d='M60 6 L78 42 L114 42 L84 66 L96 108 L60 84 L24 108 L36 66 L6 42 L42 42 Z'/><circle cx='60' cy='60' r='14'/></g></svg>");
+      url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='240' height='240' viewBox='0 0 240 240'><g fill='none' stroke='%23a86a1f' stroke-opacity='0.055' stroke-width='1.1'><path d='M120 22 C86 22 62 52 66 92 C70 138 112 168 150 152 C186 137 192 92 166 74 C146 60 118 70 117 96 C116 114 132 124 144 114'/><path d='M120 44 C98 44 82 64 85 90 C88 120 116 142 142 131'/><circle cx='132' cy='96' r='5'/><path d='M120 218 C154 218 178 188 174 148 C170 102 128 72 90 88 C54 103 48 148 74 166 C94 180 122 170 123 144 C124 126 108 116 96 126'/><path d='M120 196 C142 196 158 176 155 150 C152 120 124 98 98 109'/><circle cx='108' cy='144' r='5'/><path d='M20 116 C26 104 38 104 42 114 C46 124 38 134 28 132'/><path d='M220 124 C214 136 202 136 198 126 C194 116 202 106 212 108'/></g></svg>");
     background-attachment: fixed;
-    background-size: auto, 120px 120px;
+    background-size: auto, 240px 240px;
     color: var(--color-foreground);
     font-family: var(--font-sans);
     font-feature-settings: "ss01", "cv11";
