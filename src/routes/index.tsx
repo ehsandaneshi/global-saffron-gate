@@ -139,6 +139,7 @@ function SectionHeader({ eyebrow, title, center }: { eyebrow: string; title: str
       <div className={center ? "text-center max-w-3xl mx-auto" : "max-w-3xl"}>
         <div className="text-xs uppercase tracking-[0.3em] text-[color:var(--saffron-deep)]">{eyebrow}</div>
         <h2 className="mt-3 font-display text-3xl md:text-4xl lg:text-5xl xl:text-6xl font-black text-foreground">{title}</h2>
+        <div className={`title-flourish mt-4 ${center ? "mx-auto" : "rtl:ml-auto rtl:mr-0"}`} aria-hidden="true" />
       </div>
   );
 }
