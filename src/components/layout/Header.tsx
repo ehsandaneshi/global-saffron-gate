@@ -4,6 +4,7 @@ import { useState } from "react";
 import { useI18n } from "@/lib/i18n";
 import type { Lang } from "@/lib/translations";
 import { cn } from "@/lib/utils";
+import logoAsset from "@/assets/sigol-logo.png.asset.json";
 
 const langs: { code: Lang; label: string; native: string }[] = [
   { code: "en", label: "EN", native: "English" },
@@ -31,9 +32,11 @@ export function Header() {
       <div className="persian-strip" aria-hidden="true" />
       <div className="container-page flex h-[4.5rem] items-center gap-2 sm:gap-4">
         <Link to="/" className="flex items-center gap-2 min-w-0 shrink">
-          <div className="grid h-11 w-11 shrink-0 place-items-center rounded-lg bg-[image:var(--gradient-saffron)] shadow-[var(--shadow-elegant)]">
-            <span className="font-display text-lg font-bold text-primary-foreground">S</span>
-          </div>
+          <img
+            src={logoAsset.url}
+            alt="لوگوی کارخانه سی گل"
+            className="h-12 w-12 shrink-0 object-contain"
+          />
           <div className="min-w-0">
             <div className="font-display text-base sm:text-lg font-extrabold leading-normal text-foreground truncate py-0.5">{t("brand_name")}</div>
             <div className="hidden sm:block text-xs uppercase tracking-widest text-muted-foreground mt-0.5">Persian Heritage · Global Reach</div>
