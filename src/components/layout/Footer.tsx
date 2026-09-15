@@ -6,9 +6,9 @@ import logoAsset from "@/assets/sigol-logo.png.asset.json";
 export function Footer() {
   const { t } = useI18n();
   return (
-    <footer className="mt-24 bg-[color:var(--ink)] text-[color:var(--cream)]">
+    <footer className="dark-luxury mt-24 text-[color:var(--cream)] overflow-hidden">
       <div className="persian-strip" aria-hidden="true" />
-      <div className="container-page py-16 grid gap-10 md:grid-cols-4">
+       <div className="container-page relative py-16 grid gap-10 md:grid-cols-4">
         <div className="md:col-span-2">
           <div className="flex items-center gap-2">
             <img
@@ -21,7 +21,7 @@ export function Footer() {
           <p className="mt-4 max-w-md text-sm leading-relaxed opacity-70">{t("footer_about")}</p>
           <div className="mt-6 flex flex-wrap gap-3">
             {["Sigol", "Manbod", "Dorsin"].map((b) => (
-              <span key={b} className="rounded-full border border-white/15 px-3 py-1 text-xs tracking-wider uppercase">
+               <span key={b} className="rounded-full border border-[color:var(--gold)]/25 bg-[color:var(--cream)]/5 px-3 py-1 text-xs tracking-wider uppercase">
                 {b}
               </span>
             ))}

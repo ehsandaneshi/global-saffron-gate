@@ -33,8 +33,8 @@ function ManufacturingPage() {
   return (
     <PageShell>
       <PageHeader eyebrow={t("nav_manufacturing")} title={t("page_manufacturing_title")} lead={t("page_manufacturing_lead")} />
-      <section className="py-20 container-page">
-        <img src={factoryImg} alt="Factory" loading="lazy" className="rounded-3xl shadow-[var(--shadow-elegant)] w-full aspect-[16/8] object-cover" />
+      <section className="py-20 container-page luxury-reveal">
+        <div className="luxury-image"><img src={factoryImg} alt="Factory" loading="lazy" className="rounded-lg shadow-[var(--shadow-luxury)] w-full aspect-[16/8] object-cover" /></div>
         <ol className="mt-16 relative border-s-2 border-[color:var(--saffron)]/30 ps-8 space-y-10">
           {steps.map(([k, d], i) => (
             <li key={k} className="relative">

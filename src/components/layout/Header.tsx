@@ -28,7 +28,7 @@ export function Header() {
   ] as const;
 
   return (
-    <header className="fixed top-0 inset-x-0 z-50 backdrop-blur-md bg-background/85 border-b border-border">
+    <header className="luxury-header fixed top-0 inset-x-0 z-50 backdrop-blur-xl supports-[backdrop-filter]:bg-background/75">
       <div className="persian-strip" aria-hidden="true" />
       <div className="container-page flex h-[4.5rem] items-center gap-2 sm:gap-4">
         <Link to="/" className="flex items-center gap-2 min-w-0 shrink">
@@ -43,7 +43,7 @@ export function Header() {
           </div>
         </Link>
 
-        <nav className="hidden lg:flex items-center gap-1 mx-auto">
+        <nav className="hidden lg:flex items-center gap-1 mx-auto rounded-full border border-border/70 bg-card/55 p-1 shadow-[var(--shadow-soft)]">
           {nav.map((n) => (
             <Link
               key={n.to}
@@ -51,7 +51,7 @@ export function Header() {
               activeOptions={{ exact: n.to === "/" }}
               activeProps={{ className: "text-primary" }}
               inactiveProps={{ className: "text-foreground/75 hover:text-foreground" }}
-              className="px-3 py-2 text-sm font-medium transition-colors"
+              className="relative px-3 py-2 text-sm font-medium transition-colors after:absolute after:inset-x-3 after:bottom-1 after:h-px after:origin-center after:scale-x-0 after:bg-[image:var(--gradient-gold-metal)] after:transition-transform hover:after:scale-x-100"
             >
               {n.label}
             </Link>
@@ -59,7 +59,7 @@ export function Header() {
         </nav>
 
         <div className="ms-auto lg:ms-0 flex items-center gap-2 shrink-0">
-          <div className="flex items-center rounded-full border border-border bg-card p-0.5">
+          <div className="flex items-center rounded-full border border-border/80 bg-card/70 p-0.5 shadow-[var(--shadow-soft)]">
             <Globe className="ms-2 h-3.5 w-3.5 text-muted-foreground hidden sm:inline-block" />
             {langs.map((l) => (
               <button
@@ -81,7 +81,7 @@ export function Header() {
 
           <Link
             to="/contact"
-            className="hidden md:inline-flex items-center rounded-full bg-secondary px-4 py-2 text-xs font-semibold text-secondary-foreground hover:opacity-90 transition"
+            className="luxe-button hidden md:inline-flex items-center rounded-full bg-secondary px-4 py-2 text-xs font-semibold text-secondary-foreground"
           >
             {t("nav_export_inquiry")}
           </Link>

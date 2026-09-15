@@ -139,8 +139,8 @@ function ProductsPage() {
   return (
     <PageShell>
       <PageHeader eyebrow={t("nav_products")} title={t("page_products_title")} lead={t("page_products_lead")} />
-      <section className="py-12 container-page">
-        <div className="flex flex-wrap gap-2">
+      <section className="py-12 md:py-20 container-page luxury-reveal">
+        <div className="flex flex-wrap gap-2 rounded-lg border border-border/70 bg-card/65 p-2 shadow-[var(--shadow-soft)] backdrop-blur">
           {cats.map((c) => (
             <button
               key={c.id}
@@ -162,15 +162,15 @@ function ProductsPage() {
               ? t(p.nameKey)
               : `${t("cat_flavored_nabat")} — ${p.flavorKey ? t(p.flavorKey) : p.name}`;
             return (
-              <article key={p.name} className="surface-card overflow-hidden group">
+               <article key={p.name} className="surface-card ornamental-border overflow-hidden group">
                 <div className="aspect-[4/3] overflow-hidden">
-                  <img src={p.img} alt={title} loading="lazy" width={1024} height={768} className="h-full w-full object-cover group-hover:scale-105 transition-transform duration-700" />
+                   <img src={p.img} alt={title} loading="lazy" width={1024} height={768} className="h-full w-full object-cover transition-transform duration-700 ease-out group-hover:scale-110" />
                 </div>
                 <div className="p-5">
                   <div className="text-[10px] uppercase tracking-[0.25em] text-[color:var(--saffron-deep)]">{p.brand}</div>
                   <h3 className="mt-1 font-display text-xl font-extrabold">{title}</h3>
                   <div className="mt-3 text-xs text-muted-foreground">{p.pack}</div>
-                  <a href="/#inquiry" className="mt-4 inline-flex text-sm font-semibold text-[color:var(--saffron-deep)]">{t("cta_export_inquiry")} →</a>
+                   <a href="/#inquiry" className="mt-4 inline-flex text-sm font-semibold text-[color:var(--saffron-deep)] transition-colors hover:text-primary">{t("cta_export_inquiry")} →</a>
                 </div>
               </article>
             );

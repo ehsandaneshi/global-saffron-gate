@@ -35,7 +35,7 @@ function ContactPage() {
   return (
     <PageShell>
       <PageHeader eyebrow={t("nav_contact")} title={t("page_contact_title")} lead={t("page_contact_lead")} />
-      <section className="py-20 container-page grid md:grid-cols-2 gap-12 items-start">
+      <section className="py-20 container-page grid md:grid-cols-2 gap-12 items-start luxury-reveal">
         <div className="space-y-4">
           {items.map(({ i: Icon, title, l }) => (
             <div key={title + l} className="surface-card p-5 flex items-center gap-4">
@@ -48,7 +48,7 @@ function ContactPage() {
           ))}
           <div className="text-xs text-muted-foreground">{t("contact_hours")}</div>
         </div>
-        <div className="rounded-3xl overflow-hidden shadow-[var(--shadow-elegant)] aspect-[4/3]">
+        <div className="luxury-image rounded-lg overflow-hidden shadow-[var(--shadow-luxury)] aspect-[4/3]">
           <iframe title="Map" src="https://maps.google.com/maps?q=رفسنجان، سعادت‌آباد، خیابان شهید امیری، ایران&z=15&output=embed" className="h-full w-full border-0" loading="lazy" />
         </div>
       </section>

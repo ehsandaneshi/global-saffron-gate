@@ -32,8 +32,8 @@ function AboutPage() {
   return (
     <PageShell>
       <PageHeader eyebrow={t("nav_about")} title={t("page_about_title")} lead={t("page_about_lead")} />
-      <section className="py-20 container-page grid md:grid-cols-2 gap-12 items-center">
-        <img src={factoryImg} alt="Factory" loading="lazy" className="rounded-3xl shadow-[var(--shadow-elegant)] aspect-[4/3] object-cover" />
+      <section className="py-20 container-page grid md:grid-cols-2 gap-12 items-center luxury-reveal">
+        <div className="luxury-image"><img src={factoryImg} alt="Factory" loading="lazy" className="rounded-lg shadow-[var(--shadow-luxury)] aspect-[4/3] object-cover" /></div>
         <div>
           <div className="text-xs uppercase tracking-[0.3em] text-[color:var(--saffron-deep)]">{t("about_history_t")}</div>
           <h2 className="mt-3 font-display text-2xl md:text-3xl font-extrabold">{t("about_eyebrow")}</h2>
@@ -53,7 +53,7 @@ function AboutPage() {
           </div>
         </div>
       </section>
-      <section className="py-20 bg-card border-y border-border">
+      <section className="py-20 bg-card border-y border-[color:var(--gold)]/20 luxury-reveal">
         <div className="container-page grid md:grid-cols-3 gap-6">
           {blocks.map((b) => (
             <div key={b.t} className="surface-card p-8">

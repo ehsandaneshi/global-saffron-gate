@@ -37,10 +37,10 @@ function CertPage() {
   return (
     <PageShell>
       <PageHeader eyebrow={t("nav_certifications")} title={t("page_certifications_title")} lead={t("page_certifications_lead")} />
-      <section className="py-20 container-page">
+      <section className="py-20 container-page luxury-reveal">
         <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-5">
           {certs.map((c, i) => (
-            <div key={c.n} className="surface-card p-6 text-center">
+            <div key={c.n} className="surface-card ornamental-border p-6 text-center">
               <div className="grid h-14 w-14 place-items-center rounded-2xl bg-[image:var(--gradient-saffron)] text-primary-foreground mx-auto">
                 {i % 3 === 0 ? <Award className="h-7 w-7" /> : i % 3 === 1 ? <ShieldCheck className="h-7 w-7" /> : <BadgeCheck className="h-7 w-7" />}
               </div>
