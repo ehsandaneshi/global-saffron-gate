@@ -33,10 +33,10 @@ function ExportPage() {
   return (
     <PageShell>
       <PageHeader eyebrow={t("nav_export")} title={t("page_export_title")} lead={t("page_export_lead")} />
-      <section className="py-20 container-page">
+      <section className="py-20 container-page luxury-reveal">
         <div className="grid sm:grid-cols-2 gap-6">
           {services.map((s) => (
-            <div key={s.t} className="surface-card p-8">
+            <div key={s.t} className="surface-card ornamental-border p-8">
               <div className="grid h-12 w-12 place-items-center rounded-xl bg-[image:var(--gradient-saffron)] text-primary-foreground">
                 <s.i className="h-6 w-6" />
               </div>

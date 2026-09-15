@@ -99,18 +99,19 @@ function HomePage() {
 function Hero() {
   const { t } = useI18n();
   return (
-    <section className="relative isolate overflow-hidden">
+    <section className="hero-luxury relative isolate overflow-hidden">
       <img
         src={heroImg}
         alt="Premium saffron nabat"
         width={1920}
         height={1280}
-        className="absolute inset-0 -z-10 h-full w-full object-cover"
+        className="hero-media absolute inset-0 -z-10 h-full w-full object-cover"
       />
       <div className="absolute inset-0 -z-10 bg-[image:var(--gradient-hero)]" />
-      <div className="container-page relative py-24 md:py-36">
-        <div className="max-w-3xl text-[color:var(--cream)]">
-          <span className="inline-flex items-center gap-2 rounded-full border border-[color:var(--gold)]/40 bg-black/30 px-3 py-1 text-xs uppercase tracking-[0.25em] text-[color:var(--gold)]">
+      <div className="absolute inset-x-0 bottom-0 -z-10 h-40 bg-gradient-to-t from-[color:var(--ink)]/45 to-transparent" />
+      <div className="container-page relative z-10 py-24 md:py-36">
+        <div className="max-w-3xl animate-fade-in text-[color:var(--cream)]">
+          <span className="inline-flex items-center gap-2 rounded-full border border-[color:var(--gold)]/40 bg-[color:var(--ink)]/35 px-3 py-1 text-xs uppercase tracking-[0.25em] text-[color:var(--gold)] backdrop-blur-md">
             <Sparkles className="h-3 w-3" /> {t("hero_eyebrow")}
           </span>
           <h1 className="mt-6 font-display text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-extrabold leading-[1.05]">
@@ -118,11 +119,11 @@ function Hero() {
           </h1>
           <p className="mt-6 max-w-xl text-base md:text-lg opacity-85">{t("hero_subtitle")}</p>
           <div className="mt-8 flex flex-wrap gap-3">
-            <Link to="/products" className="group inline-flex items-center gap-2 rounded-full bg-[image:var(--gradient-saffron)] px-6 py-3 text-sm font-semibold text-primary-foreground shadow-[var(--shadow-elegant)] hover:brightness-110 transition">
+            <Link to="/products" className="luxe-button group inline-flex items-center gap-2 rounded-full bg-[image:var(--gradient-saffron)] px-6 py-3 text-sm font-semibold text-primary-foreground">
               {t("cta_view_products")}
               <ArrowRight className="h-4 w-4 transition-transform group-hover:translate-x-1 rtl:rotate-180 rtl:group-hover:-translate-x-1" />
             </Link>
-            <a href="#inquiry" className="inline-flex items-center gap-2 rounded-full border border-white/30 bg-white/5 px-6 py-3 text-sm font-semibold backdrop-blur hover:bg-white/10 transition">
+            <a href="#inquiry" className="inline-flex items-center gap-2 rounded-full border border-[color:var(--cream)]/30 bg-[color:var(--cream)]/5 px-6 py-3 text-sm font-semibold backdrop-blur transition hover:bg-[color:var(--cream)]/10 hover:border-[color:var(--gold)]/60">
               {t("cta_export_inquiry")}
             </a>
             <a href="#downloads" className="inline-flex items-center gap-2 rounded-full px-6 py-3 text-sm font-semibold text-[color:var(--cream)]/85 hover:text-[color:var(--gold)] transition">
@@ -149,10 +150,10 @@ function SectionHeader({ eyebrow, title, center }: { eyebrow: string; title: str
 function AboutStrip() {
   const { t } = useI18n();
   return (
-    <section className="py-20 md:py-28">
+    <section className="py-20 md:py-28 luxury-reveal">
       <div className="container-page grid md:grid-cols-2 gap-12 items-center">
-        <div className="relative">
-          <img src={factoryImg} alt="Sigol factory" width={1600} height={1067} loading="lazy" className="rounded-3xl shadow-[var(--shadow-elegant)] object-cover w-full aspect-[4/3]" />
+        <div className="luxury-image relative">
+          <img src={factoryImg} alt="Sigol factory" width={1600} height={1067} loading="lazy" className="rounded-lg shadow-[var(--shadow-luxury)] object-cover w-full aspect-[4/3]" />
           <div className="surface-card absolute -bottom-6 -end-6 rtl:-start-6 rtl:end-auto p-5 max-w-xs">
             <div className="text-2xl font-display font-bold text-[color:var(--saffron-deep)]">+10</div>
             <div className="text-xs uppercase tracking-wider text-muted-foreground mt-1">{t("stats_years")}</div>
@@ -184,18 +185,19 @@ function AboutStrip() {
 function Brands() {
   const { t } = useI18n();
   const brands = [
-    { name: "Sigol", tag: "Premium · Luxury", icon: Crown, desc: t("brand_sigol_desc"), gradient: "linear-gradient(135deg,oklch(0.62 0.18 55),oklch(0.42 0.12 45))" },
-    { name: "Manbod", tag: "Family · Retail", icon: Gift, desc: t("brand_manbod_desc"), gradient: "linear-gradient(135deg,oklch(0.68 0.13 195),oklch(0.38 0.14 265))" },
-    { name: "Dorsin", tag: "Modern · OEM", icon: Package, desc: t("brand_dorsin_desc"), gradient: "linear-gradient(135deg,oklch(0.78 0.16 75),oklch(0.55 0.14 35))" },
+    { name: "Sigol", tag: "Premium · Luxury", icon: Crown, desc: t("brand_sigol_desc"), tone: "bg-[image:var(--gradient-luxury-dark)]" },
+    { name: "Manbod", tag: "Family · Retail", icon: Gift, desc: t("brand_manbod_desc"), tone: "bg-[image:var(--gradient-royal)]" },
+    { name: "Dorsin", tag: "Modern · OEM", icon: Package, desc: t("brand_dorsin_desc"), tone: "bg-[image:var(--gradient-saffron)]" },
   ];
   return (
-    <section className="py-20 md:py-28 bg-pattern-persian">
+    <section className="py-20 md:py-28 bg-pattern-persian luxury-reveal">
       <div className="container-page">
         <SectionHeader eyebrow={t("brands_eyebrow")} title={t("brands_title")} center />
         <div className="mt-14 grid md:grid-cols-3 gap-6">
           {brands.map((b) => (
-            <div key={b.name} className="group surface-card ornamental-border overflow-hidden p-8 hover:-translate-y-1 transition-transform">
-              <div className="h-32 -mx-8 -mt-8 mb-6 grid place-items-center text-primary-foreground" style={{ backgroundImage: b.gradient }}>
+            <div key={b.name} className="group surface-card ornamental-border overflow-hidden p-8">
+              <div className={`relative h-32 -mx-8 -mt-8 mb-6 grid place-items-center overflow-hidden text-primary-foreground ${b.tone}`}>
+                <div className="absolute inset-0 opacity-20 bg-pattern-islamic" aria-hidden="true" />
                 <b.icon className="h-12 w-12" strokeWidth={1.5} />
               </div>
               <div className="text-xs uppercase tracking-[0.25em] text-[color:var(--saffron-deep)]">{b.tag}</div>
@@ -226,15 +228,15 @@ function Categories() {
     "flavor_mint", "flavor_orange_blossom", "flavor_hibiscus", "flavor_cardamom", "flavor_saffron",
   ] as const;
   return (
-    <section className="py-20 md:py-28">
+    <section className="py-20 md:py-28 luxury-reveal">
       <div className="container-page">
         <SectionHeader eyebrow={t("cats_eyebrow")} title={t("cats_title")} />
         <div className="mt-12 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-5">
           {cats.map((c) => (
-            <Link to="/products" key={c.k} className="group relative overflow-hidden rounded-2xl aspect-[4/5]">
+            <Link to="/products" key={c.k} className="group relative overflow-hidden rounded-lg aspect-[4/5] border border-[color:var(--gold)]/25 shadow-[var(--shadow-luxury)]">
               <img src={c.img} alt={t(c.k)} loading="lazy" width={1024} height={768} className="absolute inset-0 h-full w-full object-cover transition-transform duration-700 group-hover:scale-110" />
               <div className="absolute inset-0 bg-gradient-to-t from-[color:var(--ink)] via-[color:var(--ink)]/30 to-transparent" />
-              <div className="absolute bottom-4 start-4 end-4 text-[color:var(--cream)]">
+               <div className="absolute inset-x-4 bottom-4 border-s border-[color:var(--gold)]/70 ps-3 text-[color:var(--cream)]">
                 <div className="font-display text-xl md:text-2xl font-extrabold">{t(c.k)}</div>
               </div>
             </Link>
@@ -266,14 +268,14 @@ function WhyUs() {
     { i: Truck, k: ["why_price", "why_price_d"] as const },
   ];
   return (
-    <section className="py-20 md:py-28 bg-[color:var(--ink)] text-[color:var(--cream)] relative overflow-hidden">
+    <section className="dark-luxury py-20 md:py-28 text-[color:var(--cream)] relative overflow-hidden luxury-reveal">
       <div className="absolute inset-0 opacity-20 bg-[radial-gradient(circle_at_80%_20%,oklch(0.78_0.16_75/0.7),transparent_55%)]" />
       <div className="container-page relative">
         <div className="text-xs uppercase tracking-[0.3em] text-[color:var(--gold)]">{t("why_eyebrow")}</div>
         <h2 className="mt-3 font-display text-3xl md:text-4xl lg:text-5xl xl:text-6xl font-black max-w-3xl">{t("why_title")}</h2>
         <div className="mt-14 grid md:grid-cols-2 lg:grid-cols-3 gap-6">
           {items.map(({ i: Icon, k }) => (
-            <div key={k[0]} className="rounded-2xl border border-white/10 bg-white/5 p-6 backdrop-blur hover:bg-white/10 transition">
+             <div key={k[0]} className="rounded-lg border border-[color:var(--cream)]/10 bg-[color:var(--cream)]/5 p-6 backdrop-blur transition duration-300 hover:-translate-y-1 hover:border-[color:var(--gold)]/35 hover:bg-[color:var(--cream)]/10">
               <Icon className="h-7 w-7 text-[color:var(--gold)]" />
               <div className="mt-4 font-display text-xl font-extrabold">{t(k[0])}</div>
               <div className="mt-2 text-sm opacity-75">{t(k[1])}</div>
@@ -321,7 +323,7 @@ function Stats() {
     { v: 15, s: "+", k: "stats_products" as const },
   ];
   return (
-    <section className="py-16 border-y border-border bg-card">
+    <section className="py-16 border-y border-[color:var(--gold)]/20 bg-card luxury-reveal">
       <div className="container-page grid grid-cols-2 md:grid-cols-5 gap-8">
         {data.map((d) => (
           <div key={d.k} className="text-center">
@@ -347,7 +349,7 @@ function Process() {
     { k: ["process_5", "process_5_d"] as const },
   ];
   return (
-    <section className="py-20 md:py-28">
+    <section className="py-20 md:py-28 luxury-reveal">
       <div className="container-page">
         <SectionHeader eyebrow={t("process_eyebrow")} title={t("process_title")} center />
         <ol className="mt-14 grid md:grid-cols-5 gap-4 relative">
@@ -369,7 +371,7 @@ function Certifications() {
   const { t } = useI18n();
   const certs = ["ISO 22000", "HACCP", "HALAL", "FDA", "GMP", "ISO 9001"];
   return (
-    <section className="py-20 md:py-28 bg-card">
+    <section className="py-20 md:py-28 bg-card luxury-reveal">
       <div className="container-page">
         <div className="grid md:grid-cols-2 gap-12 items-center">
           <div>
@@ -381,7 +383,7 @@ function Certifications() {
           </div>
           <div className="grid grid-cols-3 gap-4">
             {certs.map((c) => (
-              <div key={c} className="aspect-square grid place-items-center rounded-2xl border border-border bg-background text-center p-3">
+              <div key={c} className="surface-card aspect-square grid place-items-center text-center p-3">
                 <div>
                   <Award className="h-6 w-6 mx-auto text-[color:var(--saffron-deep)]" />
                   <div className="mt-2 font-display font-bold text-sm">{c}</div>
@@ -406,7 +408,7 @@ function ExportMap() {
     { k: "export_regions_af" as const, n: 2 },
   ];
   return (
-    <section className="py-20 md:py-28 relative overflow-hidden bg-[image:var(--gradient-royal)] text-[color:var(--cream)]">
+    <section className="dark-luxury py-20 md:py-28 relative overflow-hidden text-[color:var(--cream)] luxury-reveal">
       <div className="absolute inset-0 opacity-10 bg-[radial-gradient(circle_at_50%_50%,white,transparent_60%)]" />
       <div className="container-page relative">
         <div className="text-center max-w-4xl mx-auto">
@@ -415,7 +417,7 @@ function ExportMap() {
           <p className="mt-5 opacity-80">{t("export_body")}</p>
         </div>
 
-        <div className="mt-12 rounded-3xl border border-white/10 bg-white/5 p-6 backdrop-blur">
+        <div className="mt-12 rounded-lg border border-[color:var(--gold)]/20 bg-[color:var(--cream)]/5 p-6 shadow-[var(--shadow-gold-ring)] backdrop-blur">
           <div className="aspect-[16/7] w-full grid place-items-center rounded-2xl bg-[radial-gradient(ellipse_at_center,oklch(0.78_0.16_75/0.25),transparent_70%)] relative">
             <Globe2 className="h-32 w-32 text-[color:var(--gold)] opacity-40" strokeWidth={0.7} />
             <div className="absolute inset-0">
@@ -448,12 +450,12 @@ function Gallery() {
   const { t } = useI18n();
   const imgs = [heroImg, factoryImg, productsImg, saffronImg, factoryImg, heroImg];
   return (
-    <section className="py-20 md:py-28">
+    <section className="py-20 md:py-28 luxury-reveal">
       <div className="container-page">
         <SectionHeader eyebrow={t("gallery_eyebrow")} title={t("gallery_title")} />
         <div className="mt-12 grid grid-cols-2 md:grid-cols-3 gap-3">
           {imgs.map((src, i) => (
-            <div key={i} className={`overflow-hidden rounded-2xl ${i === 0 ? "md:col-span-2 md:row-span-2" : ""}`}>
+            <div key={i} className={`group overflow-hidden rounded-lg border border-[color:var(--gold)]/20 shadow-[var(--shadow-soft)] ${i === 0 ? "md:col-span-2 md:row-span-2" : ""}`}>
               <img src={src} alt="Factory" loading="lazy" className="h-full w-full object-cover aspect-square hover:scale-105 transition-transform duration-700" />
             </div>
           ))}
@@ -473,12 +475,12 @@ function DownloadCenter() {
     { k: "download_certs" as const, size: "4 MB" },
   ];
   return (
-    <section id="downloads" className="py-20 md:py-28">
+    <section id="downloads" className="py-20 md:py-28 luxury-reveal">
       <div className="container-page">
         <SectionHeader eyebrow={t("download_eyebrow")} title={t("download_title")} />
         <div className="mt-12 grid sm:grid-cols-2 lg:grid-cols-4 gap-4">
           {dls.map((d) => (
-            <a key={d.k} href="#" className="surface-card p-6 hover:-translate-y-1 transition-transform flex flex-col">
+            <a key={d.k} href="#" className="surface-card p-6 flex flex-col">
               <Download className="h-8 w-8 text-[color:var(--saffron-deep)]" />
               <div className="mt-4 font-display text-xl font-extrabold">{t(d.k)}</div>
               <div className="mt-1 text-xs text-muted-foreground">PDF · {d.size}</div>
@@ -496,7 +498,7 @@ function Partners() {
   const { t } = useI18n();
   const partners = ["Carrefour", "Lulu", "Spinneys", "Metro", "Auchan", "Tesco", "Migros", "Sahakol"];
   return (
-    <section className="py-16 bg-card border-y border-border">
+    <section className="py-16 bg-card border-y border-[color:var(--gold)]/20 luxury-reveal">
       <div className="container-page">
         <div className="text-center text-xs uppercase tracking-[0.3em] text-muted-foreground">{t("partners_title")}</div>
         <div className="mt-8 grid grid-cols-2 sm:grid-cols-4 lg:grid-cols-8 gap-6 items-center">
@@ -518,7 +520,7 @@ function Testimonials() {
     { n: "Hassan Karimov", r: "Retail Chain, Central Asia", q: "Authentic Persian flavor, beautiful packaging, and reliable monthly shipments. Highly recommended." },
   ];
   return (
-    <section className="py-20 md:py-28">
+    <section className="py-20 md:py-28 luxury-reveal">
       <div className="container-page">
         <SectionHeader eyebrow={t("testimonials_eyebrow")} title={t("testimonials_title")} center />
         <div className="mt-12 grid md:grid-cols-3 gap-6">
@@ -546,7 +548,7 @@ export function InquiryForm() {
   const { t } = useI18n();
   const [sent, setSent] = useState(false);
   return (
-    <section id="inquiry" className="py-20 md:py-28 bg-[color:var(--ink)] text-[color:var(--cream)]">
+    <section id="inquiry" className="dark-luxury py-20 md:py-28 text-[color:var(--cream)] luxury-reveal">
       <div className="container-page grid lg:grid-cols-2 gap-12 items-start">
         <div>
           <div className="text-xs uppercase tracking-[0.3em] text-[color:var(--gold)]">{t("inquiry_eyebrow")}</div>
@@ -560,7 +562,7 @@ export function InquiryForm() {
         </div>
         <form
           onSubmit={(e) => { e.preventDefault(); setSent(true); }}
-          className="rounded-3xl bg-white/5 border border-white/10 p-6 md:p-8 backdrop-blur grid sm:grid-cols-2 gap-4"
+          className="rounded-lg bg-[color:var(--cream)]/5 border border-[color:var(--gold)]/20 p-6 md:p-8 shadow-[var(--shadow-gold-ring)] backdrop-blur grid sm:grid-cols-2 gap-4"
         >
           {[
             { k: "field_name", req: true },
@@ -580,7 +582,7 @@ export function InquiryForm() {
             <span className="block text-xs uppercase tracking-wider opacity-70 mb-1.5">{t("field_message")}</span>
             <textarea rows={4} className="w-full rounded-lg border border-white/15 bg-white/5 px-3 py-2.5 text-sm outline-none focus:border-[color:var(--gold)] transition" />
           </label>
-          <button type="submit" className="sm:col-span-2 inline-flex items-center justify-center gap-2 rounded-lg bg-[image:var(--gradient-saffron)] px-6 py-3 text-sm font-semibold text-primary-foreground hover:brightness-110 transition">
+          <button type="submit" className="luxe-button sm:col-span-2 inline-flex items-center justify-center gap-2 rounded-lg bg-[image:var(--gradient-saffron)] px-6 py-3 text-sm font-semibold text-primary-foreground">
             <Send className="h-4 w-4" /> {t("send_inquiry")}
           </button>
           {sent && <div className="sm:col-span-2 text-center text-sm text-[color:var(--gold)]">{t("thanks_msg")}</div>}
@@ -602,7 +604,7 @@ function ContactBlock() {
     { i: MessageCircle, title: "WhatsApp", l: t("contact_whatsapp") },
   ];
   return (
-    <section className="py-20 md:py-28">
+    <section className="py-20 md:py-28 luxury-reveal">
       <div className="container-page grid md:grid-cols-2 gap-10 items-start">
         <div>
           <SectionHeader eyebrow={t("contact_eyebrow")} title={t("contact_title")} />
@@ -619,7 +621,7 @@ function ContactBlock() {
           </div>
           <div className="mt-3 text-xs text-muted-foreground">{t("contact_hours")}</div>
         </div>
-        <div className="rounded-3xl overflow-hidden shadow-[var(--shadow-elegant)] aspect-[4/3] bg-card">
+        <div className="luxury-image rounded-lg overflow-hidden shadow-[var(--shadow-luxury)] aspect-[4/3] bg-card">
           <iframe
             title="Map"
             src="https://maps.google.com/maps?q=رفسنجان، سعادت‌آباد، خیابان شهید امیری، ایران&z=15&output=embed"
