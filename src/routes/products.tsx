@@ -5,6 +5,7 @@ import { useI18n } from "@/lib/i18n";
 import { PageShell, PageHeader } from "@/components/PageShell";
 import stickImg from "@/assets/nabat-stick.jpg";
 import branchImg from "@/assets/nabat-branch.jpg";
+import crystalImg from "@/assets/nabat-crystal.jpg";
 import damaskRoseImg from "@/assets/nabat-damask-rose.jpg";
 import roseImg from "@/assets/nabat-rose.jpg";
 import lemonVerbenaImg from "@/assets/nabat-lemon-verbena.jpg";
@@ -19,12 +20,12 @@ import { cn } from "@/lib/utils";
 
 type Product = {
   name: string;
-  cat: "stick" | "branch" | "flavored";
+  cat: "stick" | "branch" | "crystal" | "flavored";
   brand: string;
   img: string;
   pack: string;
   desc: string;
-  nameKey?: "cat_stick_nabat" | "cat_branch_nabat";
+  nameKey?: "cat_stick_nabat" | "cat_branch_nabat" | "cat_crystal_nabat";
   flavorKey?:
     | "flavor_damask_rose" | "flavor_rose" | "flavor_lemon_verbena" | "flavor_cinnamon"
     | "flavor_ginger" | "flavor_mint" | "flavor_orange_blossom" | "flavor_hibiscus"
@@ -50,6 +51,15 @@ const products: Product[] = [
     pack: "250g · 500g · 1kg · 25kg bulk",
     desc: "نبات شاخه سی گل — Persian branch rock candy (nabat shakhe), naturally crystallized golden sugar branches for retail and bulk export.",
   },
+  {
+    name: "Crystal Nabat — نبات کریستال",
+    nameKey: "cat_crystal_nabat",
+    cat: "crystal",
+    brand: "Sigol",
+    img: crystalImg,
+    pack: "250g · 500g · 1kg · 25kg bulk",
+    desc: "نبات کریستال سی گل — Premium Persian crystal rock candy with clear, faceted sugar crystals for retail, hospitality and bulk export.",
+  },
   { name: "Flavored Nabat — Damask Rose", flavorKey: "flavor_damask_rose", cat: "flavored", brand: "Dorsin", img: damaskRoseImg, pack: "150g · 300g · 500g", desc: "نبات طعم‌دار گل محمدی — Flavored Persian nabat with Damask rose." },
   { name: "Flavored Nabat — Rose", flavorKey: "flavor_rose", cat: "flavored", brand: "Dorsin", img: roseImg, pack: "150g · 300g · 500g", desc: "نبات طعم‌دار گل رز — Flavored Persian nabat with rose." },
   { name: "Flavored Nabat — Lemon Verbena", flavorKey: "flavor_lemon_verbena", cat: "flavored", brand: "Dorsin", img: lemonVerbenaImg, pack: "150g · 300g · 500g", desc: "نبات طعم‌دار به لیمو — Flavored Persian nabat with lemon verbena." },
@@ -65,11 +75,11 @@ const products: Product[] = [
 export const Route = createFileRoute("/products")({
   head: () => ({
     meta: [
-      { title: "محصولات: نبات چوبی، نبات شاخه و نبات طعم‌دار | کارخانه سی گل" },
-      { name: "description", content: "کاتالوگ محصولات سی گل در سه دسته: نبات چوبی، نبات شاخه و نبات طعم‌دار با طعم‌های گل محمدی، گل رز، به لیمو، دارچین، زنجبیل، نعنا، بهارنارنج، چای ترش، هل و زعفران. Persian stick nabat, branch nabat and flavored nabat for wholesale and export." },
-      { name: "keywords", content: "نبات, نبات چوبی, نبات شاخه, نبات طعم دار, نبات زعفران, نبات گل محمدی, نبات هل, نبات دارچین, نبات نعنا, نبات بهارنارنج, نبات چای ترش, نبات زنجبیل, نبات به لیمو, زعفران ایرانی, شیرینی سنتی, خرید عمده نبات, stick nabat, branch nabat, flavored nabat, Persian rock candy, saffron nabat" },
-      { property: "og:title", content: "محصولات نبات سی گل — Stick, Branch & Flavored Nabat" },
-      { property: "og:description", content: "سه دسته اصلی محصولات سی گل: نبات چوبی، نبات شاخه و نبات طعم‌دار با ۱۰ طعم." },
+      { title: "محصولات نبات چوبی، شاخه، کریستال و طعم‌دار | سی گل" },
+      { name: "description", content: "کاتالوگ محصولات سی گل در چهار دسته: نبات چوبی، نبات شاخه، نبات کریستال و نبات طعم‌دار با ۱۰ طعم. Persian rock candy for wholesale and export." },
+      { name: "keywords", content: "نبات, نبات چوبی, نبات شاخه, نبات کریستال, نبات طعم دار, نبات زعفران, نبات گل محمدی, نبات هل, نبات دارچین, نبات نعنا, نبات بهارنارنج, نبات چای ترش, نبات زنجبیل, نبات به لیمو, زعفران ایرانی, شیرینی سنتی, خرید عمده نبات, crystal nabat, stick nabat, branch nabat, flavored nabat, Persian rock candy, saffron nabat" },
+      { property: "og:title", content: "محصولات نبات سی گل — Stick, Branch, Crystal & Flavored Nabat" },
+      { property: "og:description", content: "چهار دسته اصلی محصولات سی گل: نبات چوبی، نبات شاخه، نبات کریستال و نبات طعم‌دار با ۱۰ طعم." },
       { property: "og:url", content: "https://global-saffron-gate.lovable.app/products" },
       { property: "og:type", content: "website" },
     ],
@@ -118,6 +128,7 @@ const cats = [
   { id: "all", k: "filter_all" as const },
   { id: "stick", k: "cat_stick_nabat" as const },
   { id: "branch", k: "cat_branch_nabat" as const },
+  { id: "crystal", k: "cat_crystal_nabat" as const },
   { id: "flavored", k: "cat_flavored_nabat" as const },
 ];
 
