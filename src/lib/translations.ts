@@ -338,7 +338,7 @@ const fa: typeof en = {
   contact_address: "رفسنجان، سعادت‌آباد، خیابان شهید امیری، ایران",
   contact_phone: "۰۳۴۳۴۲۹۲۶۰۰ · ۰۹۱۳۶۵۰۰۳۴۵",
   contact_email: "Info@sigolsweets.ir",
-  contact_hours: "یکشنبه تا پنج‌شنبه · ۸ تا ۱۷ به وقت ایران",
+  contact_hours: "شنبه تا پنج‌شنبه · ۸ تا ۱۸ به وقت ایران",
   contact_shop: "فروشگاه",
   contact_shop_address: "رفسنجان، خیابان شهیدان دهقان رجبی، نبش کوچه ۹",
   contact_shop_phone: "۰۳۴۳۴۲۸۹۲۹۲ · ۰۹۱۳۳۹۱۰۳۴۶",
