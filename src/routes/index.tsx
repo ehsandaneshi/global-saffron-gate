@@ -433,7 +433,7 @@ function ExportMap() {
           </div>
           <div className="mt-6 grid grid-cols-2 md:grid-cols-5 gap-4">
             {regions.map((r) => (
-              <div key={r.k} className="text-center rounded-xl border border-white/10 p-4">
+              <div key={r.k} className="text-center rounded-lg border border-[color:var(--cream)]/10 p-4 transition-colors hover:border-[color:var(--gold)]/35">
                 <div className="font-display text-xl font-bold text-[color:var(--gold)]">{r.n}</div>
                 <div className="text-xs mt-1 opacity-80">{t(r.k)}</div>
               </div>
@@ -575,12 +575,12 @@ export function InquiryForm() {
           ].map((f) => (
             <label key={f.k} className="block sm:col-span-1">
               <span className="block text-xs uppercase tracking-wider opacity-70 mb-1.5">{t(f.k as never)}</span>
-              <input required={f.req} type={f.type ?? "text"} className="w-full rounded-lg border border-white/15 bg-white/5 px-3 py-2.5 text-sm outline-none focus:border-[color:var(--gold)] transition" />
+              <input required={f.req} type={f.type ?? "text"} className="w-full rounded-lg border border-[color:var(--cream)]/15 bg-[color:var(--cream)]/5 px-3 py-2.5 text-sm outline-none focus:border-[color:var(--gold)] transition" />
             </label>
           ))}
           <label className="block sm:col-span-2">
             <span className="block text-xs uppercase tracking-wider opacity-70 mb-1.5">{t("field_message")}</span>
-            <textarea rows={4} className="w-full rounded-lg border border-white/15 bg-white/5 px-3 py-2.5 text-sm outline-none focus:border-[color:var(--gold)] transition" />
+            <textarea rows={4} className="w-full rounded-lg border border-[color:var(--cream)]/15 bg-[color:var(--cream)]/5 px-3 py-2.5 text-sm outline-none focus:border-[color:var(--gold)] transition" />
           </label>
           <button type="submit" className="luxe-button sm:col-span-2 inline-flex items-center justify-center gap-2 rounded-lg bg-[image:var(--gradient-saffron)] px-6 py-3 text-sm font-semibold text-primary-foreground">
             <Send className="h-4 w-4" /> {t("send_inquiry")}

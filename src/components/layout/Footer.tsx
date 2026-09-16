@@ -51,7 +51,7 @@ export function Footer() {
           </ul>
         </div>
       </div>
-      <div className="border-t border-white/10">
+      <div className="border-t border-[color:var(--cream)]/10">
         <div className="container-page py-5 flex flex-wrap gap-3 justify-between text-xs opacity-60">
           <span>© {new Date().getFullYear()} Sigol Factory. {t("footer_rights")}</span>
           <span>Designed for global export · EN · فارسی · العربية</span>
