@@ -1,7 +1,7 @@
 import { Link } from "@tanstack/react-router";
 import { Mail, Phone, MapPin, MessageCircle } from "lucide-react";
 import { useI18n } from "@/lib/i18n";
-import logoAsset from "@/assets/sigol-logo.png.asset.json";
+import footerLogoAsset from "@/assets/sigol-footer-logo.png.asset.json";
 
 export function Footer() {
   const { t } = useI18n();
@@ -12,9 +12,9 @@ export function Footer() {
         <div className="md:col-span-2">
           <div className="flex items-center gap-2">
             <img
-              src={logoAsset.url}
+              src={footerLogoAsset.url}
               alt="لوگوی کارخانه سی گل"
-              className="h-12 w-12 shrink-0 object-contain"
+              className="h-24 w-24 shrink-0 object-contain"
             />
             <div className="font-display text-lg font-bold">{t("brand_name")}</div>
           </div>

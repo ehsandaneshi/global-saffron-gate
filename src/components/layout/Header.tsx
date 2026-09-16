@@ -23,7 +23,6 @@ export function Header() {
     { to: "/manufacturing", label: t("nav_manufacturing") },
     { to: "/certifications", label: t("nav_certifications") },
     { to: "/export", label: t("nav_export") },
-    { to: "/blog", label: t("nav_blog") },
     { to: "/contact", label: t("nav_contact") },
   ] as const;
 

@@ -11,7 +11,6 @@ const en = {
   nav_manufacturing: "Manufacturing",
   nav_certifications: "Certifications",
   nav_export: "Export",
-  nav_blog: "Blog",
   nav_contact: "Contact",
   nav_export_inquiry: "Export Inquiry",
 
@@ -187,13 +186,6 @@ const en = {
   export_services_doc: "Export Documentation",
   export_services_doc_d: "Certificates of origin, halal, health, and phytosanitary — all handled.",
 
-  page_blog_title: "Insights & News",
-  page_blog_lead: "Industry updates, export news, and stories from our factory.",
-  blog_cat_industry: "Industry News",
-  blog_cat_export: "Export News",
-  blog_cat_product: "Product Education",
-  blog_cat_company: "Company Updates",
-
   page_contact_title: "Contact Us",
   page_contact_lead: "We're here to support importers, distributors, and retail partners worldwide.",
 };
@@ -209,7 +201,6 @@ const fa: typeof en = {
   nav_manufacturing: "تولید",
   nav_certifications: "گواهینامه‌ها",
   nav_export: "صادرات",
-  nav_blog: "وبلاگ",
   nav_contact: "تماس",
   nav_export_inquiry: "درخواست صادرات",
 
@@ -385,13 +376,6 @@ const fa: typeof en = {
   export_services_doc: "مستندات صادراتی",
   export_services_doc_d: "گواهی مبدأ، حلال، بهداشت و قرنطینه — به‌طور کامل انجام می‌شود.",
 
-  page_blog_title: "بینش‌ها و اخبار",
-  page_blog_lead: "اخبار صنعت، صادرات و داستان‌های کارخانه ما.",
-  blog_cat_industry: "اخبار صنعت",
-  blog_cat_export: "اخبار صادرات",
-  blog_cat_product: "آموزش محصول",
-  blog_cat_company: "اخبار شرکت",
-
   page_contact_title: "تماس با ما",
   page_contact_lead: "در خدمت واردکنندگان، توزیع‌کنندگان و شرکای خرده‌فروشی در سراسر جهان هستیم.",
 };
@@ -407,7 +391,6 @@ const ar: typeof en = {
   nav_manufacturing: "التصنيع",
   nav_certifications: "الشهادات",
   nav_export: "التصدير",
-  nav_blog: "المدونة",
   nav_contact: "اتصل بنا",
   nav_export_inquiry: "طلب تصدير",
 
@@ -582,13 +565,6 @@ const ar: typeof en = {
   export_services_log_d: "شروط FOB / CIF، حاويات كاملة ومستندات تصدير شاملة.",
   export_services_doc: "مستندات التصدير",
   export_services_doc_d: "شهادات المنشأ والحلال والصحة والحجر الزراعي — كاملة.",
-
-  page_blog_title: "رؤى وأخبار",
-  page_blog_lead: "أخبار الصناعة والتصدير وقصص من مصنعنا.",
-  blog_cat_industry: "أخبار الصناعة",
-  blog_cat_export: "أخبار التصدير",
-  blog_cat_product: "تعليم المنتج",
-  blog_cat_company: "أخبار الشركة",
 
   page_contact_title: "اتصل بنا",
   page_contact_lead: "نحن هنا لدعم المستوردين والموزعين وشركاء التجزئة في جميع أنحاء العالم.",
