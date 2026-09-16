@@ -140,7 +140,7 @@ const en = {
   contact_address: "Rafsanjan, Saadatabad, Shahid Amiri St, Iran",
   contact_phone: "034 3429 2600 · 0913 650 0345",
   contact_email: "Info@sigolsweets.ir",
-  contact_hours: "Sun – Thu · 08:00 – 17:00 IRST",
+  contact_hours: "Sat – Thu · 08:00 – 18:00 IRST",
   contact_shop: "Retail Shop",
   contact_shop_address: "Rafsanjan, Shahidan Dehghan Rajabi St, corner of Alley 9",
   contact_shop_phone: "034 3428 9292 · 0913 391 0346",
