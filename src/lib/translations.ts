@@ -98,9 +98,6 @@ const en = {
   export_regions_am: "Americas",
   export_regions_af: "Africa",
 
-  gallery_eyebrow: "Factory Gallery",
-  gallery_title: "Inside the Sigol facility",
-
   video_eyebrow: "Video Showcase",
   video_title: "See the craft in motion",
   video_factory: "Factory Tour",
@@ -288,9 +285,6 @@ const fa: typeof en = {
   export_regions_am: "قاره آمریکا",
   export_regions_af: "آفریقا",
 
-  gallery_eyebrow: "گالری کارخانه",
-  gallery_title: "درون کارخانه سی گل",
-
   video_eyebrow: "ویدئوها",
   video_title: "هنر تولید را در حرکت ببینید",
   video_factory: "تور کارخانه",
@@ -477,9 +471,6 @@ const ar: typeof en = {
   export_regions_asia: "آسيا والمحيط الهادئ",
   export_regions_am: "الأمريكتان",
   export_regions_af: "أفريقيا",
-
-  gallery_eyebrow: "معرض المصنع",
-  gallery_title: "داخل منشأة سي گل",
 
   video_eyebrow: "الفيديوهات",
   video_title: "شاهد الحرفة في الحركة",
