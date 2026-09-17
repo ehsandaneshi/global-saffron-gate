@@ -10,9 +10,9 @@ import { PageShell } from "@/components/PageShell";
 import heroImg from "@/assets/hero-saffron-nabat.jpg";
 import factoryImg from "@/assets/factory-interior.jpg";
 import stickImg from "@/assets/nabat-stick.jpg";
-import branchImg from "@/assets/nabat-branch.jpg";
 import crystalImg from "@/assets/nabat-crystal.jpg";
-import flavoredImg from "@/assets/nabat-flavored.jpg";
+import branchAsset from "@/assets/products-uploaded/sigol-branch.jpeg.asset.json";
+import flavoredAsset from "@/assets/products-uploaded/sigol-saffron.jpeg.asset.json";
 
 const HOME_TITLE = "نبات زعفرانی، شیرینی سنتی و زعفران ایرانی | کارخانه سی گل — Sigol Factory";
 const HOME_DESC = "کارخانه سی گل، تولیدکننده تخصصی نبات زعفرانی، نبات چوبی، نبات شاخه‌ای، آبنبات، شکرپنیر و شیرینی سنتی ایرانی با زعفران درجه یک. صادرات نبات و زعفران به بیش از ۲۸ کشور جهان. Premium Persian saffron rock candy (Nabat), saffron threads, and traditional Iranian confectionery — wholesale, private label & OEM export.";
@@ -216,9 +216,9 @@ function Categories() {
   const { t } = useI18n();
   const cats = [
     { k: "cat_stick_nabat" as const, img: stickImg },
-    { k: "cat_branch_nabat" as const, img: branchImg },
+    { k: "cat_branch_nabat" as const, img: branchAsset.url },
     { k: "cat_crystal_nabat" as const, img: crystalImg },
-    { k: "cat_flavored_nabat" as const, img: flavoredImg },
+    { k: "cat_flavored_nabat" as const, img: flavoredAsset.url },
   ];
   const flavors = [
     "flavor_damask_rose", "flavor_rose", "flavor_lemon_verbena", "flavor_cinnamon", "flavor_ginger",
