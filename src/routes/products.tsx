@@ -4,18 +4,18 @@ import { useState } from "react";
 import { useI18n } from "@/lib/i18n";
 import { PageShell, PageHeader } from "@/components/PageShell";
 import stickImg from "@/assets/nabat-stick.jpg";
-import branchImg from "@/assets/nabat-branch.jpg";
 import crystalImg from "@/assets/nabat-crystal.jpg";
-import damaskRoseImg from "@/assets/nabat-damask-rose.jpg";
-import roseImg from "@/assets/nabat-rose.jpg";
-import lemonVerbenaImg from "@/assets/nabat-lemon-verbena.jpg";
-import cinnamonImg from "@/assets/nabat-cinnamon.jpg";
-import gingerImg from "@/assets/nabat-ginger.jpg";
-import mintImg from "@/assets/nabat-mint.jpg";
-import orangeBlossomImg from "@/assets/nabat-orange-blossom.jpg";
-import hibiscusImg from "@/assets/nabat-hibiscus.jpg";
-import cardamomImg from "@/assets/nabat-cardamom.jpg";
-import saffronFlavorImg from "@/assets/nabat-saffron-flavor.jpg";
+import branchAsset from "@/assets/products-uploaded/sigol-branch.jpeg.asset.json";
+import damaskRoseAsset from "@/assets/products-uploaded/sigol-damask-rose.png.asset.json";
+import roseAsset from "@/assets/products-uploaded/sigol-rose.jpeg.asset.json";
+import lemonVerbenaAsset from "@/assets/products-uploaded/sigol-lemon-verbena.jpeg.asset.json";
+import cinnamonAsset from "@/assets/products-uploaded/sigol-cinnamon.jpeg.asset.json";
+import gingerAsset from "@/assets/products-uploaded/sigol-ginger.jpeg.asset.json";
+import mintAsset from "@/assets/products-uploaded/sigol-mint.jpeg.asset.json";
+import orangeBlossomAsset from "@/assets/products-uploaded/sigol-orange-blossom.jpeg.asset.json";
+import hibiscusAsset from "@/assets/products-uploaded/sigol-hibiscus.jpeg.asset.json";
+import cardamomAsset from "@/assets/products-uploaded/sigol-cardamom.jpeg.asset.json";
+import saffronFlavorAsset from "@/assets/products-uploaded/sigol-saffron.jpeg.asset.json";
 import { cn } from "@/lib/utils";
 
 type Product = {
@@ -47,7 +47,7 @@ const products: Product[] = [
     nameKey: "cat_branch_nabat",
     cat: "branch",
     brand: "Sigol",
-    img: branchImg,
+    img: branchAsset.url,
     pack: "250g · 500g · 1kg · 25kg bulk",
     desc: "نبات شاخه سی گل — Persian branch rock candy (nabat shakhe), naturally crystallized golden sugar branches for retail and bulk export.",
   },
@@ -60,16 +60,16 @@ const products: Product[] = [
     pack: "250g · 500g · 1kg · 25kg bulk",
     desc: "نبات کریستال سی گل — Premium Persian crystal rock candy with clear, faceted sugar crystals for retail, hospitality and bulk export.",
   },
-  { name: "Flavored Nabat — Damask Rose", flavorKey: "flavor_damask_rose", cat: "flavored", brand: "Dorsin", img: damaskRoseImg, pack: "150g · 300g · 500g", desc: "نبات طعم‌دار گل محمدی — Flavored Persian nabat with Damask rose." },
-  { name: "Flavored Nabat — Rose", flavorKey: "flavor_rose", cat: "flavored", brand: "Dorsin", img: roseImg, pack: "150g · 300g · 500g", desc: "نبات طعم‌دار گل رز — Flavored Persian nabat with rose." },
-  { name: "Flavored Nabat — Lemon Verbena", flavorKey: "flavor_lemon_verbena", cat: "flavored", brand: "Dorsin", img: lemonVerbenaImg, pack: "150g · 300g · 500g", desc: "نبات طعم‌دار به لیمو — Flavored Persian nabat with lemon verbena." },
-  { name: "Flavored Nabat — Cinnamon", flavorKey: "flavor_cinnamon", cat: "flavored", brand: "Dorsin", img: cinnamonImg, pack: "150g · 300g · 500g", desc: "نبات طعم‌دار دارچین — Flavored Persian nabat with cinnamon." },
-  { name: "Flavored Nabat — Ginger", flavorKey: "flavor_ginger", cat: "flavored", brand: "Dorsin", img: gingerImg, pack: "150g · 300g · 500g", desc: "نبات طعم‌دار زنجبیل — Flavored Persian nabat with ginger." },
-  { name: "Flavored Nabat — Mint", flavorKey: "flavor_mint", cat: "flavored", brand: "Dorsin", img: mintImg, pack: "150g · 300g · 500g", desc: "نبات طعم‌دار نعنا — Flavored Persian nabat with mint." },
-  { name: "Flavored Nabat — Orange Blossom", flavorKey: "flavor_orange_blossom", cat: "flavored", brand: "Manbod", img: orangeBlossomImg, pack: "150g · 300g · 500g", desc: "نبات طعم‌دار بهارنارنج — Flavored Persian nabat with orange blossom." },
-  { name: "Flavored Nabat — Hibiscus", flavorKey: "flavor_hibiscus", cat: "flavored", brand: "Manbod", img: hibiscusImg, pack: "150g · 300g · 500g", desc: "نبات طعم‌دار چای ترش — Flavored Persian nabat with hibiscus." },
-  { name: "Flavored Nabat — Cardamom", flavorKey: "flavor_cardamom", cat: "flavored", brand: "Manbod", img: cardamomImg, pack: "150g · 300g · 500g", desc: "نبات طعم‌دار هل — Flavored Persian nabat with cardamom." },
-  { name: "Flavored Nabat — Saffron", flavorKey: "flavor_saffron", cat: "flavored", brand: "Sigol", img: saffronFlavorImg, pack: "150g · 300g · 500g · Bulk", desc: "نبات طعم‌دار زعفران — Flavored Persian nabat with premium Sargol saffron." },
+  { name: "Flavored Nabat — Damask Rose", flavorKey: "flavor_damask_rose", cat: "flavored", brand: "Dorsin", img: damaskRoseAsset.url, pack: "150g · 300g · 500g", desc: "نبات طعم‌دار گل محمدی — Flavored Persian nabat with Damask rose." },
+  { name: "Flavored Nabat — Rose", flavorKey: "flavor_rose", cat: "flavored", brand: "Dorsin", img: roseAsset.url, pack: "150g · 300g · 500g", desc: "نبات طعم‌دار گل رز — Flavored Persian nabat with rose." },
+  { name: "Flavored Nabat — Lemon Verbena", flavorKey: "flavor_lemon_verbena", cat: "flavored", brand: "Dorsin", img: lemonVerbenaAsset.url, pack: "150g · 300g · 500g", desc: "نبات طعم‌دار به لیمو — Flavored Persian nabat with lemon verbena." },
+  { name: "Flavored Nabat — Cinnamon", flavorKey: "flavor_cinnamon", cat: "flavored", brand: "Dorsin", img: cinnamonAsset.url, pack: "150g · 300g · 500g", desc: "نبات طعم‌دار دارچین — Flavored Persian nabat with cinnamon." },
+  { name: "Flavored Nabat — Ginger", flavorKey: "flavor_ginger", cat: "flavored", brand: "Dorsin", img: gingerAsset.url, pack: "150g · 300g · 500g", desc: "نبات طعم‌دار زنجبیل — Flavored Persian nabat with ginger." },
+  { name: "Flavored Nabat — Mint", flavorKey: "flavor_mint", cat: "flavored", brand: "Dorsin", img: mintAsset.url, pack: "150g · 300g · 500g", desc: "نبات طعم‌دار نعنا — Flavored Persian nabat with mint." },
+  { name: "Flavored Nabat — Orange Blossom", flavorKey: "flavor_orange_blossom", cat: "flavored", brand: "Manbod", img: orangeBlossomAsset.url, pack: "150g · 300g · 500g", desc: "نبات طعم‌دار بهارنارنج — Flavored Persian nabat with orange blossom." },
+  { name: "Flavored Nabat — Hibiscus", flavorKey: "flavor_hibiscus", cat: "flavored", brand: "Manbod", img: hibiscusAsset.url, pack: "150g · 300g · 500g", desc: "نبات طعم‌دار چای ترش — Flavored Persian nabat with hibiscus." },
+  { name: "Flavored Nabat — Cardamom", flavorKey: "flavor_cardamom", cat: "flavored", brand: "Manbod", img: cardamomAsset.url, pack: "150g · 300g · 500g", desc: "نبات طعم‌دار هل — Flavored Persian nabat with cardamom." },
+  { name: "Flavored Nabat — Saffron", flavorKey: "flavor_saffron", cat: "flavored", brand: "Sigol", img: saffronFlavorAsset.url, pack: "150g · 300g · 500g · Bulk", desc: "نبات طعم‌دار زعفران — Flavored Persian nabat with premium Sargol saffron." },
 ];
 
 export const Route = createFileRoute("/products")({
