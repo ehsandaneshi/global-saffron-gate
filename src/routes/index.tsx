@@ -9,8 +9,6 @@ import { useI18n } from "@/lib/i18n";
 import { PageShell } from "@/components/PageShell";
 import heroImg from "@/assets/hero-saffron-nabat.jpg";
 import factoryImg from "@/assets/factory-interior.jpg";
-import productsImg from "@/assets/products-display.jpg";
-import saffronImg from "@/assets/saffron-threads.jpg";
 import stickImg from "@/assets/nabat-stick.jpg";
 import branchImg from "@/assets/nabat-branch.jpg";
 import crystalImg from "@/assets/nabat-crystal.jpg";
@@ -85,7 +83,6 @@ function HomePage() {
       <Process />
       <Certifications />
       <ExportMap />
-      <Gallery />
       <DownloadCenter />
       <Partners />
       <Testimonials />
@@ -439,26 +436,6 @@ function ExportMap() {
               </div>
             ))}
           </div>
-        </div>
-      </div>
-    </section>
-  );
-}
-
-/* ---------------- GALLERY ---------------- */
-function Gallery() {
-  const { t } = useI18n();
-  const imgs = [heroImg, factoryImg, productsImg, saffronImg, factoryImg, heroImg];
-  return (
-    <section className="py-20 md:py-28 luxury-reveal">
-      <div className="container-page">
-        <SectionHeader eyebrow={t("gallery_eyebrow")} title={t("gallery_title")} />
-        <div className="mt-12 grid grid-cols-2 md:grid-cols-3 gap-3">
-          {imgs.map((src, i) => (
-            <div key={i} className={`group overflow-hidden rounded-lg border border-[color:var(--gold)]/20 shadow-[var(--shadow-soft)] ${i === 0 ? "md:col-span-2 md:row-span-2" : ""}`}>
-              <img src={src} alt="Factory" loading="lazy" className="h-full w-full object-cover aspect-square hover:scale-105 transition-transform duration-700" />
-            </div>
-          ))}
         </div>
       </div>
     </section>
