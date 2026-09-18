@@ -29,7 +29,7 @@ const en = {
 
   brands_eyebrow: "Our Brands",
   brands_title: "Three brands, one heritage of excellence",
-  brand_sigol_desc: "Our flagship premium line — luxury saffron nabat and crystal candy crafted for connoisseurs and gifting markets.",
+  brand_sigol_desc: "Our flagship premium line — luxury saffron nabat crafted for connoisseurs and gifting markets.",
   brand_manbod_desc: "Family-favorite Persian sweets and traditional confectionery, designed for retail and hypermarket distribution.",
   brand_dorsin_desc: "Modern flavored nabat and innovative formats for export markets, private label, and OEM partners.",
 
@@ -37,7 +37,6 @@ const en = {
   cats_title: "A complete confectionery portfolio",
   cat_stick_nabat: "Stick Nabat",
   cat_branch_nabat: "Branch Nabat",
-  cat_crystal_nabat: "Crystal Nabat",
   cat_flavored_nabat: "Flavored Nabat",
   flavor_damask_rose: "Damask Rose",
   flavor_rose: "Rose",
@@ -145,7 +144,7 @@ const en = {
   contact_factory_phone: "034 3429 2600 · 0913 650 0345",
   contact_whatsapp: "WhatsApp · 0913 650 0345",
 
-  footer_about: "Sigol Factory is a leading Iranian manufacturer of premium saffron nabat, crystal candy, and traditional Persian confectionery for global markets.",
+  footer_about: "Sigol Factory is a leading Iranian manufacturer of premium saffron nabat and traditional Persian confectionery for global markets.",
   footer_quick: "Quick Links",
   footer_brands: "Our Brands",
   footer_contact: "Get in Touch",
@@ -163,7 +162,7 @@ const en = {
   about_values_b: "Authenticity · Quality · Integrity · Partnership · Innovation.",
 
   page_products_title: "Product Catalog",
-  page_products_lead: "Explore our full range of nabat, crystal candy, and traditional Persian confectionery.",
+  page_products_lead: "Explore our full range of stick, branch, and flavored nabat alongside traditional Persian confectionery.",
   filter_all: "All",
 
   page_manufacturing_title: "Manufacturing Excellence",
@@ -216,7 +215,7 @@ const fa: typeof en = {
 
   brands_eyebrow: "برندهای ما",
   brands_title: "سه برند، یک میراث برتر",
-  brand_sigol_desc: "خط لوکس و پرچم‌دار ما — نبات زعفرانی و کریستالی برای بازارهای هدیه و خاص.",
+  brand_sigol_desc: "خط لوکس و پرچم‌دار ما — نبات زعفرانی ممتاز برای بازارهای هدیه و خاص.",
   brand_manbod_desc: "شیرینی‌های سنتی محبوب خانواده برای توزیع در فروشگاه‌های زنجیره‌ای و خرده‌فروشی.",
   brand_dorsin_desc: "نبات‌های طعم‌دار مدرن برای بازارهای صادراتی، برند اختصاصی و شرکای OEM.",
 
@@ -224,7 +223,6 @@ const fa: typeof en = {
   cats_title: "یک پرتفوی کامل شیرینی",
   cat_stick_nabat: "نبات چوبی",
   cat_branch_nabat: "نبات شاخه",
-  cat_crystal_nabat: "نبات کریستال",
   cat_flavored_nabat: "نبات طعم‌دار",
   flavor_damask_rose: "گل محمدی",
   flavor_rose: "گل رز",
@@ -332,7 +330,7 @@ const fa: typeof en = {
   contact_factory_phone: "۰۳۴۳۴۲۹۲۶۰۰ · ۰۹۱۳۶۵۰۰۳۴۵",
   contact_whatsapp: "واتس‌اپ · ۰۹۱۳۶۵۰۰۳۴۵",
 
-  footer_about: "کارخانه سی گل تولیدکننده پیشرو نبات زعفرانی، نبات کریستال و شیرینی‌های سنتی ایرانی برای بازارهای جهانی است.",
+  footer_about: "کارخانه سی گل تولیدکننده پیشرو نبات زعفرانی و شیرینی‌های سنتی ایرانی برای بازارهای جهانی است.",
   footer_quick: "لینک‌های سریع",
   footer_brands: "برندهای ما",
   footer_contact: "ارتباط با ما",
@@ -350,7 +348,7 @@ const fa: typeof en = {
   about_values_b: "اصالت · کیفیت · صداقت · همکاری · نوآوری.",
 
   page_products_title: "کاتالوگ محصولات",
-  page_products_lead: "محدوده کامل نبات، شیرینی کریستالی و شیرینی‌های سنتی ایرانی ما را ببینید.",
+  page_products_lead: "مجموعه کامل نبات چوبی، نبات شاخه، نبات طعم‌دار و شیرینی‌های سنتی ایرانی ما را ببینید.",
   filter_all: "همه",
 
   page_manufacturing_title: "تعالی در تولید",
@@ -403,7 +401,7 @@ const ar: typeof en = {
 
   brands_eyebrow: "علاماتنا التجارية",
   brands_title: "ثلاث علامات، إرث واحد من التميز",
-  brand_sigol_desc: "خطنا الفاخر الرائد — نبات الزعفران والحلويات البلورية لعشاق الذواقة وأسواق الهدايا.",
+  brand_sigol_desc: "خطنا الفاخر الرائد — نبات الزعفران الممتاز لعشاق الذواقة وأسواق الهدايا.",
   brand_manbod_desc: "حلويات إيرانية تقليدية مفضلة للعائلة، مصممة للبيع بالتجزئة وسلاسل الهايبر ماركت.",
   brand_dorsin_desc: "نبات بنكهات حديثة وصيغ مبتكرة لأسواق التصدير والعلامة الخاصة وشركاء OEM.",
 
@@ -411,7 +409,6 @@ const ar: typeof en = {
   cats_title: "محفظة حلويات متكاملة",
   cat_stick_nabat: "نبات على عود",
   cat_branch_nabat: "نبات أغصان",
-  cat_crystal_nabat: "نبات كريستال",
   cat_flavored_nabat: "نبات بالنكهات",
   flavor_damask_rose: "الورد المحمدي",
   flavor_rose: "الورد الجوري",
@@ -537,7 +534,7 @@ const ar: typeof en = {
   about_values_b: "الأصالة · الجودة · النزاهة · الشراكة · الابتكار.",
 
   page_products_title: "كتالوج المنتجات",
-  page_products_lead: "استكشف مجموعتنا الكاملة من النبات والحلويات البلورية والإيرانية التقليدية.",
+  page_products_lead: "استكشف مجموعتنا الكاملة من نبات العيدان والأغصان والنكهات والحلويات الإيرانية التقليدية.",
   filter_all: "الكل",
 
   page_manufacturing_title: "التميز في التصنيع",
