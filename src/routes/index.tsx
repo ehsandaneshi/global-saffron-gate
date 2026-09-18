@@ -9,8 +9,7 @@ import { useI18n } from "@/lib/i18n";
 import { PageShell } from "@/components/PageShell";
 import heroImg from "@/assets/hero-saffron-nabat.jpg";
 import factoryImg from "@/assets/factory-interior.jpg";
-import stickImg from "@/assets/nabat-stick.jpg";
-import crystalImg from "@/assets/nabat-crystal.jpg";
+import stickAsset from "@/assets/products-uploaded/sigol-stick-nabat.jpeg.asset.json";
 import branchAsset from "@/assets/products-uploaded/sigol-branch.jpeg.asset.json";
 import flavoredAsset from "@/assets/products-uploaded/sigol-saffron.jpeg.asset.json";
 
@@ -215,9 +214,8 @@ function Brands() {
 function Categories() {
   const { t } = useI18n();
   const cats = [
-    { k: "cat_stick_nabat" as const, img: stickImg },
+    { k: "cat_stick_nabat" as const, img: stickAsset.url },
     { k: "cat_branch_nabat" as const, img: branchAsset.url },
-    { k: "cat_crystal_nabat" as const, img: crystalImg },
     { k: "cat_flavored_nabat" as const, img: flavoredAsset.url },
   ];
   const flavors = [
@@ -228,7 +226,7 @@ function Categories() {
     <section className="py-20 md:py-28 luxury-reveal">
       <div className="container-page">
         <SectionHeader eyebrow={t("cats_eyebrow")} title={t("cats_title")} />
-        <div className="mt-12 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-5">
+        <div className="mt-12 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5">
           {cats.map((c) => (
             <Link to="/products" key={c.k} className="group relative overflow-hidden rounded-lg aspect-[4/5] border border-[color:var(--gold)]/25 shadow-[var(--shadow-luxury)]">
               <img src={c.img} alt={t(c.k)} loading="lazy" width={1024} height={768} className="absolute inset-0 h-full w-full object-cover transition-transform duration-700 group-hover:scale-110" />
