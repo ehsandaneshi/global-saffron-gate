@@ -9,9 +9,9 @@ import { useI18n } from "@/lib/i18n";
 import { PageShell } from "@/components/PageShell";
 import heroImg from "@/assets/hero-saffron-nabat.jpg";
 import factoryImg from "@/assets/factory-interior.jpg";
-import stickAsset from "@/assets/products-uploaded/sigol-stick-nabat.jpeg.asset.json";
-import branchAsset from "@/assets/products-uploaded/sigol-branch.jpeg.asset.json";
-import flavoredAsset from "@/assets/products-uploaded/sigol-saffron.jpeg.asset.json";
+const stickAsset = { url: "/images/products/sigol-stick-nabat.jpeg" };
+const branchAsset = { url: "/images/products/sigol-branch.jpeg" };
+const flavoredAsset = { url: "/images/products/sigol-saffron.jpeg" };
 
 const HOME_TITLE = "نبات زعفرانی، شیرینی سنتی و زعفران ایرانی | کارخانه سی گل — Sigol Factory";
 const HOME_DESC = "کارخانه سی گل، تولیدکننده تخصصی نبات زعفرانی، نبات چوبی، نبات شاخه‌ای، آبنبات، شکرپنیر و شیرینی سنتی ایرانی با زعفران درجه یک. صادرات نبات و زعفران به بیش از ۲۸ کشور جهان. Premium Persian saffron rock candy (Nabat), saffron threads, and traditional Iranian confectionery — wholesale, private label & OEM export.";

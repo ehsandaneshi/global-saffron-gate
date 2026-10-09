@@ -91,8 +91,8 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
       { name: "twitter:card", content: "summary_large_image" },
       { name: "twitter:title", content: "کارخانه سی گل — نبات زعفرانی و زعفران ایرانی" },
       { name: "twitter:description", content: "تولیدکننده نبات زعفرانی، زعفران ایرانی و شیرینی سنتی صادراتی." },
-      { property: "og:image", content: "https://pub-bb2e103a32db4e198524a2e9ed8f35b4.r2.dev/b91ded03-11bf-42a5-88b5-932c9d9ed3b9/id-preview-c1a2915f--aa031a1e-bb43-48d2-aac0-fbf64418c44e.lovable.app-1781265946222.png" },
-      { name: "twitter:image", content: "https://pub-bb2e103a32db4e198524a2e9ed8f35b4.r2.dev/b91ded03-11bf-42a5-88b5-932c9d9ed3b9/id-preview-c1a2915f--aa031a1e-bb43-48d2-aac0-fbf64418c44e.lovable.app-1781265946222.png" },
+      { property: "og:image", content: "https://sigolsweets.lovable.app/images/brand/og-image.png" },
+      { name: "twitter:image", content: "https://sigolsweets.lovable.app/images/brand/og-image.png" },
     ],
     links: [
       { rel: "stylesheet", href: appCss },
