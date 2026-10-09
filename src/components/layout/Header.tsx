@@ -4,7 +4,7 @@ import { useState } from "react";
 import { useI18n } from "@/lib/i18n";
 import type { Lang } from "@/lib/translations";
 import { cn } from "@/lib/utils";
-import logoAsset from "@/assets/sigol-logo.png.asset.json";
+const logoAsset = { url: "/images/brand/sigol-logo.png" };
 
 const langs: { code: Lang; label: string; native: string }[] = [
   { code: "en", label: "EN", native: "English" },
