@@ -156,10 +156,8 @@ function ProductsPage() {
                    <img src={p.img} alt={title} loading="lazy" width={1024} height={768} className="h-full w-full object-cover transition-transform duration-700 ease-out group-hover:scale-110" />
                 </div>
                 <div className="p-5">
-                  <div className="text-[10px] uppercase tracking-[0.25em] text-[color:var(--saffron-deep)]">{p.brand}</div>
-                  <h3 className="mt-1 font-display text-xl font-extrabold">{title}</h3>
-                  <div className="mt-3 text-xs text-muted-foreground">{p.pack}</div>
-                   <a href="/#inquiry" className="mt-4 inline-flex text-sm font-semibold text-[color:var(--saffron-deep)] transition-colors hover:text-primary">{t("cta_export_inquiry")} →</a>
+                  <h3 className="font-display text-xl font-extrabold">{title}</h3>
+                  <a href="/#inquiry" className="mt-3 inline-flex text-sm font-semibold text-[color:var(--saffron-deep)] transition-colors hover:text-primary">{t("cta_buy_export")} →</a>
                 </div>
               </article>
             );
